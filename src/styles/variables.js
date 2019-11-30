@@ -47,7 +47,7 @@ export const Color = {
   grayLighter: `#efefef`,
   grayWhite: `#f1f1f1`,
   yellow: `#e6af05`,
-  themeColor: "#663399",
+  themeColor: "#7159c1",
 }
 
 // --------------------------------------------------

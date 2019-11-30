@@ -100,7 +100,7 @@ export default createGlobalStyle`
     --bgSolid: ${V.Color.blackSolid};
     --bgSecondary: ${V.Color.grayDark};
     --borderColor: ${V.Color.grayDark};
-    --highlightColor: ${V.Color.blueLight};
+    --highlightColor: ${V.Color.themeColor};
     --primaryColor: ${V.Color.white};
     --secondaryColor: ${V.Color.grayLight};
     --themeColor: ${V.Color.themeColor};

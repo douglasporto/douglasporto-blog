@@ -4,10 +4,17 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import GridTemplate from "../components/GridTemplate"
 import PostItems from "../components/PostItems"
+import Pagination from "../components/Pagination"
 import SEO from "../components/seo"
 
 const BlogList = props => {
   const postList = props.data.allMarkdownRemark.edges
+  const { currentPage, numPages } = props.pageContext
+  const isFirst = currentPage === 1
+  const isLast = currentPage === numPages
+  const prevPage =
+    currentPage - 1 === 1 ? "/blog/" : `/blog/page/${currentPage - 1}`
+  const nextPage = `/blog/page/${currentPage + 1}`
 
   return (
     <Layout>
@@ -31,8 +38,15 @@ const BlogList = props => {
             />
           )
         )}
+        <Pagination
+          isFirst={isFirst}
+          isLast={isLast}
+          currentPage={currentPage}
+          numPages={numPages}
+          prevPage={prevPage}
+          nextPage={nextPage}
+        />
       </GridTemplate>
-      <GridTemplate></GridTemplate>
     </Layout>
   )
 }
