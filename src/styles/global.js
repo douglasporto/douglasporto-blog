@@ -99,7 +99,7 @@ export default createGlobalStyle`
     --bg: ${V.Color.grayDarker};
     --bgSolid: ${V.Color.blackSolid};
     --bgSecondary: ${V.Color.grayDark};
-    --borderColor: ${V.Color.grayDark};
+    --borderColor: ${V.Color.menuDarker};
     --highlightColor: ${V.Color.themeColor};
     --primaryColor: ${V.Color.white};
     --secondaryColor: ${V.Color.grayLight};

@@ -14,6 +14,8 @@ tags:
 twitter_text: Vamos aprender na prática como fazer uma requisição AXIOS na API do GitHub.
 ---
 
+![Axios](/assets/posts/bg-axios-vuejs.png)
+
 Neste artigo não vou enrolar. Vamos colocar a mão na massa e aprender na prática a utilizar o [AXIOS](https://github.com/axios/axios).
 
 Faremos uma página onde digitaremos um usuário [GitHub](https://github.com/) para buscar os dados na [API do GitHub](https://developer.github.com/v3/) e montaremos em nossa tela todos os repositórios deste usuário.

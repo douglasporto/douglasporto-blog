@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const Header = styled.header.attrs({
   role: "banner",
 })`
-  background-color: ${V.Color.black};
+  background-color: ${V.Color.menuDarkerRgb};
   color: ${V.Color.white};
   display: block;
   left: 0;
@@ -20,9 +20,6 @@ export const Header = styled.header.attrs({
   width: 100%;
   will-change: background-color;
   z-index: ${V.ZIndex.header};
-  ${media.greaterThan("medium")`
-    background-color: ${V.Color.black};
-  `}
 `
 export const Content = styled.div`
   height: 64px;

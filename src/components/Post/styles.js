@@ -1,10 +1,18 @@
 import styled from "styled-components"
+import media from "styled-media-query"
+
+import * as V from "../../styles/variables"
+import * as T from "../../styles/typography"
 
 export const PostHeader = styled.header`
   color: #fff;
   margin: auto;
-  max-width: 70rem;
-  padding: 5rem 5rem 0;
+  /* max-width: 70rem;
+  padding: 5rem 5rem 0; */
+  ${media.greaterThan("medium")`
+    padding-left: ${V.Space.default};
+    padding-right: ${V.Space.default};
+  `}
 `
 
 export const PostTitle = styled.h1`
@@ -17,7 +25,7 @@ export const PostTitle = styled.h1`
 export const PostDescription = styled.h2`
   font-size: 2rem;
   font-weight: 200;
-  padding: 0 1.4rem;
+  padding: 1.4rem;
 `
 
 export const PostDate = styled.p`
@@ -28,8 +36,12 @@ export const PostDate = styled.p`
 
 export const MainContent = styled.section`
   margin: auto;
-  max-width: 70rem;
-  padding: 2rem 5rem;
+  ${media.greaterThan("medium")`
+    padding-left: ${V.Space.default};
+    padding-right: ${V.Space.default};
+  `}
+  /* max-width: 70rem; */
+  /* padding: 2rem 5rem; */
   p,
   h1,
   h2,
@@ -41,7 +53,7 @@ export const MainContent = styled.section`
   iframe,
   .button-post {
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: 0.069rem;
@@ -78,7 +90,6 @@ export const MainContent = styled.section`
   img {
     display: block;
     max-width: 100%;
-    margin: 1.875rem auto;
   }
   iframe {
     padding: 0 1.6rem 1.6rem;
@@ -86,9 +97,14 @@ export const MainContent = styled.section`
   }
   blockquote {
     color: #fff;
-    border-left: 0.3rem solid #1fa1f2;
-    padding: 0 1.875rem;
+    border-left: 0.3rem solid var(--themeColor);
+    border-radius: 0 0.5rem 0.5rem 0;
+    background: ${V.Color.gray};
+    padding: 0.5rem 1.875rem;
     margin: 3.125rem auto;
+    p {
+      margin: 0;
+    }
   }
   hr {
     border: 1px solid #38444d;
@@ -148,7 +164,7 @@ export const MainContent = styled.section`
     margin: 1rem auto !important;
   }
   a {
-    border-bottom: 1px dashed #1fa1f2;
+    ${T.Link} /* border-bottom: 1px dashed #1fa1f2;
     color: #1fa1f2;
     text-decoration: none;
     transition: opacity 0.5s;
@@ -157,6 +173,6 @@ export const MainContent = styled.section`
     }
     &:hover {
       opacity: 0.8;
-    }
+    } */
   }
 `
