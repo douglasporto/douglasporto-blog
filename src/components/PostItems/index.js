@@ -1,8 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+
 import * as S from "./styles"
+
 import Tags from "../Tags"
+import ButtonLink from "../ButtonLink"
 
 export default function PostItems({
   slug,
@@ -14,15 +16,17 @@ export default function PostItems({
 }) {
   return (
     <S.PostItemWrapper>
-      <S.Title>{title}</S.Title>
       <S.Head>
-        {date} - {timeToRead} minutos de leitura
+        {date}
+        <span> · Leitura de {timeToRead} min</span>
       </S.Head>
-      <Tags tags={tags} />
+      <ButtonLink rel={title} to={slug}>
+        <S.Title>{title}</S.Title>
+      </ButtonLink>
+      <S.Tags>
+        <Tags tags={tags} />
+      </S.Tags>
       <S.Description>{description}</S.Description>
-      <Link to={slug}>
-        <S.ItemButtom>Leia mais</S.ItemButtom>
-      </Link>
     </S.PostItemWrapper>
   )
 }

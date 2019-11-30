@@ -62,7 +62,7 @@ export const query = graphql`
         node {
           frontmatter {
             category
-            date(formatString: "DD [de] MMMM.YYYY", locale: "pt-br")
+            date(formatString: "DD MMM. YYYY", locale: "pt-br")
             description
             tags
             image

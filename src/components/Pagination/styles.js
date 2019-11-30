@@ -3,7 +3,6 @@ import * as V from "../../styles/variables"
 
 export const Pagination = styled.nav`
   align-items: center;
-  border-top: ${V.Border.box};
   color: var(--secondaryColor);
   display: flex;
   font-size: 1.4rem;

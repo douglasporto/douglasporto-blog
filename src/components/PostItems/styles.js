@@ -12,69 +12,30 @@ export const PostItemLink = styled(Link)`
 export const PostItemWrapper = styled.article`
   align-items: center;
   border-bottom: 1px solid var(--borderColor);
-  padding: 2rem 3rem;
+  padding: 4rem 3rem;
   width: 100%;
 `
-export const Head = styled.div`
-  ${T.Small}
+export const Head = styled.time`
+  color: var(--secondaryColor);
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
 `
 export const Title = styled.h1`
   ${props => (props.isMini ? `${T.Heading4}` : `${T.Heading1}`)}
-  &:not(:first-child) {
-    margin-top: ${props => (props.isMini ? `${V.Space.xs}` : `${V.Space.sm}`)};
+  &:hover {
+    color: var(--highLightColor);
   }
-  &:not(:last-child) {
-    margin-bottom: ${V.Space.xs};
-  }
+`
+
+export const Tags = styled.div`
+  margin: 15px 0;
 `
 export const Description = styled.h2`
-  ${T.Subtitle1}
-  margin-top: ${V.Space.default};
+  ${T.Subtitle2}
+
   &:not(:last-child) {
     margin-bottom: ${V.Space.default};
-  }
-`
-export const ItemButtom = styled.button`
-  ${T.Heading4}
-  text-transform: capitalize;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  padding: 5px 15px;
-  border-radius: 3px;
-  border: ${V.Border.box};
-  border-radius: ${V.BorderRadius.box};
-  box-shadow: ${V.BoxShadow.box};
-  color: var(--primaryColor);
-  position: relative;
-  will-change: border-color;
-  cursor: pointer;
-  &:after,
-  &:before {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: transform ${V.Transition.default};
-  }
-  &:before {
-    border-left: 1px solid var(--themeColor);
-    border-right: 1px solid var(--themeColor);
-    transform: scaleY(0);
-  }
-  &:after {
-    border-bottom: 1px solid var(--themeColor);
-    border-top: 1px solid var(--themeColor);
-    transform: scaleX(0);
-  }
-  &:hover {
-    &:before {
-      transform: scaleY(1);
-    }
-    &:after {
-      transform: scaleX(1);
-    }
   }
 `

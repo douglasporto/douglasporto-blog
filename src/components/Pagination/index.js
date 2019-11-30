@@ -1,8 +1,6 @@
 import React from "react"
 import propTypes from "prop-types"
 
-import { Link } from "gatsby"
-
 import ButtonLink from "../ButtonLink"
 import * as S from "./styles"
 
