@@ -25,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             frontmatter {
               category
-              date(formatString: "DD [de] MMMM.YYYY", locale: "pt-br")
+              date(formatString: "DD [de] MMM.YYYY", locale: "pt-br")
               description
               tags
               image
@@ -33,6 +33,26 @@ exports.createPages = ({ graphql, actions }) => {
               twitter_text
             }
             timeToRead
+            fields {
+              slug
+            }
+          }
+          next {
+            timeToRead
+            frontmatter {
+              date(formatString: "DD [de] MMM.YYYY", locale: "pt-br")
+              title
+            }
+            fields {
+              slug
+            }
+          }
+          previous {
+            timeToRead
+            frontmatter {
+              date(formatString: "DD [de] MMM.YYYY", locale: "pt-br")
+              title
+            }
             fields {
               slug
             }

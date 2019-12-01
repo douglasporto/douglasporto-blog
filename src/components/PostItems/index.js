@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import * as S from "./styles"
+import * as D from "../DateTime/styles"
 
 import Tags from "../Tags"
 import ButtonLink from "../ButtonLink"
@@ -16,16 +17,18 @@ export default function PostItems({
 }) {
   return (
     <S.PostItemWrapper>
-      <S.Head>
+      <D.DateTime>
         {date}
         <span> · Leitura de {timeToRead} min</span>
-      </S.Head>
+      </D.DateTime>
       <ButtonLink rel={title} to={slug}>
         <S.Title>{title}</S.Title>
       </ButtonLink>
-      <S.Tags>
-        <Tags tags={tags} />
-      </S.Tags>
+      {tags && (
+        <S.Tags>
+          <Tags tags={tags} />
+        </S.Tags>
+      )}
       <S.Description>{description}</S.Description>
     </S.PostItemWrapper>
   )
