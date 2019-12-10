@@ -693,7 +693,7 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@emotion/is-prop-valid@^0.8.1":
+"@emotion/is-prop-valid@^0.8.1", "@emotion/is-prop-valid@^0.8.5":
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.5.tgz#2dda0791f0eafa12b7a0a5b39858405cc7bde983"
   dependencies:
@@ -1035,6 +1035,118 @@
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
+
+"@styled-icons/boxicons-logos@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/boxicons-logos/-/boxicons-logos-9.0.1.tgz#f6c860acdb3c49046d1ac4030689f073b3e29561"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/boxicons-regular@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/boxicons-regular/-/boxicons-regular-9.0.1.tgz#094b4885731d1cabaf449462a2e22f1c8c9669af"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/boxicons-solid@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/boxicons-solid/-/boxicons-solid-9.0.1.tgz#044907ce675db30250441805d1a8fe5e9612106d"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/crypto@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/crypto/-/crypto-9.0.1.tgz#fd03a711c7f3416413b268fc6225c3e7917b44ea"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/evil@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/evil/-/evil-9.0.1.tgz#1a2c3060dae4434928ad0684a68ac114da49474b"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/fa-brands@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/fa-brands/-/fa-brands-9.0.1.tgz#e0efb07b98482c05ef836fd2c2a5ec9082158010"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/fa-regular@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/fa-regular/-/fa-regular-9.0.1.tgz#034891a2b1d8743bb150090e5ed0082da70f9a8c"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/fa-solid@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/fa-solid/-/fa-solid-9.0.1.tgz#cbfb5a60a32f8efcf4acb3a35a79f245c717fac3"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/feather@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/feather/-/feather-9.0.1.tgz#fa19950f3aa2cb2c579196d9a9657e7fe347549c"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/icomoon@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/icomoon/-/icomoon-9.0.1.tgz#43b97acf25f89aaf78918b968142d867bf2efaba"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/material@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/material/-/material-9.0.1.tgz#88a0a484535ece279b84d3690e18d12c5fec7e8a"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/octicons@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/octicons/-/octicons-9.0.1.tgz#dff1b65c398c3730cb8e3c8a56fb09979100041f"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/remix-fill@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/remix-fill/-/remix-fill-9.0.1.tgz#c58d8ffd330309508f70ef49a47a541521595d80"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/remix-line@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/remix-line/-/remix-line-9.0.1.tgz#c7c613b53bf5381b293b54ed3de35f66c1d69d30"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
+
+"@styled-icons/styled-icon@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/styled-icon/-/styled-icon-9.0.1.tgz#94aee3ef24e0a5e308fb3749d3538d44a6bc00b8"
+  dependencies:
+    "@emotion/is-prop-valid" "^0.8.5"
+    tslib "^1.9.3"
+
+"@styled-icons/typicons@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@styled-icons/typicons/-/typicons-9.0.1.tgz#18bb0c634ca28058da7258c3b1e5fa328453ed26"
+  dependencies:
+    "@styled-icons/styled-icon" "^9.0.1"
+    tslib "^1.9.3"
 
 "@types/algoliasearch@^3.30.16":
   version "3.34.6"
@@ -10624,6 +10736,28 @@ styled-components@^4.4.1:
     stylis-rule-sheet "^0.0.10"
     supports-color "^5.5.0"
 
+styled-icons@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/styled-icons/-/styled-icons-9.0.1.tgz#ce115150e55c7334157b4abd9ad201dd1b891862"
+  dependencies:
+    "@styled-icons/boxicons-logos" "^9.0.1"
+    "@styled-icons/boxicons-regular" "^9.0.1"
+    "@styled-icons/boxicons-solid" "^9.0.1"
+    "@styled-icons/crypto" "^9.0.1"
+    "@styled-icons/evil" "^9.0.1"
+    "@styled-icons/fa-brands" "^9.0.1"
+    "@styled-icons/fa-regular" "^9.0.1"
+    "@styled-icons/fa-solid" "^9.0.1"
+    "@styled-icons/feather" "^9.0.1"
+    "@styled-icons/icomoon" "^9.0.1"
+    "@styled-icons/material" "^9.0.1"
+    "@styled-icons/octicons" "^9.0.1"
+    "@styled-icons/remix-fill" "^9.0.1"
+    "@styled-icons/remix-line" "^9.0.1"
+    "@styled-icons/styled-icon" "^9.0.1"
+    "@styled-icons/typicons" "^9.0.1"
+    tslib "^1.9.3"
+
 styled-media-query@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/styled-media-query/-/styled-media-query-2.1.2.tgz#d59e8d91bc4bcff210dc511bdcecedf16eb2c5b7"
@@ -10948,7 +11082,7 @@ ts-pnp@^1.1.2:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.5.tgz#840e0739c89fce5f3abd9037bb091dbff16d9dec"
 
-tslib@^1.6.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.6.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
 

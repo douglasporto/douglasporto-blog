@@ -94,8 +94,9 @@ export default createGlobalStyle`
     transition: background-color ${V.Transition.default};
     will-change: background-color;
   }
-  /* body.theme-dark { */
-  body {
+  body.dark {
+  /* body { */
+    --themeColor: ${V.Color.themeColor};
     --bg: ${V.Color.grayDarker};
     --bgSolid: ${V.Color.blackSolid};
     --bgSecondary: ${V.Color.grayDark};
@@ -103,10 +104,12 @@ export default createGlobalStyle`
     --highlightColor: ${V.Color.themeColor};
     --primaryColor: ${V.Color.white};
     --secondaryColor: ${V.Color.grayLight};
-    --themeColor: ${V.Color.themeColor};
+    --headerColor: ${V.Color.menuDarkerRgb};
+    --headerFontColor: ${V.Color.themeColor};
     --boxShadow: rgba(250, 250, 250, .12);
   }
-  body.theme-light {
+  body.light {
+    --themeColor: ${V.Color.themeColor};
     --bg: ${V.Color.white};
     --bgSolid: ${V.Color.whiteSolid};
     --bgSecondary: ${V.Color.grayWhite};
@@ -114,6 +117,8 @@ export default createGlobalStyle`
     --highlightColor: ${V.Color.blue};
     --primaryColor: ${V.Color.black};
     --secondaryColor: ${V.Color.gray};
+    --headerColor: ${V.Color.menuLightRgb};
+    --headerFontColor: ${V.Color.black};
     --boxShadow: rgba(18, 18, 18, .12);
   }
   p a {

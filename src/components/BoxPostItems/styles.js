@@ -66,8 +66,8 @@ export const BoxHandler = styled.article`
   }
 
   &:before {
-    border-left: 1px solid var(--highlightColor);
-    border-right: 1px solid var(--highlightColor);
+    border-left: 1px solid var(--themeColor);
+    border-right: 1px solid var(--themeColor);
     transform: scaleY(0);
   }
 

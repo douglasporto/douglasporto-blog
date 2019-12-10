@@ -5,7 +5,7 @@ import * as V from "../../styles/variables"
 import * as T from "../../styles/typography"
 
 export const PostHeader = styled.header`
-  color: #fff;
+  color: var(--themeColor);
   margin: auto;
   /* max-width: 70rem;
   padding: 5rem 5rem 0; */
@@ -52,7 +52,7 @@ export const MainContent = styled.section`
   .tags,
   iframe,
   .button-post {
-    color: #fff;
+    color: var(--primaryColor);
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.7;
@@ -96,13 +96,13 @@ export const MainContent = styled.section`
     width: 100%;
   }
   blockquote {
-    color: #fff;
     border-left: 0.3rem solid var(--themeColor);
     border-radius: 0 0.5rem 0.5rem 0;
-    background: ${V.Color.gray};
+    background: var(--bgSecondary);
     padding: 0.5rem 1.875rem;
     margin: 3.125rem auto;
     p {
+      color: var(--secondaryColor);
       margin: 0;
     }
   }

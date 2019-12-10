@@ -2,19 +2,15 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import * as V from "../../styles/variables"
 
-export const Container = styled.div`
-  background: ${V.Color.black};
-`
 export const Header = styled.header.attrs({
   role: "banner",
 })`
-  background-color: ${V.Color.menuDarkerRgb};
+  background-color: var(--headerColor);
   color: ${V.Color.white};
   display: block;
   left: 0;
   position: fixed;
   right: 0;
-  text-transform: lowercase;
   top: 0;
   transition: background-color 0.3s;
   width: 100%;
@@ -46,13 +42,12 @@ export const Nav = styled.nav`
     font-weight: bold;
     padding-right: 15px;
     &.active {
-      color: var(--themeColor);
+      color: var(--headerFontColor);
     }
     &:focus,
     &:hover {
-      color: var(--themeColor);
+      color: var(--headerFontColor);
       transform: translateY(-2px);
-    }
     }
   }
 `
@@ -66,6 +61,12 @@ export const Title = styled.h1`
   ${media.greaterThan("small")`
     font-size: 2.1rem;
   `}
+  &:after {
+    content: "/DouglasPorto.(js|css|html)/gi";
+    ${media.lessThan("small")`
+    content: "DouglasPorto";
+    `}
+  }
 `
 export const Menu = styled.div`
   align-items: center;

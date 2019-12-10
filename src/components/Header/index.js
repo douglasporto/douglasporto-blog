@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 
 import Avatar from "../Avatar"
 import Menu from "../Menu"
+import LightButton from "../LightButton"
 
 import * as S from "./styles"
 
@@ -17,12 +18,13 @@ const Header = ({ site: { author } }) => {
             <Avatar />
           </Link>
           <Link to="/">
-            <S.Title>Douglas Porto</S.Title>
+            <S.Title></S.Title>
           </Link>
         </S.Nav>
         <S.Menu>
           <Menu />
         </S.Menu>
+        <LightButton />
       </S.Content>
     </S.Header>
   )

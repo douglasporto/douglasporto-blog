@@ -89,7 +89,7 @@ export const LinkTransition = `
   position: relative;
   will-change: transform;
   &:after {
-    background-color: var(--highlightColor);
+    background-color: var(--themeColor);
     content: '';
     height: 2px;
     left: 0;
@@ -108,7 +108,7 @@ export const LinkTransition = `
 `
 
 export const Link = `
-  color: var(--highlightColor);
+  color: var(--themeColor);
   ${LinkTransition}
 `
 

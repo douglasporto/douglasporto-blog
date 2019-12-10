@@ -22,7 +22,7 @@ export const Menu = styled.nav`
     ${media.greaterThan("medium")`
       ${T.LinkTransition}
       &:after {
-        background-color: var(--themeColor);
+        background-color: var(--headerFontColor);
         margin-top: 0;
         top: calc(100% - 2px);
       }
@@ -31,11 +31,11 @@ export const Menu = styled.nav`
       margin-right: ${V.Space.xs};
     }
     &.active {
-      color: var(--themeColor);
+      color: var(--headerFontColor);
     }
     &:focus,
     &:hover {
-      color: var(--themeColor);
+      color: var(--headerFontColor);
     }
   }
 `
