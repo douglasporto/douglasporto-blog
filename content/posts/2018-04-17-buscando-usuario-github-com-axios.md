@@ -14,7 +14,7 @@ tags:
 twitter_text: Vamos aprender na prática como fazer uma requisição AXIOS na API do GitHub.
 ---
 
-![Axios](/assets/posts/bg-axios-vuejs.png)
+![Axios](/assets/posts/header-axios-vuejs.png)
 
 Neste artigo não vou enrolar. Vamos colocar a mão na massa e aprender na prática a utilizar o [AXIOS](https://github.com/axios/axios).
 
