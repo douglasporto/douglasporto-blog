@@ -84,6 +84,7 @@ export const MainContent = styled.section`
   p,
   li {
     code {
+      border-radius: 3px;
       word-wrap: break-word;
     }
   }
@@ -158,7 +159,8 @@ export const MainContent = styled.section`
     }
   }
   .gatsby-highlight {
-    padding: 0 1.6rem 1.6rem;
+    padding: 1.2rem;
+    border-radius: 5px;
   }
   .instagram-media {
     margin: 1rem auto !important;

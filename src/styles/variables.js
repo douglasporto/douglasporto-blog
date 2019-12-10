@@ -42,7 +42,7 @@ export const Color = {
   // blue: `#187888`,
   blueLight: `#a1ecf7`,
   menuDarkerRgb: `rgba(29, 29, 29, .95)`,
-  menuLightRgb: `rgba(113, 89, 193, .85)`,
+  menuLightRgb: `rgba(113, 89, 193, 1)`,
   menuDarker: `#1d1d1d`,
   grayDarker: `#282a36`,
   grayDark: `#2d2d2d`,
