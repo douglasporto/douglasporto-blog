@@ -8,7 +8,7 @@ export const LightButton = styled.button.attrs(props => ({
   role: "button",
 }))`
   align-items: center;
-  color: ${props => (props.active ? `${V.Color.blue}` : `${V.Color.yellow}`)};
+  color: ${props => (props.active ? `${V.Color.yellow}` : `${V.Color.blue}`)};
   cursor: pointer;
   display: inline-flex;
   height: ${V.Height.headerSm};

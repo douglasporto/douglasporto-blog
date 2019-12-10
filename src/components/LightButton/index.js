@@ -25,7 +25,7 @@ export default function LightButton() {
   }
   return (
     <S.LightButton active={!isDarkMode} onClick={onChange}>
-      {isDarkMode ? <S.LightButtonIconSun /> : <S.LightButtonIconMoon />}
+      {!isDarkMode ? <S.LightButtonIconSun /> : <S.LightButtonIconMoon />}
     </S.LightButton>
   )
 }
