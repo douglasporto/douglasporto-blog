@@ -77,7 +77,7 @@ Simples, a interpolação do Vue é `{ { } }`, ou seja, basta dentro da nossa `<
 
 e o nosso resultado será o famoso Hello World.
 
-![Way Data-bind](/assets/img/posts/directiva.png)
+![Way Data-bind](/assets/posts/directiva.png)
 
 Simples não?
 
@@ -117,7 +117,7 @@ Nosso html criamos uma `<ul>` e nela usamos o `v-for`
 
 Nosso resultado será:
 
-![v-for](/assets/img/posts/hellovue1.png)
+![v-for](/assets/posts/hellovue1.png)
 
 ## v-if e two-Way Data-bind
 
@@ -201,7 +201,7 @@ O **V-if** é o famosos `if` de qualquer linguagem, então colocamos o **v-if()*
 
 Logo de cara, você vai ver que a nossa lista sumiu. Mas basta clicar em Brasil ou Internacional para o Vue resolver nosso problema.
 
-![v-for](/assets/img/posts/hellovue2.png)
+![v-for](/assets/posts/hellovue2.png)
 
 **Incrível** não?
 

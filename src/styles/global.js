@@ -117,7 +117,7 @@ export default createGlobalStyle`
     --highlightColor: ${V.Color.blue};
     --primaryColor: ${V.Color.black};
     --secondaryColor: ${V.Color.gray};
-    --headerColor: ${V.Color.menuLightRgb};
+    --headerColor: ${V.Color.themeColor};
     --headerFontColor: ${V.Color.black};
     --boxShadow: rgba(18, 18, 18, .12);
   }
