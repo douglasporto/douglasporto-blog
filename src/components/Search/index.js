@@ -1,29 +1,57 @@
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
+import qs from "qs"
 import algoliasearch from "algoliasearch/lite"
-import { InstantSearch, SearchBox, Hits, Stats } from "react-instantsearch-dom"
+import {
+  InstantSearch,
+  SearchBox,
+  Stats,
+  Configure,
+  Hits,
+} from "react-instantsearch-dom"
 
 import Hit from "./Hit"
 import * as S from "./styles"
 
-export default function Search({ algolia, callback }) {
+const urlToSearchState = ({ search }) => qs.parse(search.slice(1))
+
+export default function Search({ algolia, callback, props }) {
+  const { location } = props
   const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey)
-  return algolia && algolia.appId ? (
+  const [searchState, setSearchState] = useState(urlToSearchState(location))
+
+  const onSearchStateChange = updatedSearchState => {
+    setSearchState(updatedSearchState)
+  }
+  return (
     <S.SearchWrapper>
-      <InstantSearch searchClient={searchClient} indexName={algolia.indexName}>
-        <SearchBox autoFocus translations={{ placeholder: "Pesquisar..." }} />
-        <Stats
-          translations={{
-            stats(nbHits, timeSpentMs) {
-              return `${nbHits} resultados encontrados em ${timeSpentMs}ms`
-            },
-          }}
-        />
-        <Hits hitComponent={Hit} />
-      </InstantSearch>
+      {algolia && algolia.appId ? (
+        <InstantSearch
+          searchClient={searchClient}
+          indexName={algolia.indexName}
+          searchState={searchState}
+          onSearchStateChange={onSearchStateChange}
+        >
+          <SearchBox translations={{ placeholder: "Pesquisar no blog..." }} />
+          {searchState && searchState.query ? (
+            <>
+              <Stats
+                translations={{
+                  stats(nbHits) {
+                    return `${nbHits} resultados encontrados`
+                  },
+                }}
+              />
+              <Hits hitComponent={Hit} />
+            </>
+          ) : (
+            <nav>{callback}</nav>
+          )}
+        </InstantSearch>
+      ) : (
+        <nav>{callback}</nav>
+      )}
     </S.SearchWrapper>
-  ) : (
-    <nav>{callback}</nav>
   )
 }
 

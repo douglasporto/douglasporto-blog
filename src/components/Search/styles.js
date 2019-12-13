@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import * as V from "../../styles/variables"
 
 export const SearchWrapper = styled.section`
   display: flex;
@@ -32,6 +33,9 @@ export const SearchWrapper = styled.section`
     width: 100%;
     &::placeholder {
       color: #8899a6;
+    }
+    &:focus {
+      outline: none;
     }
   }
   .ais-SearchBox-submit,
