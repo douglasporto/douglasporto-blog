@@ -2,13 +2,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import qs from "qs"
 import algoliasearch from "algoliasearch/lite"
-import {
-  InstantSearch,
-  SearchBox,
-  Stats,
-  Configure,
-  Hits,
-} from "react-instantsearch-dom"
+import { InstantSearch, SearchBox, Stats, Hits } from "react-instantsearch-dom"
 
 import Hit from "./Hit"
 import * as S from "./styles"

@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import * as V from "../../styles/variables"
 
 export const SearchWrapper = styled.section`
   display: flex;
