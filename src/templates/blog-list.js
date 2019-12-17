@@ -40,7 +40,7 @@ const BlogList = props => {
             index
           ) => (
             <Animated
-              animationIn="slideInUp"
+              animationIn="bounceInRight"
               animationOut="zoomOutDown"
               animationInDuration={1000 + index * 1000}
               animationOutDuration={1000}
