@@ -3,6 +3,7 @@ require("dotenv").config()
 const queries = require("./src/utils/algolia")
 
 const plugins = [
+  `gatsby-plugin-transition-link`,
   `gatsby-plugin-react-helmet`,
   {
     // keep as first gatsby-source-filesystem plugin for gatsby image support

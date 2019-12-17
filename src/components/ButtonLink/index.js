@@ -11,7 +11,7 @@ const ButtonLink = ({ children, to }) => {
       to={to}
       cover
       direction="down"
-      duration={1}
+      duration={0.8}
       bg={getActiveTheme()}
     >
       {children}

@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { TransitionPortal } from "gatsby-plugin-transition-link"
 import { useStaticQuery, graphql } from "gatsby"
 
 import GlobalStyles from "../../styles/global"
@@ -25,7 +26,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyles />
-      <Header site={site.siteMetadata} />
+      <TransitionPortal level="top">
+        <Header site={site.siteMetadata} />
+      </TransitionPortal>
       <S.Main>
         <Container>{children}</Container>
       </S.Main>

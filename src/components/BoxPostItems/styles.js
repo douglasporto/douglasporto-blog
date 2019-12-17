@@ -1,11 +1,11 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import * as V from "../../styles/variables"
 import * as T from "../../styles/typography"
 
-export const BlogItem = styled(Link)`
+export const BlogItem = styled(AniLink)`
   color: var(--primaryColor);
   display: block;
 

@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import * as V from "../../styles/variables"
 import * as T from "../../styles/typography"
 
-export const PostItemLink = styled(Link)`
+export const PostItemLink = styled(AniLink)`
   color: red;
   text-decoration: none;
   margin: 30px 0;
