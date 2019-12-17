@@ -2,6 +2,7 @@
 title: "Colocando Stylus no seu Site"
 description: Você já ouviu falar em Pré-Processador CSS? Conheça o Stylus e seja mais produtivo.
 image: "/assets/img/posts/bg-colocando-stylus.png"
+featuredImage: image/bg-colocando-stylus.png
 category: "Front-End"
 date: 2018-04-09 00:00:01
 tags:

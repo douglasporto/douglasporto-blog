@@ -2,6 +2,7 @@
 title: "Conhecendo Jekyll"
 description: Problemas com plugins do WordPress NUNCA MAIS. Jekyll, o melhor gerador de site estático feito para desenvolvedores.
 image: "/assets/img/posts/bg-conhecendo-jekyll.png"
+featuredImage: image/bg-conhecendo-jekyll.png
 category: "Front-End"
 date: 2018-04-04 00:00:01
 tags:

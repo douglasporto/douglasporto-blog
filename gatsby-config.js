@@ -9,7 +9,8 @@ const plugins = [
     // keep as first gatsby-source-filesystem plugin for gatsby image support
     resolve: "gatsby-source-filesystem",
     options: {
-      path: `${__dirname}/static/assets`,
+      path: `${__dirname}/content/posts/image`,
+      // path: `${__dirname}/static/assets`,
       name: "uploads",
     },
   },

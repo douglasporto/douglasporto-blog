@@ -1,8 +1,13 @@
 import styled from "styled-components"
+import Img from "gatsby-image"
 import media from "styled-media-query"
 
 import * as V from "../../styles/variables"
 import * as T from "../../styles/typography"
+
+export const ImageHeader = styled(Img)`
+  display: block;
+`
 
 export const PostHeader = styled.header`
   color: var(--themeColor);

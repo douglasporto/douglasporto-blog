@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -12,16 +13,21 @@ const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const next = pageContext.next
   const previous = pageContext.previous
+  const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
 
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+      />
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date}
           <span> · Leitura de {post.timeToRead} min</span>
         </S.PostDate>
         <S.PostTitle>Title: {post.frontmatter.title}</S.PostTitle>
+        <Img fluid={featuredImgFluid} />
         <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
       </S.PostHeader>
       <S.MainContent>
@@ -45,6 +51,24 @@ export const query = graphql`
         description
         tags
         image
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              base64
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+              originalImg
+              originalName
+              presentationWidth
+              presentationHeight
+            }
+          }
+        }
         title
         twitter_text
       }

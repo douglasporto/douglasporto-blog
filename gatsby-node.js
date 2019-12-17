@@ -29,6 +29,24 @@ exports.createPages = ({ graphql, actions }) => {
               description
               tags
               image
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 300) {
+                    base64
+                    tracedSVG
+                    aspectRatio
+                    src
+                    srcSet
+                    srcWebp
+                    srcSetWebp
+                    sizes
+                    originalImg
+                    originalName
+                    presentationWidth
+                    presentationHeight
+                  }
+                }
+              }
               title
               twitter_text
             }
