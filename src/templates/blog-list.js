@@ -6,6 +6,7 @@ import GridTemplate from "../components/GridTemplate"
 import PostItems from "../components/PostItems"
 import Pagination from "../components/Pagination"
 import Search from "../components/Search"
+import { Animated } from "react-animated-css"
 import SEO from "../components/seo"
 
 const BlogList = props => {
@@ -28,21 +29,32 @@ const BlogList = props => {
     return (
       <>
         {postList.map(
-          ({
-            node: {
-              frontmatter: { date, description, tags, title },
-              timeToRead,
-              fields: { slug },
+          (
+            {
+              node: {
+                frontmatter: { date, description, tags, title },
+                timeToRead,
+                fields: { slug },
+              },
             },
-          }) => (
-            <PostItems
-              slug={slug}
-              date={date}
-              timeToRead={timeToRead}
-              title={title}
-              tags={tags}
-              description={description}
-            />
+            index
+          ) => (
+            <Animated
+              animationIn="slideInUp"
+              animationOut="zoomOutDown"
+              animationInDuration={1000 + index * 1000}
+              animationOutDuration={1000}
+              isVisible={true}
+            >
+              <PostItems
+                slug={slug}
+                date={date}
+                timeToRead={timeToRead}
+                title={title}
+                tags={tags}
+                description={description}
+              />
+            </Animated>
           )
         )}
         <Pagination
