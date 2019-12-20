@@ -97,7 +97,7 @@ export default createGlobalStyle`
   body.dark {
   /* body { */
     --themeColor: ${V.Color.themeColor};
-    --bg: ${V.Color.grayDarker};
+    --bg: ${V.Color.twitterBgDark};
     --bgSolid: ${V.Color.blackSolid};
     --bgSecondary: ${V.Color.grayDark};
     --borderColor: ${V.Color.menuDarker};

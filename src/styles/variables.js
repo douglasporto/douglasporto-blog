@@ -38,6 +38,7 @@ export const Color = {
   black: `rgba(15, 15, 15, .95)`,
   whiteSolid: `#ffffff`,
   blackSolid: `#000000`,
+  twitterBgDark: `rgb(21, 32, 43)`,
   blue: `#0f4c81`,
   // blue: `#187888`,
   blueLight: `#a1ecf7`,
@@ -50,7 +51,8 @@ export const Color = {
   grayLighter: `#efefef`,
   grayWhite: `#f1f1f1`,
   yellow: `#e6af05`,
-  themeColor: "#7159c1",
+  themeColor: "rgba(29,161,242,1.00)",
+  /* themeColor: "#7159c1", */
 }
 
 // --------------------------------------------------
