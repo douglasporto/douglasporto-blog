@@ -23,7 +23,7 @@ export const PostHeader = styled.header`
 export const PostTitle = styled.h1`
   font-size: 4rem;
   font-weight: 700;
-  padding: 0 1.4rem;
+  padding: 0 1.4rem 1.8rem 0;
   margin: 1rem auto;
 `
 
@@ -34,9 +34,9 @@ export const PostDescription = styled.h2`
 `
 
 export const PostDate = styled.p`
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 100;
-  padding: 0 1.4rem;
+  color: var(--secondaryColor);
 `
 
 export const MainContent = styled.section`
