@@ -20,6 +20,11 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
+        image={
+          post.frontmatter.image
+            ? `https://douglasporto.com.br${post.frontmatter.image.publicURL}`
+            : "https://douglasporto.com.br/assets/default.jpeg"
+        }
       />
       <S.PostHeader>
         <S.PostDate>
