@@ -1,8 +1,7 @@
 ---
 title: "Conhecendo Vue.js"
 description: Uma pequena introdução ao Framework em javascript, Vuejs
-image: "/assets/img/posts/vuejs.jpg"
-featuredImage: image/vuejs.jpg
+image: /assets/vuejs.jpg
 category: "Front-End"
 date: 2018-03-28 00:00:01
 tags:

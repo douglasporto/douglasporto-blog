@@ -18,13 +18,10 @@ const IndexPage = () => {
         edges {
           node {
             frontmatter {
-              category
-              date(formatString: "DD MMM. YYYY", locale: "pt-br")
+              date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
               description
-              tags
-              image
               title
-              twitter_text
+              tags
             }
             timeToRead
             fields {

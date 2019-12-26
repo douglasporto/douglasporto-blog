@@ -1,8 +1,7 @@
 ---
 title: "Hello World Vue.js"
 description: Um simples Hello World em Vue.js
-image: "/assets/img/posts/hellovue.png"
-featuredImage: image/hellovue.png
+image: /assets/hellovue.png
 category: "Front-End"
 date: 2018-03-31 00:00:01
 tags:

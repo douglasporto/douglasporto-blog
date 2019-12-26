@@ -1,8 +1,7 @@
 ---
 title: "Buscando Usuário GitHub com AXIOS"
 description: Vamos aprender na prática como fazer uma requisição AXIOS na API do GitHub.
-image: "/assets/posts/header-axios-vuejs.png"
-featuredImage: image/header-axios-vuejs.png
+image: /assets/header-axios-vuejs.png
 category: "Front-End"
 date: 2018-04-17 00:00:01
 tags:

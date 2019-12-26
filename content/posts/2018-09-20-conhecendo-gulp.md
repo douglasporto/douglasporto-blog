@@ -1,8 +1,7 @@
 ---
 title: "Conhecendo Gulp"
 description: Conheça o mundo dos automatizador de tarefas Gulp
-image: "/assets/img/posts/bg-know-gulp.png"
-featuredImage: image/bg-know-gulp.png
+image: /assets/bg-know-gulp.png
 category: "Front-End"
 date: 2018-09-20 00:00:01
 tags:

@@ -13,7 +13,7 @@ const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const next = pageContext.next
   const previous = pageContext.previous
-  const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
+  const featuredImgFluid = post.frontmatter.image.childImageSharp.fluid
 
   return (
     <Layout>
@@ -50,22 +50,12 @@ export const query = graphql`
         date(formatString: "DD MMM. YYYY", locale: "pt-br")
         description
         tags
-        image
-        featuredImage {
+        image {
+          id
+          publicURL
           childImageSharp {
-            fluid(maxWidth: 300) {
-              base64
-              tracedSVG
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-              originalImg
-              originalName
-              presentationWidth
-              presentationHeight
+            fluid(maxWidth: 1280, quality: 60) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

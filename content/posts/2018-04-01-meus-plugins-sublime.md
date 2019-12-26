@@ -1,8 +1,7 @@
 ---
 title: "Meus Plugins Sublime"
 description: Os plugins que mais gosto do Sublime Text 3.
-image: "/assets/img/posts/bg-meus-plugins-sublime.png"
-featuredImage: image/bg-meus-plugins-sublime.png
+image: /assets/bg-meus-plugins-sublime.png
 category: "DEV"
 date: 2018-04-01 00:00:01
 tags:
