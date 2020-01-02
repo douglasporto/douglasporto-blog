@@ -3,13 +3,13 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import * as S from "./styles"
 
-export default function Avatar() {
+export default function Avatar({ large }) {
   const { image } = useStaticQuery(
     graphql`
       query {
         image: file(relativePath: { eq: "profile.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 48, quality: 100) {
+            fluid(maxWidth: 200, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -17,5 +17,5 @@ export default function Avatar() {
       }
     `
   )
-  return <S.Avatar fluid={image.childImageSharp.fluid} />
+  return <S.Avatar large={large} fluid={image.childImageSharp.fluid} />
 }

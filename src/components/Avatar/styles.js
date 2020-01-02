@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Img from "gatsby-image"
 import media from "styled-media-query"
+import PropTypes from "prop-types"
 
 import * as V from "../../styles/variables"
 
@@ -13,7 +14,15 @@ export const Avatar = styled(Img).attrs({
   height: ${V.Space.md};
   width: ${V.Space.md};
   ${media.greaterThan("medium")`
-    height: ${V.Space.lg};
-    width: ${V.Space.lg};
+  ${props =>
+    props.large
+      ? `height: 15rem;
+    width: 15rem;`
+      : `height: ${V.Space.md};
+  width: ${V.Space.md};`}
   `}
 `
+
+Avatar.propTypes = {
+  large: PropTypes.bool,
+}

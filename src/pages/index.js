@@ -1,12 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Animated } from "react-animated-css"
 
 import Layout from "../components/Layout"
 import GridTemplate from "../components/GridTemplate"
 import PostItems from "../components/PostItems"
 import Author from "../components/Author"
 import SEO from "../components/seo"
-import { Animated } from "react-animated-css"
+import * as S from "../components/PageIndex/styles"
 
 const IndexPage = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
@@ -46,6 +47,7 @@ const IndexPage = () => {
         >
           <Author />
         </Animated>
+        <S.Title>Últimas do blog</S.Title>
         {postList.map(
           (
             {
