@@ -18,14 +18,18 @@ export default function Author({ fullText }) {
         Meu nome é <span itemProp="name">Douglas Porto</span> e sou apaixonado
         por tecnologia. Trabalho com desenvolvimento Web desde 2010 onde
         trabalhe por 9 anos com sistema para callcenter do{" "}
-        <a href="https://financiamentos.bradesco/" target="_blank">
+        <a
+          href="https://financiamentos.bradesco/"
+          target="_blank"
+          rel="Bradesco"
+        >
           Banco Bradeco
         </a>
       </S.Description>
       <S.Description>
         Hoje me considero FullStack, podendo trabalhar com BackEnd tanto quanto
         FrontEnd. Atualmente trabalhando na{" "}
-        <a href="https://fabapp.com" target="_blank">
+        <a href="https://fabapp.com" target="_blank" rel="Fabapp">
           FabApp.
         </a>
       </S.Description>

@@ -4,6 +4,7 @@ import { Animated } from "react-animated-css"
 
 import Layout from "../components/Layout"
 import GridTemplate from "../components/GridTemplate"
+import ButtonLink from "../components/ButtonLink"
 import PostItems from "../components/PostItems"
 import Author from "../components/Author"
 import SEO from "../components/seo"
@@ -77,6 +78,7 @@ const IndexPage = () => {
             </Animated>
           )
         )}
+        <ButtonLink to="/blog/">Ver todos os posts</ButtonLink>
       </GridTemplate>
     </Layout>
   )
