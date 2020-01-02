@@ -7,7 +7,9 @@ export default function Tags({ tags }) {
   return (
     <S.TagsContainer>
       {tags.map((tag, i) => (
-        <S.TagsItems key={i}>{tag}</S.TagsItems>
+        <S.TagsItems key={i} to="">
+          {tag}
+        </S.TagsItems>
       ))}
     </S.TagsContainer>
   )

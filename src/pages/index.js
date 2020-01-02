@@ -66,6 +66,7 @@ const IndexPage = () => {
               animationInDuration={1000 + index * 1000}
               animationOutDuration={1000}
               isVisible={true}
+              key={index}
             >
               <PostItems
                 slug={slug}
