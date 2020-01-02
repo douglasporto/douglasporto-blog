@@ -39,7 +39,7 @@ export default function HTML(props) {
                   localStorage.setItem('theme', newTheme);
                 } catch (err) {}
               }
-              setTheme(preferredTheme || 'theme-dark');
+              setTheme(preferredTheme || 'dark');
             })();
           `,
           }}
