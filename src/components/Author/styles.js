@@ -7,7 +7,7 @@ export const Container = styled.div`
 `
 
 export const Header = styled.h1`
-  margin: 3rem;
+  margin: 3rem 0;
   font-size: 2.5rem;
 `
 export const Description = styled.p`
