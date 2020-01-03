@@ -3,8 +3,11 @@ require("dotenv").config()
 const queries = require("./src/utils/algolia")
 
 const plugins = [
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-sharp`,
   `gatsby-plugin-transition-link`,
   `gatsby-plugin-react-helmet`,
+  `gatsby-plugin-styled-components`,
   {
     // keep as first gatsby-source-filesystem plugin for gatsby image support
     resolve: "gatsby-source-filesystem",
@@ -48,13 +51,13 @@ const plugins = [
             linkImagesToOriginal: false,
           },
         },
+        `gatsby-plugin-catch-links`,
         `gatsby-remark-lazy-load`,
+        `gatsby-remark-responsive-iframe`,
         `gatsby-remark-prismjs`,
       ],
     },
   },
-  `gatsby-transformer-sharp`,
-  `gatsby-plugin-sharp`,
   `gatsby-plugin-sitemap`,
   {
     resolve: `gatsby-plugin-manifest`,

@@ -6054,6 +6054,13 @@ gatsby-plugin-algolia-search@^0.5.6:
     algoliasearch "^3.24.5"
     lodash.chunk "^4.2.0"
 
+gatsby-plugin-catch-links@^2.1.21:
+  version "2.1.21"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-2.1.21.tgz#82b82b4ca9e8ecc82705039f0b51498ef7728467"
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+    escape-string-regexp "^1.0.5"
+
 gatsby-plugin-manifest@^2.2.27:
   version "2.2.27"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.27.tgz#19848ad1876362ac3a76981f77dca857b878ac68"
@@ -6217,6 +6224,16 @@ gatsby-remark-relative-images@^0.2.3:
     lodash "^4.17.15"
     slash "^2.0.0"
     unist-util-select "^1.5.0"
+
+gatsby-remark-responsive-iframe@^2.2.30:
+  version "2.2.30"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-responsive-iframe/-/gatsby-remark-responsive-iframe-2.2.30.tgz#9a269a2e3dd0f8e311728d03533095c49c00275c"
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+    cheerio "^1.0.0-rc.3"
+    common-tags "^1.8.0"
+    lodash "^4.17.15"
+    unist-util-visit "^1.4.1"
 
 gatsby-source-filesystem@^2.1.36:
   version "2.1.36"
