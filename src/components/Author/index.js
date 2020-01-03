@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import * as S from "./styles"
-
 import Avatar from "../Avatar"
+
+import * as S from "./styles"
 
 export default function Author({ fullText }) {
   return (
@@ -18,20 +18,14 @@ export default function Author({ fullText }) {
         Meu nome é <span itemProp="name">Douglas Porto</span> e sou apaixonado
         por tecnologia. Trabalho com desenvolvimento Web desde 2010 onde
         trabalhe por 9 anos com sistema para callcenter do{" "}
-        <a
-          href="https://financiamentos.bradesco/"
-          target="_blank"
-          rel="Bradesco"
-        >
+        <S.ExternalLink to="https://financiamentos.bradesco/">
           Banco Bradeco
-        </a>
+        </S.ExternalLink>
       </S.Description>
       <S.Description>
         Hoje me considero FullStack, podendo trabalhar com BackEnd tanto quanto
         FrontEnd. Atualmente trabalhando na{" "}
-        <a href="https://fabapp.com" target="_blank" rel="Fabapp">
-          FabApp.
-        </a>
+        <S.ExternalLink to="https://fabapp.com">FabApp.</S.ExternalLink>
       </S.Description>
       {fullText && (
         <>

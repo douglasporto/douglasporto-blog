@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import * as T from "../../styles/typography"
 
 export const Container = styled.div`
   display: flex;
@@ -20,4 +21,12 @@ export const Description = styled.p`
 export const Avatar = styled.div`
   margin: 5rem 0;
   align-self: center;
+`
+
+export const ExternalLink = styled.a.attrs(props => ({
+  target: "_blank",
+  href: props.to,
+  rel: "noopener noreferrer",
+}))`
+  ${T.Link}
 `
