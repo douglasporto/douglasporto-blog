@@ -8,8 +8,8 @@ import PropTypes from "prop-types"
 import * as V from "@styles/variables"
 
 export const Avatar = styled(Img).attrs({
-  alt: "Douglas Porto",
-  "aria-label": "Douglas Porto",
+  alt: "Página não encontrada",
+  "aria-label": "Página não encontrada",
 })`
   border-radius: 50%;
   display: block;

@@ -7,7 +7,7 @@ import Author from "@components/Author"
 import ButtonLink from "@components/ButtonLink"
 import GridTemplate from "@components/GridTemplate"
 import Layout from "@components/Layout"
-import * as S from "@components/PageIndex/styles"
+import * as S from "@components/PageStyles/styles"
 import PostItems from "@components/PostItems"
 import SEO from "@components/seo"
 
