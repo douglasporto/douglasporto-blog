@@ -71,26 +71,32 @@ const plugins = [
       icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
     },
   },
-  // this (optional) plugin enables Progressive Web App + Offline functionality
-  // To learn more, visit: https://gatsby.dev/offline
   `gatsby-plugin-offline`,
   `gatsby-plugin-netlify-cms`,
 ]
 
-// if (process.env.CONTEXT === "production") {
-const algolia = {
-  resolve: `gatsby-plugin-algolia-search`,
-  options: {
-    appId: process.env.GATSBY_ALGOLIA_APP_ID,
-    apiKey: process.env.ALGOLIA_ADMIN_KEY,
-    queries,
-    chunkSize: 10000, // default: 1000
-    enablePartialUpdates: true,
-  },
-}
+if (process.env.CONTEXT === "production") {
+  const algolia = {
+    resolve: `gatsby-plugin-algolia-search`,
+    options: {
+      appId: process.env.GATSBY_ALGOLIA_APP_ID,
+      apiKey: process.env.ALGOLIA_ADMIN_KEY,
+      queries,
+      chunkSize: 10000, // default: 1000
+      enablePartialUpdates: true,
+    },
+  }
+  const analytics = {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      head: false,
+    },
+  }
 
-plugins.push(algolia)
-// }
+  plugins.push(algolia)
+  plugins.push(analytics)
+}
 
 module.exports = {
   siteMetadata: {
