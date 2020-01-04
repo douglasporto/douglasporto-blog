@@ -1,6 +1,7 @@
 import Img from "gatsby-image"
 
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const Title = styled.h1`
   margin: 3rem 0 0 0;
@@ -12,11 +13,15 @@ export const Title = styled.h1`
 export const ContainerImg = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 5rem 0;
 `
 export const Erro = styled.h1`
   font-size: 15rem;
+  display: none;
+  ${media.greaterThan("medium")`
+    display: block;
+  `}
 `
 
 export const Image = styled(Img).attrs({

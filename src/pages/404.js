@@ -1,4 +1,5 @@
 import React from "react"
+import { Animated } from "react-animated-css"
 
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -26,26 +27,58 @@ const NotFoundPage = () => {
     <Layout>
       <SEO title="404: Not found" />
       <GridTemplate>
-        <S.Title>
-          Puts... deu ruim mano!{"  "}
-          <span className="small" role="img" aria-label="Emoji assustado">
-            😱
-          </span>
-        </S.Title>
+        <Animated
+          animationIn="rubberBand"
+          animationOut="zoomOutDown"
+          animationInDuration={2000}
+          animationOutDuration={1000}
+          isVisible={true}
+        >
+          <S.Title>
+            Puts... deu ruim mano!{"  "}
+            <span className="small" role="img" aria-label="Emoji assustado">
+              😱
+            </span>
+          </S.Title>
+        </Animated>
         <S.ContainerImg>
-          <S.Image fluid={image.childImageSharp.fluid} />
-          <S.Erro>404</S.Erro>
+          <Animated
+            animationIn="fadeInLeftBig"
+            animationOut="zoomOutDown"
+            animationInDuration={2000}
+            animationOutDuration={1000}
+            isVisible={true}
+          >
+            <S.Image fluid={image.childImageSharp.fluid} />
+          </Animated>
+          <Animated
+            animationIn="fadeInRightBig"
+            animationOut="zoomOutDown"
+            animationInDuration={2000}
+            animationOutDuration={1000}
+            isVisible={true}
+          >
+            <S.Erro>404</S.Erro>
+          </Animated>
         </S.ContainerImg>
-        <S.Description>
-          Não sei o que procurava, mas de uma olhadinha no blog, poderá
-          encontrar lá.{"  "}
-          <span className="small" role="img" aria-label="Emoji feliz">
-            😄
-          </span>
-        </S.Description>
-        <ButtonLink to="/blog/">
-          <S.Description>Blog</S.Description>
-        </ButtonLink>
+        <Animated
+          animationIn="slideInUp"
+          animationOut="zoomOutDown"
+          animationInDuration={2000}
+          animationOutDuration={1000}
+          isVisible={true}
+        >
+          <S.Description>
+            Não sei o que procurava, mas de uma olhadinha no blog, poderá
+            encontrar lá.{"  "}
+            <span className="small" role="img" aria-label="Emoji feliz">
+              😄
+            </span>
+          </S.Description>
+          <ButtonLink to="/blog/">
+            <S.Description>Blog</S.Description>
+          </ButtonLink>
+        </Animated>
       </GridTemplate>
     </Layout>
   )
