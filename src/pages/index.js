@@ -1,14 +1,15 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { Animated } from "react-animated-css"
 
-import Layout from "../components/Layout"
-import GridTemplate from "../components/GridTemplate"
-import ButtonLink from "../components/ButtonLink"
-import PostItems from "../components/PostItems"
-import Author from "../components/Author"
-import SEO from "../components/seo"
-import * as S from "../components/PageIndex/styles"
+import { useStaticQuery, graphql } from "gatsby"
+
+import Author from "@components/Author"
+import ButtonLink from "@components/ButtonLink"
+import GridTemplate from "@components/GridTemplate"
+import Layout from "@components/Layout"
+import * as S from "@components/PageIndex/styles"
+import PostItems from "@components/PostItems"
+import SEO from "@components/seo"
 
 const IndexPage = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`

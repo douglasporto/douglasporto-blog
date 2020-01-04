@@ -1,9 +1,11 @@
-import styled from "styled-components"
 import Img from "gatsby-image"
+
+import styled from "styled-components"
 import media from "styled-media-query"
 
-import * as V from "../../styles/variables"
-import * as T from "../../styles/typography"
+
+import * as T from "@styles/typography"
+import * as V from "@styles/variables"
 
 export const ImageHeader = styled(Img)`
   display: block;

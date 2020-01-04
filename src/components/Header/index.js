@@ -1,11 +1,12 @@
 import React from "react"
 
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import Avatar from "../Avatar"
-import Menu from "../Menu"
-import LightButton from "../LightButton"
+import PropTypes from "prop-types"
+
+import Avatar from "@components/Avatar"
+import LightButton from "@components/LightButton"
+import Menu from "@components/Menu"
 
 import * as S from "./styles"
 

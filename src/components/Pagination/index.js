@@ -1,7 +1,9 @@
 import React from "react"
+
 import propTypes from "prop-types"
 
-import ButtonLink from "../ButtonLink"
+import ButtonLink from "@components/ButtonLink"
+
 import * as S from "./styles"
 
 export default function Pagination({

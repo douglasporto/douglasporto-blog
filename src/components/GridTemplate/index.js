@@ -1,7 +1,8 @@
 import React from "react"
+
 import PropTypes from "prop-types"
 
-import * as S from "./styled"
+import * as S from "./styles"
 
 const GridTemplate = ({ children }) => {
   return <S.GridTemplate>{children}</S.GridTemplate>

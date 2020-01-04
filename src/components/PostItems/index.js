@@ -1,11 +1,12 @@
 import React from "react"
+
 import PropTypes from "prop-types"
 
-import * as S from "./styles"
-import * as D from "../DateTime/styles"
+import ButtonLink from "@components/ButtonLink"
+import * as D from "@components/DateTime/styles"
+import Tags from "@components/Tags"
 
-import Tags from "../Tags"
-import ButtonLink from "../ButtonLink"
+import * as S from "./styles"
 
 export default function PostItems({
   slug,

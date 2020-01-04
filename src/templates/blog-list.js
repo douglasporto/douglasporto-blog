@@ -1,12 +1,13 @@
 import React from "react"
+import { Animated } from "react-animated-css"
+
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
 import GridTemplate from "../components/GridTemplate"
-import PostItems from "../components/PostItems"
+import Layout from "../components/Layout"
 import Pagination from "../components/Pagination"
+import PostItems from "../components/PostItems"
 import Search from "../components/Search"
-import { Animated } from "react-animated-css"
 import SEO from "../components/seo"
 
 const BlogList = props => {

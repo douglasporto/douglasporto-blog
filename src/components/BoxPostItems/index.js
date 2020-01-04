@@ -1,10 +1,12 @@
 import React from "react"
+
 import PropTypes from "prop-types"
 
-import { getActiveTheme } from "../../utils/themes"
+import { getActiveTheme } from "@utils/themes"
+
+import * as D from "@components/DateTime/styles"
 
 import * as S from "./styles"
-import * as D from "../DateTime/styles"
 
 export default function BoxPostItems({ slug, title, isMini, date }) {
   return (

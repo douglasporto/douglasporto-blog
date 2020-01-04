@@ -1,9 +1,9 @@
 import React from "react"
 
-import Layout from "../components/Layout"
-import GridTemplate from "../components/GridTemplate"
-import SEO from "../components/seo"
-import Author from "../components/Author"
+import Author from "@components/Author"
+import GridTemplate from "@components/GridTemplate"
+import Layout from "@components/Layout"
+import SEO from "@components/seo"
 
 const HiPage = () => (
   <Layout>

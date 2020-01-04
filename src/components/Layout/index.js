@@ -1,11 +1,15 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { TransitionPortal } from "gatsby-plugin-transition-link"
-import { useStaticQuery, graphql } from "gatsby"
 
-import GlobalStyles from "../../styles/global"
-import Header from "../Header"
-import Container from "../Container"
+import { useStaticQuery, graphql } from "gatsby"
+import { TransitionPortal } from "gatsby-plugin-transition-link"
+
+import PropTypes from "prop-types"
+
+import Container from "@components/Container"
+import Header from "@components/Header"
+
+import GlobalStyles from "@styles/global"
+
 import * as S from "./styles"
 
 const Layout = ({ children }) => {

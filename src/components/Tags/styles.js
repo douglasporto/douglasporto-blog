@@ -1,7 +1,10 @@
-import styled from "styled-components"
 import { Link } from "gatsby"
-import * as V from "../../styles/variables"
-import * as T from "../../styles/typography"
+
+import styled from "styled-components"
+
+
+import * as T from "@styles/typography"
+import * as V from "@styles/variables"
 
 export const TagsContainer = styled.div`
   display: flex;

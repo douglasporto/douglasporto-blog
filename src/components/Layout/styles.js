@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
-import * as V from "../../styles/variables"
+import * as V from "@styles/variables"
 
 export const Wrapper = styled.div`
   min-height: 100%;

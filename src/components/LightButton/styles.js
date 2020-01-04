@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Sun, Moon } from "styled-icons/boxicons-solid"
 
-import * as V from "../../styles/variables"
+import * as V from "@styles/variables"
 
 export const LightButton = styled.button.attrs(props => ({
   title: props.active ? `Apagar a luz` : `Acender a luz`,

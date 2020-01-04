@@ -1,13 +1,13 @@
 import React from "react"
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from "../components/Layout"
-import SEO from "../components/seo"
-import RecommendedPosts from "../components/RecommendedPosts"
-import Comments from "../components/Comments"
-
-import * as S from "../components/Post/styles"
+import Comments from "@components/Comments"
+import Layout from "@components/Layout"
+import * as S from "@components/Post/styles"
+import RecommendedPosts from "@components/RecommendedPosts"
+import SEO from "@components/seo"
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark

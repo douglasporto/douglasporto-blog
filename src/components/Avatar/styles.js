@@ -1,9 +1,11 @@
-import styled from "styled-components"
 import Img from "gatsby-image"
+
+import styled from "styled-components"
 import media from "styled-media-query"
+
 import PropTypes from "prop-types"
 
-import * as V from "../../styles/variables"
+import * as V from "@styles/variables"
 
 export const Avatar = styled(Img).attrs({
   alt: "Douglas Porto",

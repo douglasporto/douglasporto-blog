@@ -1,6 +1,9 @@
 import React from "react"
+
 import propTypes from "prop-types"
-import BoxPostItems from "../../components/BoxPostItems"
+
+import BoxPostItems from "@components/BoxPostItems"
+
 import * as S from "./styles"
 
 const RecommendedPosts = ({ next, previous }) => (

@@ -1,4 +1,4 @@
-import * as V from "../styles/variables"
+import * as V from "@styles/variables"
 
 export const getActiveTheme = () => {
   if (typeof document === "undefined") return

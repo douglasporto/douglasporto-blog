@@ -1,9 +1,11 @@
 import React from "react"
+
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import * as S from "./styles"
-import { getActiveTheme } from "../../utils/themes"
+import { getActiveTheme } from "@utils/themes"
+
 import menuLinks from "./content"
+import * as S from "./styles"
 
 export default function Menu() {
   return (

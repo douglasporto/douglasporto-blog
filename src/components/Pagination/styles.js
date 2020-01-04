@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import * as V from "../../styles/variables"
+
+import * as V from "@styles/variables"
 
 export const Pagination = styled.nav`
   align-items: center;
