@@ -5,8 +5,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 import Avatar from "@components/Avatar"
-import LightButton from "@components/LightButton"
 import Menu from "@components/Menu"
+import Social from "@components/Social"
 
 import * as S from "./styles"
 
@@ -25,7 +25,7 @@ const Header = ({ site: { author } }) => {
         <S.Menu>
           <Menu />
         </S.Menu>
-        <LightButton />
+        <Social />
       </S.Content>
     </S.Header>
   )

@@ -14,7 +14,6 @@ export const LightButton = styled.button.attrs(props => ({
   height: ${V.Height.headerSm};
   padding-left: ${V.Space.xs};
   padding-right: ${V.Space.xs};
-
   &:focus {
     outline: transparent;
   }
