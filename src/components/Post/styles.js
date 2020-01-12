@@ -3,7 +3,6 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import media from "styled-media-query"
 
-
 import * as T from "@styles/typography"
 import * as V from "@styles/variables"
 
@@ -43,6 +42,7 @@ export const PostDate = styled.p`
 
 export const MainContent = styled.section`
   margin: auto;
+  margin-bottom: 10rem;
   ${media.greaterThan("medium")`
     padding-left: ${V.Space.default};
     padding-right: ${V.Space.default};

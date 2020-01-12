@@ -101,7 +101,7 @@ export default createGlobalStyle`
     --bg: ${V.Color.twitterBgDark};
     --bgSolid: ${V.Color.blackSolid};
     --bgSecondary: ${V.Color.grayDark};
-    --borderColor: ${V.Color.menuDarker};
+    --borderColor: ${V.Color.grayDark};
     --highlightColor: ${V.Color.themeColor};
     --primaryColor: ${V.Color.white};
     --secondaryColor: ${V.Color.grayLight};
@@ -114,7 +114,7 @@ export default createGlobalStyle`
     --bg: ${V.Color.white};
     --bgSolid: ${V.Color.whiteSolid};
     --bgSecondary: ${V.Color.grayWhite};
-    --borderColor: ${V.Color.grayWhite};
+    --borderColor: ${V.Color.menuDarker};
     --highlightColor: ${V.Color.blue};
     --primaryColor: ${V.Color.black};
     --secondaryColor: ${V.Color.gray};
