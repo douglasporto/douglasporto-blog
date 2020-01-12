@@ -7,6 +7,12 @@ import * as V from "@styles/variables"
 
 export const Container = styled.nav`
   padding: 0 0.6rem;
+  display: inline-block;
+  ${props =>
+    !props.footer &&
+    media.lessThan("medium")`
+        display: none;
+    `}
 `
 
 export const IconLink = styled.a.attrs(props => ({
@@ -17,10 +23,6 @@ export const IconLink = styled.a.attrs(props => ({
   ${T.Link}
   font-size: 1.6rem;
   padding: 0 0.6rem;
-  display: none;
-  ${media.greaterThan("medium")`
-    display: inline-block;
-  `}
 `
 
 const styleIcon = `

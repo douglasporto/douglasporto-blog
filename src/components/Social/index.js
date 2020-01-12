@@ -4,9 +4,9 @@ import LightButton from "@components/LightButton"
 
 import * as S from "./styles"
 
-export default function Social() {
+export default function Social({ footer = false }) {
   return (
-    <S.Container>
+    <S.Container footer={footer}>
       <S.IconLink to="https://github.com/douglasporto">
         <S.IconGithub />
       </S.IconLink>
@@ -16,7 +16,7 @@ export default function Social() {
       <S.IconLink to="https://www.linkedin.com/in/douglas-porto/">
         <S.IconLinkedinIn />
       </S.IconLink>
-      <LightButton />
+      {!footer && <LightButton />}
     </S.Container>
   )
 }
