@@ -23,6 +23,9 @@ export const IconLink = styled.a.attrs(props => ({
   ${T.Link}
   font-size: 1.6rem;
   padding: 0 0.6rem;
+  ${media.lessThan("medium")`
+      margin: 2rem
+  `}
 `
 
 const styleIcon = `
