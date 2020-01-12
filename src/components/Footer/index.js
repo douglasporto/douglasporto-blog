@@ -11,7 +11,17 @@ export default function Footer() {
       <S.FooterSocial>
         <Social footer={true} />
       </S.FooterSocial>
-      <S.FooterText>© copywrite {year} - Douglas Porto</S.FooterText>
+      <S.FooterText>
+        © copywrite {year} - Douglas Porto{" "}
+        <a
+          className="link"
+          href="https://github.com/douglasporto/douglasporto-blog/blob/master/LICENSE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Termos de Uso
+        </a>
+      </S.FooterText>
     </S.Footer>
   )
 }

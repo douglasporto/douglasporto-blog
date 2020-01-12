@@ -27,6 +27,18 @@ export const FooterText = styled.div`
   ${media.greaterThan("medium")`
     display: block;
   `}
+  .link {
+    color: var(--secondaryColor);
+    font-style: italic;
+    &:hover {
+      text-decoration: none;
+    }
+    &:before {
+      content: "•";
+      display: inline-block;
+      margin: 0 ${V.Space.xxs};
+    }
+  }
 `
 export const FooterSocial = styled.div`
   display: none;

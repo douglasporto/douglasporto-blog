@@ -15,12 +15,12 @@ export default function FooterBlog() {
           </span>
         </S.Title>
         <p>
-          Esse projeto é open source, então é só alterar o arquivo de texto,{" "}
+          Como esse blog é open source, então é só alterar o arquivo de texto,{" "}
           <ExternalLink
             to="https://github.com/douglasporto/douglasporto-blog/tree/master/content/posts"
             title="Ver Twitter"
           >
-            diretamente no Github
+            no próprio Github
           </ExternalLink>{" "}
           e abrir um pull-request. Simples não?
         </p>
