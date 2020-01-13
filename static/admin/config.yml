@@ -2,7 +2,7 @@ backend:
   name: github
   repo: douglasporto/douglasporto-blog
   branch: master
-  site_domain: douglasporto.com.br/
+  site_domain: douglasporto.com.br
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/posts"
