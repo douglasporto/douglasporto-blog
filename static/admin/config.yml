@@ -2,7 +2,7 @@ backend:
   name: github
   repo: douglasporto/douglasporto-blog
   branch: master
-  site_domain: https://elegant-mestorf-c9e863.netlify.com/
+  site_domain: https://douglasporto.com.br/
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/posts"
