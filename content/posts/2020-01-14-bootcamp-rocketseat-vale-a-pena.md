@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2020-01-13 08:18:12'
-image: /assets/image-default.jpeg
+image: /assets/bg-rocketseat-vale-pena.png
 title: 'Bootcamp Rocketseat, vale a pena?'
 description: O famoso curso bootcamp da Rocketseat realmente vale o valor?
 tags:
@@ -9,7 +9,6 @@ tags:
   - react
   - react-native
 ---
-
 **Faaaala deeev!!!**
 
 Com toda certeza você já deve ter escutado esta introdução em algum video no youtube. Estamos falando de [Diego Fernandes](https://twitter.com/dieegosfhttps://twitter.com/dieegosf) CTO da [Rocketseat](https://rocketseat.com.br/).
@@ -83,11 +82,11 @@ O bootcamp é uma imersão muito forte e requer muita dedicação e tempo. Diver
 Se você se inscrever e quiser ditar o seu ritmo, creio que vai perder o mais legal que é a superar os limites em tão pouco tempo. A comunidade se ajudando, empurrando uma ao outro. Assim como a tradução de `Rocket Seat` um assento de foguete, onde você deve estar preparado para ir muito longe!
 
 Caso você não estaja com tempo, ou na "vibe" de estudos intensos, aconselho duas outras escolas online de programação.
- - [Alura](https://www.alura.com.br/)
- - [Schoo of Net](https://www.schoolofnet.com/)
+
+* [Alura](https://www.alura.com.br/)
+* [Schoo of Net](https://www.schoolofnet.com/)
 
 Duas escolas excelentes tambem, porém com propostas um pouco diferente da [Rocketseat](https://rocketseat.com.br/).
-
 
 Mas e ai, você já fez uma semana omnistack?
 
