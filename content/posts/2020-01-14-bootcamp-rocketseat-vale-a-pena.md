@@ -13,9 +13,9 @@ tags:
 
 Com toda certeza você já deve ter escutado esta introdução em algum video no youtube. Estamos falando de [Diego Fernandes](https://twitter.com/dieegosfhttps://twitter.com/dieegosf) CTO da [Rocketseat](https://rocketseat.com.br/).
 
-Caso você nunca se quer procurou alguma coisa de programação no Youtube, deixarei aqui o [Canal do Rocketseat](https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olghttps://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg) (confira pois tem muuuuuito conteúdo de graça).
+Caso você não saiba do que estou falando (acho dificil), deixarei aqui o [Canal do Rocketseat](https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olghttps://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg) (confira pois tem muuuuuito conteúdo de graça).
 
-Se você esta lendo este post na semana que ele foi escrito (12 a 19 de janeiro de 2020), esta acontecendo a semana omnistacksemana omnistack 10. Todos os dias serão disponibilizados videos com conteúdo sobre fullstack com **JavaScript** totalmente gratuido. Você aprenderá [nodejs](https://nodejs.org/en/https://nodejs.org/en/) \[Backend], [React](https://reactjs.org/https://reactjs.org/) \[Frontend] e [React-native](https://facebook.github.io/react-native/https://facebook.github.io/react-native/) \[Mobile].
+Se você esta lendo este post na semana que ele foi escrito (12 a 19 de janeiro de 2020), esta acontecendo a semana omnistack 10. Todos os dias serão disponibilizados videos com conteúdo sobre fullstack com **JavaScript** totalmente gratuido. Você aprenderá [nodejs](https://nodejs.org/en/https://nodejs.org/en/) \[Backend], [React](https://reactjs.org/https://reactjs.org/) \[Frontend] e [React-native](https://facebook.github.io/react-native/https://facebook.github.io/react-native/) \[Mobile].
 
 Após essa semana será aberto a inscrição para o [Bootcamp](https://rocketseat.com.br/bootcamp).
 
