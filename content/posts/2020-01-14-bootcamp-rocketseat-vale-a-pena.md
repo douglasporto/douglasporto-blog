@@ -35,11 +35,11 @@ Quase todos os dias são feito lives com diversos temas. Diversos temas mesmo. M
 
 São as lives de Inglês e Mentoria.
 
-##### Inglês
+* Inglês
 
-As lives de inglês é um bate-papo com uma professora de inglês dando varias dicas para aprimorar o inglês. Como disse, são lives quase todos os dias, então não vou estender sobre as de inglês pois foi uma das lives que deixei bastante de ver hehehe.
+As lives de inglês é um bate-papo com uma professora de inglês dando varias dicas para aprimorar o inglês. Como disse, são lives quase todos os dias, então não vou estender sobre as de inglês pois foi uma das lives que deixei bastante de ver hehehe. Mas não por não serem boas, mas por falta de tempo.
 
-##### Mentorias
+* Mentorias
 
 Essas lives, na minha opinião, são as melhores. São mentorias sobre desenvolvimento pessoal. Sim, me ajudou muito em diversas coisas, como por exemplo, arrumar [meu linkedIn](https://www.linkedin.com/in/douglas-porto/https://www.linkedin.com/in/douglas-porto/) para que seja mais visto. E não é que deu certo?
 
@@ -51,25 +51,25 @@ Hoje tenho postagens de 15k, 10k, 7k de visulizações.
 
 Diferente dos concorrentes, a [Rocketseat](https://rocketseat.com.br/) não dará o certificado apenas por você dar "play nos videos". 
 
-Durante mais ou menos 1 mês é disponibilizados os video das aulas. Junto são enviados alguns .txt que são os desafios.  Após esse mês, você receberá a data para a entraga do código.
+Durante mais ou menos 1 mês é disponibilizados os video das aulas. Junto são enviados alguns `.txt` que são os desafios.  Após esse mês, você receberá a data para a entraga do código.
 
 ***OMG!!! Entrega do Código???***
 
-Sim, é isso que diferencia a eles dos concorrentes. Você terá um prazo para enviar o código com os desafios.
+Sim, é isso que diferencia eles dos concorrentes. Você terá um prazo para enviar o código com os desafios.
 
-Mas como assim desafios, códigos, ainda nao entendi!!??
+> Mas como assim desafios, códigos, ainda nao entendi!!??
 
 Calma, vou falar como foi o meu desafio.
 
 Após assistir as aulas recebi o desafio que era desenvolver uma aplicação parecida com o [Meetup](https://www.meetup.com/pt-BR/), então criamos a ***MeetApp*** hehehe.
 
-Neste desafio tinhamos tudo que precisava para desenvolver, as regras de negocios as tecnologias que podimos usar, até mesmo um sketch para criarmos o frontend e mobile conforme desenhado.
+Neste desafio tinhamos tudo que precisava para desenvolver, as regras de negocios as tecnologias que poderia ser usadas, até mesmo um sketch para criarmos o frontend e mobile conforme desenhado.
 
 Caso queira ver, este é meu projeto final [Github](https://github.com/douglasporto/meetapp-gostack).
 
 ![Meetapp](/assets/meetapp.png "Meetapp")
 
-Depois de enviar seu código basta aguardar ansiosamente pela nota e feedback.Depois de enviar seu código basta aguardar ansiosamente pela nota e feedback.
+Depois de enviar seu código basta aguardar ansiosamente pela nota e feedback. Depois de enviar seu código basta aguardar ansiosamente pela nota e feedback.
 
 ![Nota Bootcamp](/assets/nota-bootcamp.jpeg "Nota Bootcamp")
 
@@ -77,9 +77,9 @@ Depois de enviar seu código basta aguardar ansiosamente pela nota e feedback.De
 
 Em poucas palavras: depende!
 
-O bootcamp é uma imersão muito forte e requer muita dedicação e tempo. Diversos amigos meus fizeram na mesma turma que eu e nem terminaram de ver as aulas. Por exemplo faltando uma semana para entraga do projeto acordava as 4 horas da manhã. E não pensa você que foi um sacrificio, pelo contrário, faria novamente!
+O bootcamp é uma imersão muito forte e requer muita dedicação e tempo. Diversos amigos meus fizeram na mesma turma que eu e nem terminaram de ver as aulas. Por exemplo faltando uma semana para entrega do projeto eu acordava as 4 horas da manhã. E não pensa você que foi um sacrificio, pelo contrário, faria novamente!
 
-Se você se inscrever e quiser ditar o seu ritmo, creio que vai perder o mais legal que é a superar os limites em tão pouco tempo. A comunidade se ajudando, empurrando uma ao outro. Assim como a tradução de `Rocket Seat` um assento de foguete, onde você deve estar preparado para ir muito longe!
+Se você se inscrever e quiser ditar o seu ritmo, creio que vai perder o mais legal que é superar os limites em tão pouco tempo. A comunidade se ajudando, empurrando um ao outro. Assim como a tradução de `Rocket Seat` um assento de foguete, onde você deve estar preparado para ir muito longe!
 
 Caso você não estaja com tempo, ou na "vibe" de estudos intensos, aconselho duas outras escolas online de programação.
 
@@ -88,8 +88,10 @@ Caso você não estaja com tempo, ou na "vibe" de estudos intensos, aconselho du
 
 Duas escolas excelentes tambem, porém com propostas um pouco diferente da [Rocketseat](https://rocketseat.com.br/).
 
-Mas e ai, você já fez uma semana omnistack?
+Agora se você esta focado e afim de mudar sua vida profissional, vale sim cada centavo!
+
+Mas e ai, você já fez alguma das Semana Omnistack?
 
 Já participou de um [Bootcamp](https://rocketseat.com.br/bootcamp) ??
 
-Pensa em fazer, não? Vamos trocar uma ideia....
+Pensa em fazer? não? Vamos trocar uma ideia....
