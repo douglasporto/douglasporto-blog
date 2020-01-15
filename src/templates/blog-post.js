@@ -32,7 +32,7 @@ const BlogPost = ({ data, pageContext }) => {
           {post.frontmatter.date}
           <span> · Leitura de {post.timeToRead} min</span>
         </S.PostDate>
-        <S.PostTitle>Title: {post.frontmatter.title}</S.PostTitle>
+        <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         <Img fluid={featuredImgFluid} />
         <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
       </S.PostHeader>
