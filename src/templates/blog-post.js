@@ -23,7 +23,7 @@ const BlogPost = ({ data, pageContext }) => {
         description={post.frontmatter.description}
         image={
           post.frontmatter.image
-            ? `https://douglasporto.com.br${post.frontmatter.image.publicURL}`
+            ? `${post.frontmatter.image.publicURL}`
             : "https://douglasporto.com.br/assets/default.jpeg"
         }
       />
