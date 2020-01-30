@@ -30,7 +30,7 @@ const dicQuery = `{
       node {
         objectID: id
         fields {
-          slug
+          slug_dic
         }
         frontmatter {
           date_timestamp: date

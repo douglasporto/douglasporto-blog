@@ -86,7 +86,7 @@ const BlogListDicionary = props => {
 export const query = graphql`
   query PostListDicionary($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { fields: frontmatter___title, order: ASC }
       filter: { fileAbsolutePath: { glob: "**/content/dicdevs/*.md" } }
       limit: $limit
       skip: $skip
