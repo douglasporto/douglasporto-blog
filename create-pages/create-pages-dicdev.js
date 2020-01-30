@@ -6,7 +6,7 @@ function graphqlForDicDevs(graphql, createPage) {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: frontmatter___title, order: ASC }
           filter: { fileAbsolutePath: { glob: "**/content/dicdevs/*.md" } }
           limit: 1000
         ) {
