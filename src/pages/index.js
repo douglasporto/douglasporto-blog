@@ -17,6 +17,7 @@ const IndexPage = () => {
       allMarkdownRemark(
         sort: { fields: frontmatter___date, order: DESC }
         limit: 2
+        filter: { fileAbsolutePath: { glob: "**/content/posts/*.md" } }
       ) {
         edges {
           node {

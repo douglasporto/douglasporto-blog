@@ -1,25 +1,19 @@
 const path = require("path")
 
-const { createFilePath } = require(`gatsby-source-filesystem`)
-const { fmImagesToRelative } = require("gatsby-remark-relative-images")
-
-const { graphqlForDicDevs } = require("./create-pages/create-pages-dicdev")
-
-// To create the posts pages
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+function graphqlForDicDevs(graphql, createPage) {
+  const blogPost = path.resolve(`./src/templates/blog-dicionary.js`)
   const blog = graphql(
     `
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
-          filter: { fileAbsolutePath: { glob: "**/content/posts/*.md" } }
+          filter: { fileAbsolutePath: { glob: "**/content/dicdevs/*.md" } }
           limit: 1000
         ) {
           edges {
             node {
               fields {
+                slug_dic
                 slug
               }
               frontmatter {
@@ -31,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             next {
               fields {
-                slug
+                slug_dic
               }
               frontmatter {
                 title
@@ -40,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             previous {
               fields {
-                slug
+                slug_dic
               }
               frontmatter {
                 title
@@ -57,7 +51,7 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMarkdownRemark.edges
     posts.forEach(({ node, next, previous }) => {
       createPage({
-        path: node.fields.slug,
+        path: node.fields.slug_dic,
         component: blogPost,
         context: {
           slug: node.fields.slug,
@@ -71,8 +65,8 @@ exports.createPages = ({ graphql, actions }) => {
     const numPages = Math.ceil(posts.length / postsPerPage)
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
-        path: i === 0 ? `/blog/` : `/blog/page/${i + 1}`,
-        component: path.resolve("./src/templates/blog-list.js"),
+        path: i === 0 ? `/dicionary/` : `/dicionary/page/${i + 1}`,
+        component: path.resolve("./src/templates/blog-list-dicionary.js"),
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
@@ -82,39 +76,6 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
   })
-  return Promise.all([blog, graphqlForDicDevs(graphql, createPage)])
+  return blog
 }
-
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-
-  fmImagesToRelative(node)
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `blog` })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: `blog/${slug.slice(12)}`,
-    })
-
-    const slugDic = createFilePath({ node, getNode, basePath: `dicionary` })
-    createNodeField({
-      node,
-      name: `slug_dic`,
-      value: `dicionary/${slugDic.slice(12)}`,
-    })
-  }
-}
-
-exports.onCreateWebpackConfig = function({ actions }) {
-  actions.setWebpackConfig({
-    resolve: {
-      alias: {
-        "@components": path.resolve(__dirname, "src/components"),
-        "@styles": path.resolve(__dirname, "src/styles"),
-        "@utils": path.resolve(__dirname, "src/utils"),
-      },
-    },
-  })
-}
+exports.graphqlForDicDevs = graphqlForDicDevs

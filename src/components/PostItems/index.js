@@ -18,10 +18,12 @@ export default function PostItems({
 }) {
   return (
     <S.PostItemWrapper>
-      <D.DateTime>
-        {date}
-        <span> · Leitura de {timeToRead} min</span>
-      </D.DateTime>
+      {date && (
+        <D.DateTime>
+          {date}
+          <span> · Leitura de {timeToRead} min</span>
+        </D.DateTime>
+      )}
       <ButtonLink rel={title} to={slug}>
         <S.Title>{title}</S.Title>
       </ButtonLink>
@@ -30,7 +32,7 @@ export default function PostItems({
           <Tags tags={tags} />
         </S.Tags>
       )}
-      <S.Description>{description}</S.Description>
+      <S.Description tags={tags}>{description}</S.Description>
     </S.PostItemWrapper>
   )
 }

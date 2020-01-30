@@ -10,7 +10,7 @@ import * as S from "./styles"
 
 const urlToSearchState = ({ search }) => qs.parse(search.slice(1))
 
-export default function Search({ algolia, callback, props }) {
+export default function Search({ algolia, callback, props, placeholder }) {
   const { location } = props
   const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey)
   const [searchState, setSearchState] = useState(urlToSearchState(location))
@@ -27,7 +27,7 @@ export default function Search({ algolia, callback, props }) {
           searchState={searchState}
           onSearchStateChange={onSearchStateChange}
         >
-          <SearchBox translations={{ placeholder: "Pesquisar no blog..." }} />
+          <SearchBox translations={{ placeholder: placeholder }} />
           {searchState && searchState.query ? (
             <>
               <Stats
@@ -53,4 +53,5 @@ export default function Search({ algolia, callback, props }) {
 Search.propTypes = {
   algolia: PropTypes.object.isRequired,
   callback: PropTypes.node,
+  placeholder: PropTypes.string,
 }

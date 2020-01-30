@@ -27,3 +27,21 @@ collections:
       - { label: Description, name: description, widget: string }
       - { label: Tags, name: tags, widget: list, default: [""] }
       - { label: Body, name: body, widget: markdown }
+  - name: dicdevs # Used in routes, e.g. /admin/collections/blog
+    label: Dicdevs # Used in the UI
+    folder: content/dicdevs
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: Layout, name: layout, widget: hidden, default: post }
+      - {
+          label: Date,
+          name: date,
+          widget: datetime,
+          format: YYYY-MM-DD hh:mm:ss,
+        }
+      - { label: Cover, name: image, widget: image }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string }
+      - { label: Tags, name: tags, widget: list, default: [""] }
+      - { label: Body, name: body, widget: markdown }

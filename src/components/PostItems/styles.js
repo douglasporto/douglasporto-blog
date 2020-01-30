@@ -2,7 +2,6 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import styled from "styled-components"
 
-
 import * as T from "@styles/typography"
 import * as V from "@styles/variables"
 
@@ -36,6 +35,8 @@ export const Tags = styled.div`
   margin: 15px 0;
 `
 export const Description = styled.h2`
+  ${props => (!props.tags ? `margin-top: 1.3em;` : ``)}
+
   ${T.Subtitle2}
 
   &:not(:last-child) {

@@ -10,20 +10,20 @@ import PostItems from "../components/PostItems"
 import Search from "../components/Search"
 import SEO from "../components/seo"
 
-const BlogList = props => {
+const BlogListDicionary = props => {
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage =
-    currentPage - 1 === 1 ? "/blog/" : `/blog/page/${currentPage - 1}`
-  const nextPage = `/blog/page/${currentPage + 1}`
+    currentPage - 1 === 1 ? "/dicionary/" : `/dicionary/page/${currentPage - 1}`
+  const nextPage = `/dicionary/page/${currentPage + 1}`
 
   const postList = props.data.allMarkdownRemark.edges
 
   const algolia = {
     appId: process.env.GATSBY_ALGOLIA_APP_ID,
     searchOnlyApiKey: process.env.GATSBY_ALGOLIA_SEARCH_ONLY_KEY,
-    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
+    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME_DICDEV,
   }
 
   const content = () => {
@@ -33,9 +33,9 @@ const BlogList = props => {
           (
             {
               node: {
-                frontmatter: { date, description, tags, title },
+                frontmatter: { description, tags, title },
                 timeToRead,
-                fields: { slug },
+                fields: { slug_dic },
               },
             },
             index
@@ -48,11 +48,9 @@ const BlogList = props => {
               isVisible={true}
             >
               <PostItems
-                slug={slug}
-                date={date}
+                slug={slug_dic}
                 timeToRead={timeToRead}
                 title={title}
-                tags={tags}
                 description={description}
               />
             </Animated>
@@ -78,7 +76,7 @@ const BlogList = props => {
           algolia={algolia}
           callback={content()}
           props={props}
-          placeholder="Pesquisar no Blog..."
+          placeholder="Pesquisar no dicionário..."
         />
       </GridTemplate>
     </Layout>
@@ -86,10 +84,10 @@ const BlogList = props => {
 }
 
 export const query = graphql`
-  query PostList($skip: Int!, $limit: Int!) {
+  query PostListDicionary($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: frontmatter___date, order: DESC }
-      filter: { fileAbsolutePath: { glob: "**/content/posts/*.md" } }
+      filter: { fileAbsolutePath: { glob: "**/content/dicdevs/*.md" } }
       limit: $limit
       skip: $skip
     ) {
@@ -103,7 +101,7 @@ export const query = graphql`
           }
           timeToRead
           fields {
-            slug
+            slug_dic
           }
         }
       }
@@ -111,4 +109,4 @@ export const query = graphql`
   }
 `
 
-export default BlogList
+export default BlogListDicionary
