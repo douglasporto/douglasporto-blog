@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2020-06-10 12:23:55'
-image: /assets/bg-rocketseat-vale-pena.png
+image: /assets/bg-rocketseat-vale-pena-p2.jpg
 title: 'Bootcamp Rocketseat, vale a pena? Part-2'
 description: >-
   O famoso curso bootcamp da Rocketseat deu uma repaginada e agora realmente
