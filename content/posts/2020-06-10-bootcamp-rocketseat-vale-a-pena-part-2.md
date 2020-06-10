@@ -38,6 +38,8 @@ Então surgiu a nova comunidade.
 
 Uma feita pela própria [Rocketseat](https://rocketseat.com.br/). Num estilo [Stackoverflow](http://stackoverflow.com/) mas com a cara do nosso foguete favorito 🚀.
 
+![comunidade-rocketseat](/assets/captura-de-tela-2020-06-10-às-13.40.31.png "Comunidade Rocketseat")
+
 Agora as perguntas não ficam "perdidas". E provavelmente sua dúvida já tenha sido uma dúvida de outro dev, agilizando ainda mais a resolução do seu problema.
 
 #### Método de avaliação.
@@ -47,6 +49,8 @@ Sabemos que antes você fazia os desafios e ia subindo para um repositório do [
 Tudo foi mudado também. Vemos mais uma vez a coragem de mudar algo que estava dando certo e mais uma vez um acerto impressionante.
 
 Agora para cada fase do curso, você terá um desafio, até ai tudo normal, nada mudou. Entretanto, agora você envia o repositório separadamente para cada desafio, diretamente na página do curso.
+
+![avaliacao-rocketseat](/assets/captura-de-tela-2020-06-10-às-13.41.39.png "Avaliação Rocketseat")
 
 Se achou isso incrível, calma, o melhor esta por vir. 
 
@@ -59,8 +63,6 @@ Você ira clonar esse template e nele irá conter as partes necessárias para cu
 O que mais me impressionou foi que nesse template já uma pasta de testes unitários. Ou seja, você cumpri o desafio e para ter certeza que nada foi esquecido ou esta com erro, você roda o comando `yarn test`e *voilà.*
 
 Incrível não?
-
-
 
 #### Conclusão.
 
