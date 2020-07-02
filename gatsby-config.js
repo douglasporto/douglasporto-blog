@@ -13,6 +13,7 @@ const feeds = [
         return Object.assign({}, edge.node.frontmatter, {
           description: edge.node.frontmatter.description,
           date: edge.node.frontmatter.date,
+          thumb: edge.node.frontmatter.image.absolutePath,
           url: postUrl,
           guid: postUrl,
           custom_elements: [{ 'content:encoded': edge.node.html }]
