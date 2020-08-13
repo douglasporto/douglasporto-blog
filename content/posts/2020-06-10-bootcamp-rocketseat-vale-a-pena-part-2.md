@@ -20,7 +20,7 @@ O último artigo que fiz foi justamente falando se vale ou não comprar o curso 
 
 O que eu não imaginava era que a [Rocketseat](https://rocketseat.com.br/) iria mudar tanto e irei falar aqui quais foram as mudanças no curso.
 
-#### Typescript.
+# Typescript.
 
 Sim. Essa para mim foi a grande atualização do curso. Antes as aulas de ***back-end (node), front-end (React) e mobile (React-native)*** eram com javascript puro. 
 
@@ -28,7 +28,7 @@ Porém nos últimos anos o ***[typescript](https://www.typescriptlang.org/)*** q
 
 A [Rocketseat](https://rocketseat.com.br/) vendo essa movimentação de todas as comunidade JS, não perdeu tempo e mudou todo seu curso. O que para mim foi um grande acerto!
 
-#### Nova comunidade.
+# Nova comunidade.
 
 Quando escrevi o [artigo sobre a rocketseat](https://douglasporto.com.br/blog/bootcamp-rocketseat-vale-a-pena/) a comunidade era um dos pontos que mais gostei. Era simples se engajar. Você matava suas dúvidas rapidamente.
 
@@ -42,7 +42,7 @@ Uma feita pela própria [Rocketseat](https://rocketseat.com.br/). Num estilo [St
 
 Agora as perguntas não ficam "perdidas". E provavelmente sua dúvida já tenha sido uma dúvida de outro dev, agilizando ainda mais a resolução do seu problema.
 
-#### Método de avaliação.
+# Método de avaliação.
 
 Sabemos que antes você fazia os desafios e ia subindo para um repositório do [Github](https://github.com/). Após finalizar todos os desafios, você enviava esse repositório para a rocketseat e esperava a avaliação final.
 
@@ -64,7 +64,7 @@ O que mais me impressionou foi que nesse template já uma pasta de testes unitá
 
 Incrível não?
 
-#### Conclusão.
+# Conclusão.
 
 A [Rocketseat](https://rocketseat.com.br/) hoje é uma das, senão a principal, cursos online por não ter medo de inovar. Mesmo algo que esteja dando certo, ela não para de tentar melhorar. Com ela não tem essa de *"time que esta ganhando não se mexe"*.
 
