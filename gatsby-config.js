@@ -1,5 +1,56 @@
 require("dotenv").config()
 
+const path = require(`path`)
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+const feeds = [
+  {
+    serialize: ({ query: { site, allMarkdownRemark } }) => {
+      return allMarkdownRemark.edges.map(edge => {
+        const postUrl = path.join(site.siteMetadata.siteUrl, edge.node.fields.slug)
+        return Object.assign({}, edge.node.frontmatter, {
+          description: edge.node.frontmatter.description,
+          date: edge.node.frontmatter.date,
+          thumb: edge.node.frontmatter.image.absolutePath,
+          url: postUrl,
+          guid: postUrl,
+          custom_elements: [{ 'content:encoded': edge.node.html }]
+        })
+      })
+    },
+    query: `
+      {
+        allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                description
+                date
+                image {
+                  absolutePath
+                  publicURL
+                }
+                thumb: image {
+                  publicURL
+                }
+              }
+              excerpt(truncate: true, pruneLength: 500, format: HTML)
+            }
+          }
+        }
+      }
+    `,
+    output: '/feed.xml',
+    title: 'Douglas Porto - RSS Feed'
+  }
+]
+
 const queries = require("./src/utils/algolia")
 
 const plugins = [
@@ -77,6 +128,24 @@ const plugins = [
       display: `minimal-ui`,
       icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
     },
+  },
+  {
+    resolve: `gatsby-plugin-feed`,
+    options: {
+      query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
+            }
+          }
+        }
+      `,
+      feeds
+    }
   },
   `gatsby-plugin-offline`,
   `gatsby-plugin-netlify-cms`,

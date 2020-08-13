@@ -20,7 +20,7 @@ O último artigo que fiz foi justamente falando se vale ou não comprar o curso 
 
 O que eu não imaginava era que a [Rocketseat](https://rocketseat.com.br/) iria mudar tanto e irei falar aqui quais foram as mudanças no curso.
 
-# Typesprit.
+# Typescript.
 
 Sim. Essa para mim foi a grande atualização do curso. Antes as aulas de ***back-end (node), front-end (React) e mobile (React-native)*** eram com javascript puro. 
 
