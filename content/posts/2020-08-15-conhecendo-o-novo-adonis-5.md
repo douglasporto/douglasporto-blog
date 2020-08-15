@@ -13,16 +13,52 @@ yarn create adonis-ts-app blog
 
 
 
-node ace serve --watch
-
-
-
 configurando banco de dados
+
+yarn add pg
 
 ```
 yarn add @adonisjs/lucid@alpha
 ```
 
+
+
+rode node ace serve --watch
+
+
+
+node ace generate:manifest
+
+
+
 ```
 node ace invoke @adonisjs/lucid
 ```
+
+
+
+\*\*\*\*\*\*olhar video na pagina <https://preview.adonisjs.com/guides/auth/setup>
+
+
+
+```
+yarn add @adonisjs/auth@alpha
+```
+
+
+
+```
+node ace invoke @adonisjs/auth
+```
+
+
+
+
+
+```
+node ace migration:run
+```
+
+## [](https://preview.adonisjs.com/guides/auth/setup#contracts-overview)Criando controller
+
+node ace make:controller Users
