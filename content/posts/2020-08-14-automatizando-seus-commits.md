@@ -2,7 +2,7 @@
 layout: post
 date: '2020-08-14 03:47:15'
 image: /assets/bg-pattern-git-commit.jpg
-title: Automatizando seus Commits
+title: Padronizando seus Commits
 description: Automatizando seus Commits
 tags:
   - frontend
