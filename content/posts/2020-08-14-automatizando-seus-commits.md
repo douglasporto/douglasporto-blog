@@ -3,7 +3,10 @@ layout: post
 date: '2020-08-14 03:47:15'
 image: /assets/bg-pattern-git-commit.jpg
 title: Padronizando seus Commits
-description: Neste post ensino a configurar 4 bibliotecas ótimas para padronizar suas mensagens de commits e automatizar o processo de commit para que todos os devs tenham deixado o projeto no padrão.
+description: >-
+  Neste post ensino a configurar 4 bibliotecas ótimas para padronizar suas
+  mensagens de commits e automatizar o processo de commit para que todos os devs
+  tenham deixado o projeto no padrão.
 tags:
   - Frontend
   - Backend
@@ -92,7 +95,7 @@ Voltamos para o `package.json` lembra do Husky? Vamos ligar essas 2 libs com ele
 Dentro do husky vamos adicionar os comandos:
 
 ```json
-prepare-commit-msg":"exec < /dev/tty && git cz --hook || true", 
+"prepare-commit-msg":"exec < /dev/tty && git cz --hook || true", 
 "commit-msg":"commitlint -E HUSKY_GIT_PARAMS"
 ```
 
@@ -109,6 +112,18 @@ Recapitulando, nosso `package.json` terá o Husky assim:
   }
 },
 ```
+
+Será necessário criar a arquivo `commitlint.config.js` contendo:
+
+```javascript
+module.exports={
+
+   extends:\['@commitlint/config-conventional'],
+
+}
+```
+
+
 
 Pronto, chegou a hora do commit. Agora vamos rodar apenas o  `git commit` e teremos este resultado:
 
