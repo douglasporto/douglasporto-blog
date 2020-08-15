@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2020-08-14 03:47:15'
-image: /assets/captura-de-tela-2020-06-10-às-13.40.31.png
+image: /assets/bg-pattern-git-commit.jpg
 title: Automatizando seus Commits
 description: Automatizando seus Commits
 tags:
