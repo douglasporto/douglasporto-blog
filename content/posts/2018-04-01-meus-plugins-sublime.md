@@ -5,9 +5,7 @@ image: /assets/bg-meus-plugins-sublime.png
 category: "DEV"
 date: 2018-04-01 00:00:01
 tags:
-  - Sublime
-  - Editor
-  - Desenvolvimento
+  - SoftSkill
 twitter_text: Os plugins que mais gosto do Sublime Text 3.
 ---
 

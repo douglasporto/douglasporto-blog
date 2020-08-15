@@ -3,7 +3,7 @@ layout: post
 date: '2020-08-14 03:47:15'
 image: /assets/bg-pattern-git-commit.jpg
 title: Padronizando seus Commits
-description: Padronizando seus Commits
+description: Neste post ensino a configurar 4 bibliotecas ótimas para padronizar suas mensagens de commits e automatizar o processo de commit para que todos os devs tenham deixado o projeto no padrão.
 tags:
   - Frontend
   - Backend
@@ -16,7 +16,7 @@ Hoje vou falar sobre automatizar padrões de código e também padronizar commit
 
 Uma estrutura que costumo fazer em praticamente todos meus projetos javascript.
 
-### Automatizar padrões de código
+## Automatizar padrões de código
 
 Para automatizar nossos códigos vamos usar um carinha chamado [Husky](https://github.com/typicode/huskyhttps://github.com/typicode/husky).
 
@@ -59,7 +59,7 @@ Husky irá começar a rodar e logo após fazer as tarefas mostrará assim:
 
 Pronto! Próxima configuração.
 
-### Padronizar commits
+## Padronizar commits
 
 Quantas vezes tentamos olhar no `git log` o que foi alterado, quando foi, se foi fix, feature nova, enfim, quem nunca se perdeu no meio de tanto `commit` e não tem ideia sobre o que aquele commit de fato referenciava?
 
@@ -124,7 +124,7 @@ Seus commits ficarão assim:
 
 No começo não mudará muito, mas depois quando tiver uma lista grande de commits tudo organizado indicando o que cada commit resolveu, irá agradecer demais o commitizen.
 
-### Conclusão
+## Conclusão
 
 Me diz ai, já conhecia alguma dessas libs? Já sabia que era possível utiliza-las juntas?
 

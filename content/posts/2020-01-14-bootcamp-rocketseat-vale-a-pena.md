@@ -5,10 +5,7 @@ image: /assets/bg-rocketseat-vale-pena.png
 title: 'Bootcamp Rocketseat, vale a pena?'
 description: O famoso curso bootcamp da Rocketseat realmente vale o valor?
 tags:
-  - javascript
-  - react
-  - react-native
-  - node
+  - SoftSkill
 ---
 **Faaaala deeev!!!**
 

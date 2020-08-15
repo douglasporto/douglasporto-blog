@@ -5,8 +5,7 @@ image: /assets/vuejs.jpg
 category: "Front-End"
 date: 2018-03-28 00:00:01
 tags:
-  - VueJs
-  - Javascript
+  - Frontend
 twitter_text: Uma pequena introdução ao Framework em javascript, Vuejs.
 ---
 

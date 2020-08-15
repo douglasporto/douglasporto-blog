@@ -23,4 +23,7 @@ export const Title = styled.h2`
   &:not(:last-child) {
     margin-bottom: ${V.Space.sm};
   }
+  span {
+    padding-left: 1rem;
+  }
 `

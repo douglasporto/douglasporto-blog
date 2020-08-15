@@ -9,7 +9,7 @@ export default function FooterBlog() {
     <>
       <S.Container>
         <S.Title>
-          Encontrou algum erro? Pow... me ajuda ae!
+          Encontrou algum erro? Pow... me ajuda ae! 
           <span className="small" role="img" aria-label="Emoji sorrindo">
             😁
           </span>
@@ -18,7 +18,7 @@ export default function FooterBlog() {
           Como esse blog é open source, então é só alterar o arquivo de texto,{" "}
           <ExternalLink
             to="https://github.com/douglasporto/douglasporto-blog/tree/master/content/posts"
-            title="Ver Twitter"
+            title="Alterar post"
           >
             no próprio Github
           </ExternalLink>{" "}
@@ -27,14 +27,17 @@ export default function FooterBlog() {
       </S.Container>
       <S.Container>
         <S.Title>
-          Quer conhecer mais meu trabalho? Sigam-me os bons!!!
+          Quer conhecer mais meu trabalho? Sigam-me os bons!!! 
           <span
             className="small"
             role="img"
             aria-label="Emoji mostrando a lingua"
-          >
-            😜
-          </span>
+          >😜</span>
+          <span
+            className="small"
+            role="img"
+            aria-label="Emoji foguete"
+          >🚀</span>
         </S.Title>
         <p>
           - Twitter:{" "}
@@ -43,14 +46,14 @@ export default function FooterBlog() {
           </ExternalLink>{" "}
           <br />- Github:{" "}
           <ExternalLink
-            href="https://github.com/douglasporto"
+            to="https://github.com/douglasporto"
             title="Ver Github"
           >
             @douglasporto
           </ExternalLink>{" "}
           <br />- Linkedin:{" "}
           <ExternalLink
-            href="https://www.linkedin.com/in/douglas-porto/"
+            to="https://www.linkedin.com/in/douglas-porto/"
             title="Ver Linkedin"
           >
             @douglas-porto

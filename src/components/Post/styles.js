@@ -21,11 +21,13 @@ export const PostHeader = styled.header`
   `}
 `
 
+export const Tags = styled.div`
+  margin: 0 0 2rem 0;
+`
+
 export const PostTitle = styled.h1`
   font-size: 4rem;
   font-weight: 700;
-  padding: 0 1.4rem 1.8rem 0;
-  margin: 1rem auto;
 `
 
 export const PostDescription = styled.h2`
@@ -43,6 +45,7 @@ export const PostDate = styled.p`
 export const MainContent = styled.section`
   margin: auto;
   margin-bottom: 10rem;
+  margin-top: 5rem;
   ${media.greaterThan("medium")`
     padding-left: ${V.Space.default};
     padding-right: ${V.Space.default};
@@ -74,7 +77,7 @@ export const MainContent = styled.section`
   h3,
   h4,
   h5 {
-    margin: 2.4rem auto 1rem;
+    margin: 4.4rem auto 2rem;
   }
   ul,
   ol {

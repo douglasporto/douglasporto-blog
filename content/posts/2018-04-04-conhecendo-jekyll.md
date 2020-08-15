@@ -5,11 +5,7 @@ image: /assets/bg-conhecendo-jekyll.png
 category: "Front-End"
 date: 2018-04-04 00:00:01
 tags:
-  - Jekyll
-  - HTML
-  - Site
-  - Blog
-  - Github
+  - Frontend
 twitter_text: Problemas com plugins do WordPress NUNCA MAIS. Jekyll, o melhor gerador de site estático feito para desenvolvedores.
 ---
 

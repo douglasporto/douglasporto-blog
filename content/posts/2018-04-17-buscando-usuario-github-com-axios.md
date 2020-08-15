@@ -5,12 +5,7 @@ image: /assets/header-axios-vuejs.png
 category: "Front-End"
 date: 2018-04-17 00:00:01
 tags:
-  - Vue.js
-  - Vue
-  - API
-  - Rest Ful
-  - RestFul
-  - GitHub
+  - Frontend
 twitter_text: Vamos aprender na prática como fazer uma requisição AXIOS na API do GitHub.
 ---
 

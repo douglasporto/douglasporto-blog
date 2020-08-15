@@ -7,10 +7,7 @@ description: >-
   O famoso curso bootcamp da Rocketseat deu uma repaginada e agora realmente
   vale o valor?
 tags:
-  - javascript
-  - react
-  - react-native
-  - node
+  - SoftSkill
 ---
 **Faaaala deeev!!!**
 

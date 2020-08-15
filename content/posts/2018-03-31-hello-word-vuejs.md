@@ -5,8 +5,7 @@ image: /assets/hellovue.png
 category: "Front-End"
 date: 2018-03-31 00:00:01
 tags:
-  - VueJs
-  - Javascript
+  - Frontend
 twitter_text: Um simples Hello World em Vue.js.
 ---
 

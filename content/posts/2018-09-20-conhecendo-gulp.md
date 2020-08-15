@@ -5,9 +5,8 @@ image: /assets/bg-know-gulp.png
 category: "Front-End"
 date: 2018-09-20 00:00:01
 tags:
-  - Gulp
-  - Javascript
-  - Automatizador de Tarefas
+  - Frontend
+  - Backend
 twitter_text: Conheça o mundo dos automatizador de tarefas Gulp.
 ---
 

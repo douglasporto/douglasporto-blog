@@ -9,6 +9,7 @@ import Layout from "@components/Layout"
 import * as S from "@components/Post/styles"
 import RecommendedPosts from "@components/RecommendedPosts"
 import SEO from "@components/seo"
+import Tags from "@components/Tags"
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -33,8 +34,12 @@ const BlogPost = ({ data, pageContext }) => {
           <span> · Leitura de {post.timeToRead} min</span>
         </S.PostDate>
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
+        {post.frontmatter.tags && (
+        <S.Tags>
+          <Tags tags={post.frontmatter.tags} />
+        </S.Tags>
+      )}
         <Img fluid={featuredImgFluid} />
-        <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
       </S.PostHeader>
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>

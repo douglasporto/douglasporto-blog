@@ -5,10 +5,7 @@ image: /assets/bg-colocando-stylus.png
 category: "Front-End"
 date: 2018-04-09 00:00:01
 tags:
-  - CSS
-  - Site
-  - Blog
-  - Pré-Processador
+  - Frontend
 twitter_text: Você já ouviu falar em Pré-Processador CSS? Conheça o Stylus e seja mais produtivo.
 ---
 
