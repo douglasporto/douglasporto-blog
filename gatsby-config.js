@@ -214,7 +214,7 @@ module.exports = {
     author: `Douglas Porto`,
     position: "Web Developer",
     description: `Site pessoal e blog de um desenvolvedor Front-end apaixonado por tecnologia.`,
-    siteUrl: 'https://douglasporto.com.br',
+    siteUrl: 'https://douglasporto.com.br/',
     social: {
       twitter: `dgsapenas`,
       twitterLink: `https://twitter.com/dgsapenas`,
