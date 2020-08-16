@@ -5,6 +5,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+const queries = require("./src/utils/algolia")
+
 const feeds = [
   {
     serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -49,8 +51,6 @@ const feeds = [
     title: 'Douglas Porto - RSS Feed'
   }
 ]
-
-const queries = require("./src/utils/algolia")
 
 const plugins = [
   `gatsby-transformer-sharp`,
@@ -117,18 +117,6 @@ const plugins = [
   },
   `gatsby-plugin-sitemap`,
   {
-    resolve: `gatsby-plugin-manifest`,
-    options: {
-      name: `Douglas Porto`,
-      short_name: `Douglas Porto`,
-      start_url: `/`,
-      background_color: `#1da1f2`,
-      theme_color: `#1da1f2`,
-      display: `minimal-ui`,
-      icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-    },
-  },
-  {
     resolve: `gatsby-plugin-feed`,
     options: {
       query: `
@@ -143,8 +131,55 @@ const plugins = [
           }
         }
       `,
-      feeds
+      feeds: [
+        {
+          serialize: ({ query: { site, allMarkdownRemark } }) => {
+            return allMarkdownRemark.edges.map(edge => {
+              return Object.assign({}, edge.node.frontmatter, {
+                description: edge.node.excerpt,
+                date: edge.node.frontmatter.date,
+                url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                custom_elements: [{ "content:encoded": edge.node.html }],
+              })
+            })
+          },
+          query: `
+            {
+              allMarkdownRemark(
+                sort: { order: DESC, fields: [frontmatter___date] },
+              ) {
+                edges {
+                  node {
+                    excerpt
+                    html
+                    fields { slug }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            }
+          `,
+          output: '/feed.xml',
+          title: 'Douglas Porto - RSS Feed',
+        },
+      ],
     }
+  },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `Douglas Porto`,
+      short_name: `Douglas Porto`,
+      start_url: `/`,
+      background_color: `#1da1f2`,
+      theme_color: `#1da1f2`,
+      display: `minimal-ui`,
+      icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+    },
   },
   `gatsby-plugin-offline`,
   `gatsby-plugin-netlify-cms`,
