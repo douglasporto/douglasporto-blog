@@ -11,8 +11,6 @@ tags:
 yarn create adonis-ts-app blog
 ```
 
-
-
 configurando banco de dados
 
 yarn add pg
@@ -21,39 +19,23 @@ yarn add pg
 yarn add @adonisjs/lucid@alpha
 ```
 
-
-
 rode node ace serve --watch
 
-
-
 node ace generate:manifest
-
-
 
 ```
 node ace invoke @adonisjs/lucid
 ```
 
-
-
 \*\*\*\*\*\*olhar video na pagina <https://preview.adonisjs.com/guides/auth/setup>
-
-
 
 ```
 yarn add @adonisjs/auth@alpha
 ```
 
-
-
 ```
 node ace invoke @adonisjs/auth
 ```
-
-
-
-
 
 ```
 node ace migration:run
