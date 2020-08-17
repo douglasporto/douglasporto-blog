@@ -23,7 +23,7 @@ Uma estrutura que costumo fazer em praticamente todos meus projetos javascript.
 
 Para automatizar nossos códigos vamos usar um carinha chamado [Husky](https://github.com/typicode/huskyhttps://github.com/typicode/husky).
 
-Digamos que vamos querer varrer nosso código para ver se não ficou nenhum erro acusado pelo [Eslint](https://eslint.org/) automáticamente. Por isso e outros motivos que utilizamos essa maravilhosa lib.
+Digamos que vamos querer varrer nosso código para ver se não ficou nenhum erro acusado pelo [Eslint](https://eslint.org/) automaticamente. Por isso e outros motivos que utilizamos essa maravilhosa lib.
 
 Dentro do nosso `.git` é possível encontrar hooks, que ao configura-los podemos fazer praticamente tudo que quisermos antes ou depois de qualquer comando [GIT](https://git-scm.com/). 
 
