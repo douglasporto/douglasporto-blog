@@ -19,7 +19,7 @@ export default function Author({ fullText }) {
       <S.Description>
         Meu nome é <span itemProp="name">Douglas Porto</span> e sou apaixonado
         por tecnologia. Trabalho com desenvolvimento Web desde 2010 onde
-        trabalhe por 9 anos com sistema para callcenter do{" "}
+        trabalhei por 9 anos com sistema para callcenter do{" "}
         <ExternalLink to="https://financiamentos.bradesco/">
           Banco Bradeco
         </ExternalLink>
