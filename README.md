@@ -9,19 +9,13 @@
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/douglasporto/douglasporto-blog.svg">
-
   <a href="https://www.codacy.com/manual/douglasporto/douglasporto-blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=douglasporto/douglasporto-blog&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/7404d577a80446cdb2db39907a66182c"/></a>
-
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/douglasporto/douglasporto-blog.svg">
   <a href="https://github.com/douglasporto/douglasporto-blog/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/douglasporto/douglasporto-blog.svg">
-  </a>
-
-  <a href="https://github.com/douglasporto/douglasporto-blog/issues">
+  </a><a href="https://github.com/douglasporto/douglasporto-blog/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/douglasporto/douglasporto-blog.svg">
-  </a>
-
-  <img alt="GitHub" src="https://img.shields.io/github/license/douglasporto/douglasporto-blog.svg">
+  </a><img alt="GitHub" src="https://img.shields.io/github/license/douglasporto/douglasporto-blog.svg">
 </p>
 
 <p align="center">
