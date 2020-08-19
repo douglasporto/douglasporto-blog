@@ -12,8 +12,7 @@
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/douglasporto/douglasporto-blog.svg">
 
-  <a href="https://www.codacy.com/app/douglasporto/douglasporto-blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=douglasporto/douglasporto-blog&amp;utm_campaign=Badge_Grade">
-  <img src="https://api.codacy.com/project/badge/Grade/dfc7b01a340941ab9bbe582f9a86e908"/></a>
+  <a href="https://www.codacy.com/manual/douglasporto/douglasporto-blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=douglasporto/douglasporto-blog&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/7404d577a80446cdb2db39907a66182c"/></a>
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/douglasporto/douglasporto-blog.svg">
   <a href="https://github.com/douglasporto/douglasporto-blog/commits/master">
