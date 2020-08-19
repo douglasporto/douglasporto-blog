@@ -92,6 +92,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2fac954af82e406180efc812b9dd51ad)](https://app.codacy.com/manual/douglasporto/douglasporto-blog?utm_source=github.com&utm_medium=referral&utm_content=douglasporto/douglasporto-blog&utm_campaign=Badge_Grade_Dashboard)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
