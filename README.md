@@ -5,8 +5,12 @@
 </h1>
 
 <h4 align="center">
-  A blog for share my know about web development [Blog](https://douglasporto.com.br)
+  A blog for share my know about web development 
+   <br> 
 </h4>
+<p align="center">
+  [Blog](https://douglasporto.com.br)
+</p>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/douglasporto/douglasporto-blog.svg">
   <a href="https://www.codacy.com/manual/douglasporto/douglasporto-blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=douglasporto/douglasporto-blog&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/7404d577a80446cdb2db39907a66182c"/></a>
