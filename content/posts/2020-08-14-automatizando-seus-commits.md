@@ -74,19 +74,19 @@ Estou falando do [Commit lint](https://github.com/conventional-changelog/commitl
 
 Vamos instalar as 2 libs,
 
-```
+```bash
 yarn add  @commitlint/config-conventional @commitlint/cli commitizen -D 
 ```
 
 Com as libs instaladas vamos configura-las.
 
-```
+```bash
 npm commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
 
 ou se usa `yarn`
 
-```
+```bash
 yarn commitizen init cz-conventional-changelog --yarn --dev --exact
 ```
 
