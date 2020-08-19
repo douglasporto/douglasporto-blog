@@ -5,7 +5,7 @@
 </h1>
 
 <h4 align="center">
-  A blog for share my know about web development [See the blog](https://douglasporto.com.br)
+  A blog for share my know about web development [Blog](https://douglasporto.com.br)
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/douglasporto/douglasporto-blog.svg">
