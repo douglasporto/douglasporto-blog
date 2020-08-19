@@ -9,8 +9,7 @@
    <br> 
 </h4>
 <p align="center">
-  [Blog](https://douglasporto.com.br)
-    [ReactJS](https://reactjs.org/)
+  [Dgs Blog's](https://douglasporto.com.br)
 </p>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/douglasporto/douglasporto-blog.svg">
