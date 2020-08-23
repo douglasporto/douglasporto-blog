@@ -104,7 +104,7 @@ Então no `prepare..` estamos preparando o commit, no `commit-msg` vamos garanti
 Recapitulando, nosso `package.json` terá o Husky assim:
 
 ```json
- "husky":{
+"husky":{
   "hooks":{
     "pre-commit":"lint-staged",
     "prepare-commit-msg":"exec < /dev/tty && git cz --hook || true",
@@ -117,9 +117,7 @@ Será necessário criar a arquivo `commitlint.config.js` contendo:
 
 ```javascript
 module.exports={
-
-   extends:\['@commitlint/config-conventional'],
-
+  extends: ['@commitlint/config-conventional']
 }
 ```
 
