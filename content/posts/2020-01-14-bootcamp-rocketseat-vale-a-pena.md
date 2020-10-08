@@ -39,7 +39,7 @@ As lives de inglês é um bate-papo com uma professora de inglês dando varias d
 
 * Mentorias
 
-Essas lives, na minha opinião, são as melhores. São mentorias sobre desenvolvimento pessoal. Sim, me ajudou muito em diversas coisas, como por exemplo, arrumar [meu linkedIn](https://www.linkedin.com/in/douglas-porto/https://www.linkedin.com/in/douglas-porto/) para que seja mais visto. E não é que deu certo?
+Essas lives, na minha opinião, são as melhores. São mentorias sobre desenvolvimento pessoal. Sim, me ajudou muito em diversas coisas, como por exemplo, arrumar [meu linkedIn](https://www.linkedin.com/in/douglas-porto/) para que seja mais visto. E não é que deu certo?
 
 Recebia no mínimo 2 propostas de emprego por dia!
 
@@ -67,7 +67,7 @@ Caso queira ver, este é meu projeto final [Github](https://github.com/douglaspo
 
 ![Meetapp](/assets/meetapp.png "Meetapp")
 
-Depois de enviar seu código basta aguardar ansiosamente pela nota e feedback. Depois de enviar seu código basta aguardar ansiosamente pela nota e feedback.
+Depois de enviar seu código basta aguardar ansiosamente pela nota e feedback.
 
 ![Nota Bootcamp](/assets/nota-bootcamp.jpeg "Nota Bootcamp")
 
