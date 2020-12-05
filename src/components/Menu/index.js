@@ -19,6 +19,7 @@ export default function Menu() {
           direction="down"
           duration={0.8}
           to={link.url}
+          target={link.target}
           activeClassName="active"
         >
           {link.label}

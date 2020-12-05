@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { GithubAlt, Twitter, LinkedinIn } from "styled-icons/fa-brands"
+import { GithubAlt, Twitter, LinkedinIn, Twitch } from "styled-icons/fa-brands"
 import media from "styled-media-query"
 
 import * as T from "@styles/typography"
@@ -15,6 +15,12 @@ export const Container = styled.nav`
     `}
 `
 
+const styleBorderLink = `
+  &:after {
+    background-color: #9147ff;
+  }
+`
+
 export const IconLink = styled.a.attrs(props => ({
   target: "_blank",
   href: props.to,
@@ -26,6 +32,11 @@ export const IconLink = styled.a.attrs(props => ({
   ${media.lessThan("medium")`
       margin: 2rem
   `}
+  ${props => props.borderColor &&
+    `&:after {
+      background-color: ${props.borderColor}
+    }`
+  }
 `
 
 const styleIcon = `
@@ -46,3 +57,9 @@ export const IconTwitter = styled(Twitter)`
 export const IconLinkedinIn = styled(LinkedinIn)`
   ${styleIcon}
 `
+
+export const IconTwitch = styled(Twitch)`
+  ${styleIcon}
+  &:hover {
+    color: #9147ff;
+  }`

@@ -16,6 +16,9 @@ export default function Social({ footer = false }) {
       <S.IconLink to="https://www.linkedin.com/in/douglas-porto/">
         <S.IconLinkedinIn />
       </S.IconLink>
+      <S.IconLink to="https://www.twitch.tv/dgsapenas" borderColor="#9147ff">
+        <S.IconTwitch />
+      </S.IconLink>
       {!footer && <LightButton />}
     </S.Container>
   )
