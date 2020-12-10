@@ -1,3 +1,5 @@
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 import styled from "styled-components"
 import media from "styled-media-query"
 
@@ -39,3 +41,11 @@ export const Menu = styled.nav`
     }
   }
 `
+
+export const StyleLink = styled(AniLink)`
+  ${props => props.hideMobile &&
+    media.lessThan("medium")`
+      display: none !important;
+    `
+  }
+`;

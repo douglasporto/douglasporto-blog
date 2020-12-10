@@ -46,6 +46,7 @@ const styleIcon = `
   &:hover {
     color: var(--headerFontColor);
   }`
+
 export const IconGithub = styled(GithubAlt)`
   ${styleIcon}
 `

@@ -1,7 +1,5 @@
 import React from "react"
 
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-
 import { getActiveTheme } from "@utils/themes"
 
 import menuLinks from "./content"
@@ -11,9 +9,9 @@ export default function Menu() {
   return (
     <S.Menu>
       {menuLinks.map((link, i) => (
-        <AniLink
+        <S.StyleLink
+          hideMobile={link.hideMobile}
           partiallyActive={true}
-          key={i}
           cover
           bg={getActiveTheme()}
           direction="down"
@@ -23,7 +21,7 @@ export default function Menu() {
           activeClassName="active"
         >
           {link.label}
-        </AniLink>
+        </S.StyleLink>
       ))}
     </S.Menu>
   )

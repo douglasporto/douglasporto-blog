@@ -10,11 +10,13 @@ const menuLinks = [
   {
     label: "dicionário",
     url: "/dicionary/",
+    hideMobile: true
   },
   {
     label: "Live Coding",
     url: "https://www.twitch.tv/dgsapenas",
     target: '_blank',
+    hideMobile: true
   },
 ]
 
