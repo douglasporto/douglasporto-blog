@@ -1,9 +1,9 @@
 ---
 layout: post
-date: '2021-05-07 02:14:27'
+date: 2021-05-07 02:14:27
 image: /assets/recolocacao.png
-title: 'Mudanças: recolocação profissional'
-description: 'Série Mudança: parte 1 de 3'
+title: "Mudanças: recolocação profissional"
+description: "Série Mudança: parte 1 de 3"
 tags:
   - alura
   - rocketseat
@@ -17,7 +17,7 @@ Caso esteja vindo pelo instagram, esse meu site/blog utilizo mais para compartil
 
 No caso de você já ter conhecido, provavelmente veio porque se interessa por programação. Então neste texto iremos notar que não falaremos de algum conteúdo técnico, mas sim sobre desenvolvimento pessoal.
 
-#### Começo de tudo.
+### Começo de tudo.
 
 Antes de mais nada, devo fazer um breve relato da minha história profissional, pelo menos de uma parte dela.
 
