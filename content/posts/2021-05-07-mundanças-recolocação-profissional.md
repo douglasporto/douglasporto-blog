@@ -8,7 +8,6 @@ tags:
   - alura
   - rocketseat
   - recolocacao
-  - ''
 ---
 Salve galera!
 
