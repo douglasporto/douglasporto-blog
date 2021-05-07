@@ -1,8 +1,11 @@
 import React from "react"
 
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import PropTypes from "prop-types"
+
+import { getActiveTheme } from "@utils/themes"
+
 
 import Avatar from "@components/Avatar"
 import Menu from "@components/Menu"
@@ -15,12 +18,26 @@ const Header = ({ site: { author } }) => {
     <S.Header>
       <S.Content>
         <S.Nav>
-          <Link to="/">
+          <AniLink 
+            to="/"
+            partiallyActive={true}
+            cover
+            bg={getActiveTheme()}
+            direction="down"
+            duration={0.8}
+          >
             <Avatar />
-          </Link>
-          <Link to="/">
+          </AniLink>
+          <AniLink 
+            to="/"
+            partiallyActive={true}
+            cover
+            bg={getActiveTheme()}
+            direction="down"
+            duration={0.8}
+          >
             <S.Title></S.Title>
-          </Link>
+          </AniLink>
         </S.Nav>
         <S.Menu>
           <Menu />

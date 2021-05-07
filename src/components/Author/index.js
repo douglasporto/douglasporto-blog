@@ -10,7 +10,7 @@ import * as S from "./styles"
 export default function Author({ fullText }) {
   return (
     <S.Container>
-      <S.Header>What`s up Maaann!!!</S.Header>
+      <S.Header>What`s up guy!!!</S.Header>
       {fullText && (
         <S.Avatar>
           <Avatar large={true} />

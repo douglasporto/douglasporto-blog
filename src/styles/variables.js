@@ -51,7 +51,8 @@ export const Color = {
   grayLighter: `#efefef`,
   grayWhite: `#f1f1f1`,
   yellow: `#e6af05`,
-  themeColor: "rgba(29,161,242,1.00)",
+  // themeColor: "rgba(29,161,242,1.00)",
+  themeColor: "#9147ff",
   /* themeColor: "#7159c1", */
 }
 
