@@ -3,7 +3,7 @@ layout: post
 date: '2021-05-07 02:14:27'
 image: /assets/recolocacao-profissional-o-que-e.jpeg
 title: 'Mudanças: recolocação profissinal'
-description: 'Série Mudança: 1 de 3'
+description: 'Série Mudança: parte 1 de 3'
 tags:
   - alura
   - rocketseat
@@ -36,7 +36,7 @@ As constantes mudanças de regras e atitudes da diretoria fez com que muitos sa�
 
 Chegou a hora de traçar um plano, uma nova meta: chegou a hora de mudar.
 
-Estudei por 3 anos seguidos. Acordando muito cedo. No almoço, gastava no máximo 20 minutos comendo e usava o resto do tempo para estudar. Sem falar dos inúmeros meetup que fui.
+Estudei por 3 anos seguidos. Acordando muito cedo. No almoço, gastava no máximo 20 minutos comendo e usava o resto do tempo para estudar. Sem falar dos inúmeros meetups que fui.
 
 Quando me senti preparado, comecei a aceitar freelas e testar de fato todo conhecimento adquirido através de cursos como [Alura](https://www.alura.com.br/), [SchoolOfNet](https://www.schoolofnet.com/), [Rocketseat](https://rocketseat.com.br) e etc, sem falar nos conteúdos riquíssimos de [Fabio Vedovelli](https://twitter.com/vedovelli74), [Willian Justen](https://willianjusten.com.br/) e etc.
 
@@ -52,7 +52,7 @@ Me reencontrei profissionalmente novamente. Tudo que aprendia de novo, podia col
 
 ### Conclusão da parte 1
 
-Medo todos temos. Já estava casado quando aceitei esse novo desafio. Já tinha compromissos das quais dependiam muito de mim. 
+Medo todos temos. Já estava casado quando aceitei esse novo desafio. Já tinha compromissos dos quais dependiam muito de mim. 
 
 Mas se não confiasse em mim, jamais descobriria o quanto essa área me faz feliz. 
 
