@@ -1,7 +1,5 @@
 import React from "react"
 
-import LightButton from "@components/LightButton"
-
 import * as S from "./styles"
 
 export default function Social({ footer = false }) {
@@ -19,7 +17,6 @@ export default function Social({ footer = false }) {
       <S.IconLink to="https://www.twitch.tv/dgsapenas" borderColor="#9147ff">
         <S.IconTwitch />
       </S.IconLink>
-      {!footer && <LightButton />}
     </S.Container>
   )
 }

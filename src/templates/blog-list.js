@@ -48,7 +48,7 @@ const BlogList = props => {
               isVisible={true}
             >
               <PostItems
-                slug={slug}
+                slug={slug.substr(5)}
                 date={date}
                 timeToRead={timeToRead}
                 title={title}

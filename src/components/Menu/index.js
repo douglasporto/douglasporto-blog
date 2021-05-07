@@ -2,6 +2,9 @@ import React from "react"
 
 import { getActiveTheme } from "@utils/themes"
 
+import LightButton from "@components/LightButton"
+
+
 import menuLinks from "./content"
 import * as S from "./styles"
 
@@ -23,6 +26,7 @@ export default function Menu() {
           {link.label}
         </S.StyleLink>
       ))}
+      <LightButton />
     </S.Menu>
   )
 }
