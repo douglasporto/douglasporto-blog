@@ -12,7 +12,7 @@ tags:
 ---
 Salve galera!
 
-Sejam muito bem-vindos.
+Sejam muito bem-vindos. 🤟
 
 Caso esteja vindo pelo instagram, esse meu site/blog utilizo mais para compartilhar informações técnicas da minha profissão: **desenvolvedor web.** Por esse motivo você deve não ter conhecido este site.
 
