@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2021-05-07 02:14:27'
-image: /assets/recolocacao-profissional-o-que-e.jpeg
+image: /assets/recolocacao.png
 title: 'Mudanças: recolocação profissional'
 description: 'Série Mudança: parte 1 de 3'
 tags:
