@@ -39,7 +39,7 @@ const IndexPage = () => {
   const postList = allMarkdownRemark.edges
   return (
     <Layout>
-      <SEO />
+      <SEO title="Home" />
       <GridTemplate>
         <Animated
           animationIn="flipInX"
