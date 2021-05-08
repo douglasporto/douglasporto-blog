@@ -9,17 +9,23 @@ import * as V from "@styles/variables"
 export const TagsContainer = styled.div`
   display: flex;
 `
-export const TagsItems = styled(Link)`
+export const TagsItems = styled.div`
   ${T.Small}
-  text-decoration: none;
-  &:hover {
-    color: var(--themeColor);
-  }
   &:not(:last-child) {
     margin-right: ${V.Space.xxs};
     &:after {
       content: ", ";
       height: 3rem;
     }
+  }
+`
+
+export const TagsItemsLink = styled(Link)`
+  text-decoration: none;
+  &:visited {
+    color: inherit
+  }
+  &:hover {
+    color: var(--themeColor);
   }
 `

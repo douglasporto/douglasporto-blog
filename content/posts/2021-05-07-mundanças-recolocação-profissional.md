@@ -5,9 +5,7 @@ image: /assets/recolocacao.png
 title: "Mudanças: recolocação profissional"
 description: "Série Mudança: parte 1 de 3"
 tags:
-  - alura
-  - rocketseat
-  - recolocacao
+  - SoftSkill
 ---
 Salve galera!
 

@@ -10,18 +10,27 @@ import * as S from "./styles"
 export default function Author({ fullText }) {
   return (
     <S.Container>
-      <S.Header>What`s up guy!!!</S.Header>
       {fullText && (
         <S.Avatar>
           <Avatar large={true} />
         </S.Avatar>
       )}
+      <S.Header>
+      {!fullText &&
+        (<img
+          src="https://media.giphy.com/media/1r8YvFB47nAsAy36mp/giphy.gif" 
+          width="100px"
+          alt="Mile Morales say hello"
+        />)
+      }
+        What`s up guy!!!
+      </S.Header>
       <S.Description>
         Meu nome é <span itemProp="name">Douglas Porto</span> e sou apaixonado
         por tecnologia. Trabalho com desenvolvimento Web desde 2010 onde
         trabalhei por 9 anos com sistema para callcenter do{" "}
         <ExternalLink to="https://financiamentos.bradesco/">
-          Banco Bradeco
+          Banco Bradesco
         </ExternalLink>
       </S.Description>
       <S.Description>

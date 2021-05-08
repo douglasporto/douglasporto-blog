@@ -48,7 +48,7 @@ const BlogList = props => {
               isVisible={true}
             >
               <PostItems
-                slug={slug.substr(5)}
+                slug={slug}
                 date={date}
                 timeToRead={timeToRead}
                 title={title}
@@ -72,7 +72,7 @@ const BlogList = props => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Blog" />
       <GridTemplate>
         <Search
           algolia={algolia}

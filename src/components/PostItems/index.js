@@ -24,7 +24,7 @@ export default function PostItems({
           <span> · Leitura de {timeToRead} min</span>
         </D.DateTime>
       )}
-      <ButtonLink rel={title} to={slug}>
+      <ButtonLink rel={title} to={`/${slug}`}>
         <S.Title>{title}</S.Title>
       </ButtonLink>
       {tags && (
@@ -45,4 +45,5 @@ PostItems.propTypes = {
   tags: PropTypes.array,
   description: PropTypes.string,
   isMini: PropTypes.bool,
+  hasLink: PropTypes.bool,
 }

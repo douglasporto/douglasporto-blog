@@ -36,7 +36,7 @@ const BlogPost = ({ data, pageContext }) => {
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         {post.frontmatter.tags && (
         <S.Tags>
-          <Tags tags={post.frontmatter.tags} />
+          <Tags hasLink={true} tags={post.frontmatter.tags} />
         </S.Tags>
       )}
         <Img fluid={featuredImgFluid} />
