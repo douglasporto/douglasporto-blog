@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2021-05-18 01:01:09
-image: assets/recolocacao.png
+image: assets/interno.jpg
 title: "Mudanças: empreendedor interno"
 description: "Série Mudança: parte 2 de 3"
 tags:
