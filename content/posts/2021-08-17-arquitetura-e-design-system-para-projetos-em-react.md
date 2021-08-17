@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2021-08-17 02:24:33
-image: assets/arq-design-react.png
+image: /assets/arq-design-react.png
 title: Arquitetura e Design System para projetos em React
 description: Arquitetura na prática para aquele seu projeto em react
 tags:
@@ -25,7 +25,7 @@ Mas uma breve, muito breve mesmo, informação sobre é que essa arquitetura foi
 
 Onde encontramos 5 estágios: átomos, moléculas, organismos, modelos e paginas.
 
-![Atomic Design](assets/atomic-design.png "Atomic Design")
+![Atomic Design](/assets/atomic-design.png "Atomic Design")
 
 Num exemplo prático, átomos poderia ser um botão. A molécula seria esse botão (átomo) com outro átomo, talvez um icone. E assim por diante até chegarmos na maior composição que é a página.
 
