@@ -160,6 +160,8 @@ Então nesta página terá uma pasta especifica para os cartão do autor (Author
       - styles.scss
 ```
 
+Exemplo do nosso componente AuthorCard utilizando suas moléculas.
+
 ```jsx
   import { Card } from 'src/DesignSystem/System/Card'
 
