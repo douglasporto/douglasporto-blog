@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2021-08-25 03:33:19
-image: assets/templates-next.png
+image: /assets/templates-next.png
 title: Como criar templates de páginas no Next.js
-description: Criando templates para págians com Next.js
+description: Criando templates para páginas com Next.js
 tags:
   - Frontend
 ---
