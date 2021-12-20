@@ -25,7 +25,7 @@ export default function Author({ fullText }) {
       }
         What`s up guy!!!
       </S.Header>
-      <S.Description>
+      {/* <S.Description>
         Meu nome é <span itemProp="name">Douglas Porto</span> e sou apaixonado
         por tecnologia. Trabalho com desenvolvimento Web desde 2010 onde
         trabalhei por 9 anos com sistema para callcenter do{" "}
@@ -37,7 +37,7 @@ export default function Author({ fullText }) {
         Hoje me considero FullStack, podendo trabalhar com BackEnd tanto quanto
         FrontEnd. Atualmente trabalhando na{" "}
         <ExternalLink to="https://fabapp.com">FabApp.</ExternalLink>
-      </S.Description>
+      </S.Description> */}
       {fullText && (
         <>
           <S.Description>
