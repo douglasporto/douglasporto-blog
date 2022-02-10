@@ -1,73 +1,39 @@
-<h1 align="center">
-    <img src="https://i.ibb.co/2y9RZ3s/IMG-3384.png" width="100px" />
-    <br>
-    My person blog
-</h1>
+# A statically generated blog example using Next.js, Markdown, and TypeScript
 
-<h4 align="center">
-  A blog for share my know about web development 
-   <br> 
-</h4>
-<p align="center">
-  [Dgs Blog's](https://douglasporto.com.br)
-</p>
-<p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/douglasporto/douglasporto-blog.svg">
-  <a href="https://www.codacy.com/manual/douglasporto/douglasporto-blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=douglasporto/douglasporto-blog&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/7404d577a80446cdb2db39907a66182c"/></a>
-  <a href="https://github.com/douglasporto/douglasporto-blog/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/douglasporto/douglasporto-blog.svg">
-  </a><a href="https://github.com/douglasporto/douglasporto-blog/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/douglasporto/douglasporto-blog.svg">
-  </a><img alt="GitHub" src="https://img.shields.io/github/license/douglasporto/douglasporto-blog.svg">
-</p>
+This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
 
-<p align="center">
-  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
-</p>
+This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using Markdown files as the data source.
 
+The blog posts are stored in `/_posts` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
 
-![App Screenshot](https://i.ibb.co/bKJLPtM/Captura-de-Tela-2020-08-18-a-s-21-08-57.png)
-![App Screenshot](https://i.ibb.co/FgnJk1v/Captura-de-Tela-2020-08-18-a-s-21-18-08.png)
+To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
 
-## :rocket: Technologies
+## Preview
 
-This project was developed by Gatsby and hosted on [netlify](https://www.netlify.com/). You can check here -> [Blog](https://douglasporto.com.br)
+Preview the example live on [StackBlitz](http://stackblitz.com/):
 
-### FRONT-END
--   [ReactJS](https://reactjs.org/)
--   [GatsbyJS](https://www.gatsbyjs.org/docs/gatsby-starters/)
--   [styled-components](https://www.styled-components.com/)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/blog-starter-typescript)
 
-## :information_source: How To Use
+## Deploy your own
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.15][nodejs] or higher + [Yarn v1.5][yarn] or higher installed on your computer and the [Douglas Porto Blog's](https://github.com/douglasporto/douglasporto-blog). From your command line:
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-### Install
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter-typescript&project-name=blog-starter-typescript&repository-name=blog-starter-typescript)
+
+## How to use
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+
 ```bash
-# Clone this repository
-$ git clone https://github.com/douglasporto/douglasporto-blog
-
-# Go into the front path
-$ cd douglasporto-blog
-
-# Install dependencies
-$ yarn or npm install
-
-gatsby develop
+npx create-next-app --example blog-starter-typescript blog-starter-typescript-app
+# or
+yarn create next-app --example blog-starter-typescript blog-starter-typescript-app
 ```
 
+Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
 
-## :memo: License
-This project is under the MIT license. See the [LICENSE](https://github.com/douglasporto/douglasporto-blog/blob/master/LICENSE) for more information.
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
----
+# Notes
 
-Made with ♥ by Douglas Porto :wave: [Get in touch!](https://www.linkedin.com/in/douglas-porto/)
-
-[nodejs]: https://nodejs.org/
-[yarn]: https://yarnpkg.com/
-[vc]: https://code.visualstudio.com/
-[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+`blog-starter-typescript` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
