@@ -6,7 +6,8 @@
     "start": "next start",
     "typecheck": "tsc",
     "commit": "cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint src --max-warnings=0"
   },
   "husky": {
     "hooks": {
@@ -23,27 +24,28 @@
     "@chakra-ui/react": "^1.8.3",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
     "babel-plugin-prismjs": "^2.1.0",
     "babel-plugin-styled-components": "^1.12.0",
     "classnames": "2.3.1",
+    "commitizen": "^4.2.4",
     "date-fns": "2.21.3",
+    "eslint-plugin-react": "^7.28.0",
     "framer-motion": "^5",
     "gray-matter": "4.0.3",
+    "lint-staged": "^12.1.6",
     "next": "latest",
     "prismjs": "^1.24.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "remark": "13.0.0",
     "remark-autolink-headings": "^6.0.1",
     "remark-html": "13.0.1",
     "remark-slug": "^6.0.0",
     "styled-components": "^5.3.3",
-    "typescript": "^4.2.4",
-    "eslint-plugin-react": "^7.28.0",
-    "@typescript-eslint/eslint-plugin": "^5.9.0",
-    "@typescript-eslint/parser": "^5.9.0",
-    "commitizen": "^4.2.4",
-    "lint-staged": "^12.1.6"
+    "typescript": "^4.2.4"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
@@ -53,16 +55,16 @@
     "@types/react-dom": "^17.0.5",
     "@types/styled-components": "^5.1.20",
     "autoprefixer": "10.4.0",
-    "postcss": "8.4.5",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.7",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import-helpers": "^1.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "2.5.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "postcss": "8.4.5",
+    "prettier": "2.5.1"
   },
   "config": {
     "commitizen": {
