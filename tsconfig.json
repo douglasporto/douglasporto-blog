@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/contexts/*": ["contexts/*"],
+      "@/ssrUtils/*": ["ssrUtils/*"],
+      "@/utils/*": ["utils/*"],
+      "@/designSystem/*": ["designSystem/*"],
+      "@/services/*": ["services/*"]
+    },
     "target": "es5",
     "module": "esnext",
     "jsx": "preserve",

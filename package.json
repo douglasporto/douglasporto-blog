@@ -4,7 +4,19 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "commit": "cz",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn lint --fix"
+    ]
   },
   "dependencies": {
     "@babel/core": "^7.14.6",
@@ -26,7 +38,12 @@
     "remark-html": "13.0.1",
     "remark-slug": "^6.0.0",
     "styled-components": "^5.3.3",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "eslint-plugin-react": "^7.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "commitizen": "^4.2.4",
+    "lint-staged": "^12.1.6"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
@@ -37,6 +54,49 @@
     "@types/styled-components": "^5.1.20",
     "autoprefixer": "10.4.0",
     "postcss": "8.4.5",
-    "tailwindcss": "3.0.5"
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import-helpers": "^1.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "2.5.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "types": {
+        ":sparkles: Feat": {
+          "description": "A new feature",
+          "title": "Features"
+        },
+        ":bug: Fix": {
+          "description": "A bug fix",
+          "title": "Bug fix"
+        },
+        ":hammer: Refactor": {
+          "description": "A code change that neither fixes a bug nor adds a feature ",
+          "title": "Refactor"
+        },
+        ":lipstick: Style": {
+          "description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)",
+          "title": "Style"
+        },
+        ":bulb: Chore": {
+          "description": "Other changes that don't modify src or test files",
+          "title": "Chore"
+        },
+        ":books: Docs": {
+          "description": "Documentation only change",
+          "title": "Documentation"
+        },
+        ":wrench: Config": {
+          "description": "Configuration project",
+          "title": "Configuration"
+        }
+      }
+    }
   }
 }
