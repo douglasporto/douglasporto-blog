@@ -60,7 +60,7 @@ const Header = ({ path }: { path: string }) => {
       w="100%"
       alignContent="center"
       justifyContent="center"
-      bg={useColorModeValue('#ffffff40', '#0E091B')}
+      bg={useColorModeValue('#ffffff40', '#0E091B80')}
       sx={{
         backdropFilter: 'blur(10px)',
         boxShadow: '2px 2px 4px rgb(0 0 0 / 70%)'
