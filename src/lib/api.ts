@@ -46,13 +46,11 @@
 //   return posts
 // }
 
-
-import matter from 'gray-matter'
-import { join } from 'path'
-import fs from 'fs'
-
 import { format } from 'date-fns'
 import { pt } from 'date-fns/locale'
+import fs from 'fs'
+import matter from 'gray-matter'
+import { join } from 'path'
 
 const postsDirectory = join(process.cwd(), '_posts')
 
@@ -64,6 +62,8 @@ export function getPostBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
+  console.log(data)
+
   const date = format(new Date(data.date), "dd 'de' MMMM 'de' yyyy", {
     locale: pt
   })
@@ -71,6 +71,7 @@ export function getPostBySlug(slug: string) {
   return {
     slug: realSlug,
     date: data.date.toString(),
+    tags: data.tags,
     ...data,
     dateFormatted: date,
     content
@@ -80,7 +81,7 @@ export function getPostBySlug(slug: string) {
 export function getAllPosts() {
   const slugs = fs.readdirSync(postsDirectory)
   const posts = slugs
-    .map(slug => getPostBySlug(slug))
+    .map((slug) => getPostBySlug(slug))
     .sort((post1, post2) =>
       new Date(post1?.date) > new Date(post2?.date) ? -1 : 1
     )

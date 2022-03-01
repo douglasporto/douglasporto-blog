@@ -40,7 +40,16 @@ const components = {
   }
 }
 
+const colors = {
+  primary: {
+    main: '#ED64A6',
+    second: '#805AD5'
+  }
+}
+
+console.log(styles)
+
 // 3. extend the theme
-const theme = extendTheme({ styles, config, components })
+const theme = extendTheme({ styles, config, components, colors })
 
 export default theme
