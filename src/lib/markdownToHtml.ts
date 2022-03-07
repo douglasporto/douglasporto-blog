@@ -6,11 +6,9 @@
 //   return result.toString()
 // }
 
-
 import remark from 'remark'
-import html from 'remark-html'
 import remarkAutolinkHeadings from 'remark-autolink-headings'
-
+import html from 'remark-html'
 import slug from 'remark-slug'
 
 export default async function markdownToHtml(markdown: string) {
