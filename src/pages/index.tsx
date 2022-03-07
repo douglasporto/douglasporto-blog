@@ -1,26 +1,12 @@
 import Head from 'next/head'
 
-import { useColorMode } from '@chakra-ui/color-mode'
-import {
-  Box,
-  Button,
-  Image,
-  Heading,
-  useColorModeValue,
-  Stack
-} from '@chakra-ui/react'
+import { Box, Image, Heading, useColorModeValue, Stack } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import { getAllPosts } from 'lib/api'
+import { CMS_NAME } from 'lib/constants'
+import Post from 'types/post'
 
 import PostItem from '@/components/PostList/PostList'
-
-import OldContainer from '../components/container'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
-import MoreStories from '../components/more-stories'
-import { getAllPosts } from '../lib/api'
-import { CMS_NAME } from '../lib/constants'
-import Post from '../types/post'
 
 export const BioSection = styled(Box)`
   padding-left: 3.4em;
@@ -41,10 +27,8 @@ type Props = {
 }
 
 const Index = ({ allPosts }: Props) => {
-  const { colorMode, toggleColorMode } = useColorMode()
   const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
-  console.log(allPosts)
+  // const morePosts = allPosts.slice(1)
   return (
     <>
       <Head>

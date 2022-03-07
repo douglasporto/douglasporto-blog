@@ -107,7 +107,7 @@ const Header = ({ path }: { path: string }) => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
+                <NextLink href="/">
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>

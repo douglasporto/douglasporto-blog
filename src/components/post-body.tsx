@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+
+import { useColorMode } from '@chakra-ui/react'
 import Prism from 'prismjs'
 
 import { Container } from './post-body.styles'
@@ -8,27 +10,24 @@ type Props = {
 }
 
 const PostBody = ({ content }: Props) => {
-  const [post, setPost] = useState("loading...");
+  const [post, setPost] = useState('loading...')
+  const { colorMode } = useColorMode()
   useEffect(() => {
     function highlightCodeInHTML(html: string): string {
-      const container = document.createElement("div");
-      container.innerHTML = html;
+      const container = document.createElement('div')
+      container.innerHTML = html
 
-      // console.log(container.innerHTML)
-      Prism.highlightAllUnder(container);
+      Prism.highlightAllUnder(container)
 
-      return container.innerHTML;
+      return container.innerHTML
     }
 
-    // console.log(highlightCodeInHTML(content))
-    setPost(highlightCodeInHTML(content));
-  }, []);
+    setPost(highlightCodeInHTML(content))
+  }, [content])
 
   return (
-    <Container>
-      <div
-        className={'markdown'}
-        dangerouslySetInnerHTML={{ __html: post }} />
+    <Container colorMode={colorMode}>
+      <div className={'markdown'} dangerouslySetInnerHTML={{ __html: post }} />
     </Container>
   )
 }

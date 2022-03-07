@@ -1,10 +1,7 @@
 import { GoRocket } from 'react-icons/go'
 
-import Link from 'next/link'
-
 import { Text } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-
 const LogoBox = styled.span`
   font-weight: bold;
   font-size: 18px;
@@ -25,16 +22,14 @@ const LogoBox = styled.span`
 
 const Logo = () => {
   return (
-    <Link href="/">
-      <a>
-        <LogoBox>
-          <GoRocket />
-          <Text fontWeight="bold" ml={3}>
-            {`Douglas Porto`}
-          </Text>
-        </LogoBox>
-      </a>
-    </Link>
+    <a href="/">
+      <LogoBox>
+        <GoRocket />
+        <Text fontWeight="bold" ml={3}>
+          {`Douglas Porto`}
+        </Text>
+      </LogoBox>
+    </a>
   )
 }
 

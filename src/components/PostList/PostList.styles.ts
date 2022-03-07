@@ -1,4 +1,3 @@
-import { mode } from '@chakra-ui/theme-tools'
 import styled from '@emotion/styled'
 
 import theme from 'styles/theme'
@@ -9,7 +8,6 @@ export const List = styled.ol`
   display: flex;
   flex-direction: column;
 `
-console.log(theme)
 export const PostItem = styled.li<{ colorMode?: 'dark' | 'light' }>`
   font-family: 'Fira Code', monospace, arial;
   display: block;

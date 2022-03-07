@@ -1,58 +1,49 @@
-import { useRouter } from 'next/router'
-import { useEffect } from 'react'
-
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
-import PostType from '../../types/post'
+import { useRouter } from 'next/router'
 
-type Props = {
-  post: PostType
-  morePosts: PostType[]
-  preview?: boolean
-}
+import { Text } from '@chakra-ui/react'
+import Container from 'components/container'
+import PostBody from 'components/post-body'
+import PostHeader from 'components/post-header'
+import { getPostBySlug, getAllPosts } from 'lib/api'
+import { CMS_NAME } from 'lib/constants'
+import markdownToHtml from 'lib/markdownToHtml'
+import PostType from 'types/post'
 
 const Post = (post: PostType) => {
   const router = useRouter()
-  console.log(post)
+
+  const wpm = 225
+  const words = post.content.trim().split(/\s+/).length
+  const time = Math.ceil(words / wpm)
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    // <Layout preview={preview}>
-      <Container>
-        <Header />
-        {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
-              </Head>
-               <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />  
-              <PostBody content={post.content} />
-            </article>
-          </>
-        )}
-      </Container>
-    // </Layout>
+    <Container>
+      {router.isFallback ? (
+        <Text fontSize="3xl">Loading…</Text>
+      ) : (
+        <>
+          <article className="mb-32">
+            <Head>
+              <title>
+                {post.title} | {CMS_NAME}
+              </title>
+            </Head>
+            <PostHeader
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              timeToRead={time}
+            />
+            <PostBody content={post.content} />
+          </article>
+        </>
+      )}
+    </Container>
   )
 }
 
@@ -65,13 +56,13 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
-  const slug = params.slug
+  const { slug } = params
   const post = getPostBySlug(slug)
   const content = await markdownToHtml(post.content || '')
 
   // get prev/next posts
   const allPosts = getAllPosts()
-  const currentPostIndex = allPosts.findIndex(p => p.slug === slug)
+  const currentPostIndex = allPosts.findIndex((p) => p.slug === slug)
   const nextPost = allPosts[currentPostIndex - 1] ?? null
   const prevPost = allPosts[currentPostIndex + 1] ?? null
 

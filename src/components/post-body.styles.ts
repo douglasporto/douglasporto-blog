@@ -1,65 +1,180 @@
-import styled from 'styled-components';
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
 
+import theme from 'styles/theme'
+console.log(theme)
 
-const background = '#282A36';
-const comment =    '#6272A4';
-const foreground = '#F8F8F2';
-const selection =  '#44475A';
+const background = '#282A36'
+const comment = '#6272A4'
+const foreground = '#F8F8F2'
+const selection = '#44475A'
 
-const cyan =       '#8BE9FD';
-const green =      '#50FA7B';
-const orange =     '#FFB86C';
-const pink =       '#FF79C6';
-const purple =     '#BD93F9';
-const red =        '#FF5555';
-const yellow =     '#F1FA8C';
+const cyan = '#8BE9FD'
+const green = '#50FA7B'
+const orange = '#FFB86C'
+const pink = '#FF79C6'
+const purple = '#BD93F9'
+const red = '#FF5555'
+const yellow = '#F1FA8C'
 
 /* Transparency */
 
 /** 30% of transparency **/
-const background30 = '#282A3633';
-const comment30 =    '#6272A433';
-const foreground30 = '#F8F8F233';
-const selection30 =  '#44475A33';
+// const background30 = '#282A3633'
+const comment30 = '#6272A433'
+// const foreground30 = '#F8F8F233'
+const selection30 = '#44475A33'
 
-const cyan30 =       '#8BE9FD33';
-const green30 =      '#50FA7B33';
-const orange30 =     '#FFB86C33';
-const pink30 =       '#FF79C633';
-const purple30 =     '#BD93F933';
-const red30 =        '#FF555533';
-const yellow30 =     '#F1FA8C33';
+// const cyan30 = '#8BE9FD33'
+// const green30 = '#50FA7B33'
+// const orange30 = '#FFB86C33'
+// const pink30 = '#FF79C633'
+// const purple30 = '#BD93F933'
+// const red30 = '#FF555533'
+// const yellow30 = '#F1FA8C33'
 
-/** 40% of transparency **/
-const background40 = '#282A3666';
-const comment40 =    '#6272A466';
-const foreground40 = '#F8F8F266';
-const selection40 =  '#44475A66';
+// /** 40% of transparency **/
+// const background40 = '#282A3666'
+// const comment40 = '#6272A466'
+// const foreground40 = '#F8F8F266'
+// const selection40 = '#44475A66'
 
-const cyan40 =       '#8BE9FD66';
-const green40 =      '#50FA7B66';
-const orange40 =     '#FFB86C66';
-const pink40 =       '#FF79C666';
-const purple40 =     '#BD93F966';
-const red40 =        '#FF555566';
-const yellow40 =     '#F1FA8C66';
+// const cyan40 = '#8BE9FD66'
+// const green40 = '#50FA7B66'
+// const orange40 = '#FFB86C66'
+// const pink40 = '#FF79C666'
+// const purple40 = '#BD93F966'
+// const red40 = '#FF555566'
+// const yellow40 = '#F1FA8C66'
 
+const MainContent = css`
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul,
+  ol,
+  .tags,
+  iframe,
+  .button-post {
+    color: var(--primaryColor);
+    font-size: ${theme.fontSizes.md};
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 0.069rem;
+    padding: 0 1.2rem;
+  }
+  p {
+    margin: 0 auto 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 4.4rem auto 2rem;
+  }
+  ul,
+  ol {
+    list-style: disc;
+    padding-left: 2.5rem;
+    margin: 0 auto 1rem;
+  }
+  li {
+    & > ul {
+      margin-bottom: 0;
+    }
+  }
+  p,
+  li {
+    code {
+      border-radius: 3px;
+      word-wrap: break-word;
+    }
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    padding: 16px 0;
+  }
+  iframe {
+    padding: 0 1rem 1rem;
+    width: 100%;
+  }
+  blockquote {
+    border-left: 0.3rem solid ${theme.colors.pink[400]};
+    border-radius: 0 0.5rem 0.5rem 0;
+    background: var(--bgSecondary);
+    padding: 0.5rem 1.875rem;
+    margin: 3.125rem auto;
+    p {
+      color: var(--secondaryColor);
+      margin: 0;
+    }
+  }
+  hr {
+    border: 1px solid #38444d;
+    margin: 1.5rem auto;
+  }
+  #twitter-widget-0,
+  .instagram-media,
+  .twitter-tweet {
+    margin: 20px auto !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: ${theme.fontSizes['2xl']};
+  }
+  h2 {
+    font-size: ${theme.fontSizes['lg']};
+  }
+  h3 {
+    font-size: ${theme.fontSizes['md']};
+  }
+  h4 {
+    font-size: ${theme.fontSizes['md']};
+  }
+  h5 {
+    font-size: ${theme.fontSizes['md']};
+  }
+  strong {
+    font-weight: 500;
+  }
+  .instagram-media {
+    margin: 1rem auto !important;
+  }
+`
 
+export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
+  a {
+    color: ${({ colorMode }) =>
+      colorMode === 'dark' ? theme.colors.pink[400] : theme.colors.purple[500]};
+  }
+  ${MainContent}
 
-export const Container = styled.div`
-
-  pre::-webkit-scrollbar 
+  pre::-webkit-scrollbar
   {
     width: 14px;
   }
 
-  pre::-webkit-scrollbar-track 
+  pre::-webkit-scrollbar-track
   {
     background-color: ${comment};
     border-radius: 0px;
   }
 
-  pre::-webkit-scrollbar-thumb 
+  pre::-webkit-scrollbar-thumb
   {
     background-color: ${purple};
     border-radius: 0px;
@@ -70,7 +185,7 @@ export const Container = styled.div`
   pre[class*="language-"]::-moz-selection,
   pre[class*="language-"] ::-moz-selection,
   code[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection 
+  code[class*="language-"] ::-moz-selection
   {
     text-shadow: none;
     background-color: ${selection};
@@ -79,7 +194,7 @@ export const Container = styled.div`
   pre[class*="language-"]::selection,
   pre[class*="language-"] ::selection,
   code[class*="language-"]::selection,
-  code[class*="language-"] ::selection 
+  code[class*="language-"] ::selection
   {
     text-shadow: none;
     background-color: ${selection};
@@ -87,20 +202,20 @@ export const Container = styled.div`
 
   /* Line numbers */
 
-  pre.line-numbers 
+  pre.line-numbers
   {
     position: relative;
     padding-left: 3.8em;
     counter-reset: linenumber;
   }
 
-  pre.line-numbers > code 
+  pre.line-numbers > code
   {
     position: relative;
     white-space: inherit;
   }
 
-  .line-numbers .line-numbers-rows 
+  .line-numbers .line-numbers-rows
   {
     position: absolute;
     pointer-events: none;
@@ -117,14 +232,14 @@ export const Container = styled.div`
     user-select: none;
   }
 
-  .line-numbers-rows > span 
+  .line-numbers-rows > span
   {
     pointer-events: none;
     display: block;
     counter-increment: linenumber;
   }
 
-  .line-numbers-rows > span:before 
+  .line-numbers-rows > span:before
   {
     content: counter(linenumber);
     color: #999;
@@ -135,12 +250,12 @@ export const Container = styled.div`
 
   /* Toolbar for copying */
 
-  div.code-toolbar 
+  div.code-toolbar
   {
     position: relative;
   }
 
-  div.code-toolbar > .toolbar 
+  div.code-toolbar > .toolbar
   {
     position: absolute;
     top: 0.3em;
@@ -149,23 +264,23 @@ export const Container = styled.div`
     opacity: 0;
   }
 
-  div.code-toolbar:hover > .toolbar 
+  div.code-toolbar:hover > .toolbar
   {
     opacity: 1;
   }
 
-  div.code-toolbar > .toolbar .toolbar-item 
+  div.code-toolbar > .toolbar .toolbar-item
   {
     display: inline-block;
     padding-right: 20px;
   }
 
-  div.code-toolbar > .toolbar a 
+  div.code-toolbar > .toolbar a
   {
     cursor: pointer;
   }
 
-  div.code-toolbar > .toolbar button 
+  div.code-toolbar > .toolbar button
   {
     background: none;
     border: 0;
@@ -181,7 +296,7 @@ export const Container = styled.div`
 
   div.code-toolbar > .toolbar a,
   div.code-toolbar > .toolbar button,
-  div.code-toolbar > .toolbar span 
+  div.code-toolbar > .toolbar span
   {
     color: ${foreground};
     font-size: 0.8em;
@@ -195,7 +310,7 @@ export const Container = styled.div`
   div.code-toolbar > .toolbar button:hover,
   div.code-toolbar > .toolbar button:focus,
   div.code-toolbar > .toolbar span:hover,
-  div.code-toolbar > .toolbar span:focus 
+  div.code-toolbar > .toolbar span:focus
   {
     color: inherit;
     text-decoration: none;
@@ -204,17 +319,17 @@ export const Container = styled.div`
 
   /* Remove text shadow for printing */
 
-  @media print 
+  @media print
   {
     code[class*="language-"],
-    pre[class*="language-"] 
+    pre[class*="language-"]
     {
       text-shadow: none;
     }
   }
 
   code[class*="language-"],
-  pre[class*="language-"] 
+  pre[class*="language-"]
   {
     color: ${foreground};
     background: ${background};
@@ -240,7 +355,7 @@ export const Container = styled.div`
 
   /* Code blocks */
 
-  pre[class*="language-"] 
+  pre[class*="language-"]
   {
     background: ${background};
     border-radius: 0.5em;
@@ -251,13 +366,13 @@ export const Container = styled.div`
   }
 
   :not(pre) > code[class*="language-"],
-  pre[class*="language-"] 
+  pre[class*="language-"]
   {
     background: ${background};
   }
 
   /* Inline code */
-  :not(pre) > code[class*="language-"] 
+  :not(pre) > code[class*="language-"]
   {
     padding: 4px 7px;
     border-radius: 0.3em;
@@ -301,12 +416,12 @@ export const Container = styled.div`
     color: ${purple};
   }
 
-  .token 
+  .token
   {
     color: ${pink};
   }
 
-  .language-css .token 
+  .language-css .token
   {
     color: ${pink};
   }
@@ -316,63 +431,63 @@ export const Container = styled.div`
     color: ${foreground};
   }
 
-  .token.bold 
+  .token.bold
   {
     font-weight: bold;
   }
 
-  .token.italic 
+  .token.italic
   {
     font-style: italic;
   }
 
-  .token.atrule, .token.attr-name, .token.attr-value 
+  .token.atrule, .token.attr-name, .token.attr-value
   {
     color: ${green};
   }
 
-  .language-css .token.atrule 
+  .language-css .token.atrule
   {
     color: ${purple};
   }
 
-  .language-html .token.attr-value, .language-markup .token.attr-value 
+  .language-html .token.attr-value, .language-markup .token.attr-value
   {
     color: ${yellow};
   }
 
-  .token.boolean 
+  .token.boolean
   {
     color: ${purple};
   }
 
-  .token.builtin, .token.class-name 
+  .token.builtin, .token.class-name
   {
     color: ${cyan};
   }
 
-  .token.comment 
+  .token.comment
   {
     color: ${comment};
   }
 
-  .token.constant 
+  .token.constant
   {
     color: ${purple};
   }
 
-  .language-javascript .token.constant 
+  .language-javascript .token.constant
   {
     color: ${orange};
     font-style: italic;
   }
 
-  .token.entity 
+  .token.entity
   {
     color: ${pink};
   }
 
-  .language-css .token.entity 
+  .language-css .token.entity
   {
     color: ${green};
   }
@@ -382,7 +497,7 @@ export const Container = styled.div`
     color: ${purple};
   }
 
-  .language-html .token.entity:not(.named-entity) 
+  .language-html .token.entity:not(.named-entity)
   {
     color: ${pink};
   }
@@ -392,42 +507,42 @@ export const Container = styled.div`
     color: ${purple};
   }
 
-  .language-markup .token.entity:not(.named-entity) 
+  .language-markup .token.entity:not(.named-entity)
   {
     color: ${pink};
   }
 
-  .token.function 
+  .token.function
   {
     color: ${green};
   }
 
-  .language-css .token.function 
+  .language-css .token.function
   {
     color: ${cyan};
   }
 
-  .token.important, .token.keyword 
+  .token.important, .token.keyword
   {
     color: ${pink};
   }
 
-  .token.prolog 
+  .token.prolog
   {
     color: ${foreground};
   }
 
-  .token.property 
+  .token.property
   {
     color: ${orange};
   }
 
-  .language-css .token.property 
+  .language-css .token.property
   {
     color: ${cyan};
   }
 
-  .token.punctuation 
+  .token.punctuation
   {
     color: ${pink};
   }
@@ -437,22 +552,22 @@ export const Container = styled.div`
     color: ${orange};
   }
 
-  .language-html .token.punctuation, .language-markup .token.punctuation 
+  .language-html .token.punctuation, .language-markup .token.punctuation
   {
     color: ${foreground};
   }
 
-  .token.selector 
+  .token.selector
   {
     color: ${pink};
   }
 
-  .language-css .token.selector 
+  .language-css .token.selector
   {
     color: ${green};
   }
 
-  .token.regex 
+  .token.regex
   {
     color: ${red};
   }
@@ -462,57 +577,57 @@ export const Container = styled.div`
     color: ${foreground};
   }
 
-  .token.string 
+  .token.string
   {
     color: ${yellow};
   }
 
-  .token.tag 
+  .token.tag
   {
     color: ${pink};
   }
 
-  .token.url 
+  .token.url
   {
     color: ${cyan};
   }
 
-  .language-css .token.url 
+  .language-css .token.url
   {
     color: ${orange};
   }
 
-  .token.variable 
+  .token.variable
   {
     color: ${comment};
   }
 
-  .token.number 
+  .token.number
   {
     color: rgba(189, 147, 249, 1);
   }
 
-  .token.operator 
+  .token.operator
   {
     color: rgba(139, 233, 253, 1);
   }
 
-  .token.char 
+  .token.char
   {
     color: rgba(255, 135, 157, 1);
   }
 
-  .token.symbol 
+  .token.symbol
   {
     color: rgba(255, 184, 108, 1);
   }
 
-  .token.deleted 
+  .token.deleted
   {
     color: #e2777a;
   }
 
-  .token.namespace 
+  .token.namespace
   {
     color: #e2777a;
   }
@@ -564,5 +679,5 @@ export const Container = styled.div`
   {
     background$-color: ${red});
   }
- 
-`;
+
+`
