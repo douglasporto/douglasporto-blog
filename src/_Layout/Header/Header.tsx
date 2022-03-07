@@ -36,17 +36,16 @@ const LinkItem = ({
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={href} passHref>
-      <Box
-        as="a"
-        p={2}
-        color={active ? 'pink.700' : inactiveColor}
-        fontWeight={active ? '700' : '500'}
-        target={_target}
-      >
-        {children}
-      </Box>
-    </NextLink>
+    <Box
+      as="a"
+      p={2}
+      color={active ? 'pink.700' : inactiveColor}
+      fontWeight={active ? '700' : '500'}
+      target={_target}
+      href={href}
+    >
+      {children}
+    </Box>
   )
 }
 
@@ -91,6 +90,9 @@ const Header = ({ path }: { path: string }) => {
           >
             <LinkItem href="/works" path={path}>
               Works
+            </LinkItem>
+            <LinkItem href="/its-me" path={path}>
+              it&apos;s me
             </LinkItem>
             <LinkItem href="/posts" path={path}>
               Posts

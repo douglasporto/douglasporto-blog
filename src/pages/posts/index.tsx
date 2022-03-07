@@ -5,26 +5,21 @@ import { getAllPosts } from 'lib/api'
 import { CMS_NAME } from 'lib/constants'
 import Post from 'types/post'
 
-import Author from '@/components/Author/Author'
 import PostItem from '@/components/PostList/PostList'
 
 type Props = {
   allPosts: Post[]
 }
 
-const Index = ({ allPosts }: Props) => {
+const Posts = ({ allPosts }: Props) => {
   const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1)
   return (
     <>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
-          rel="stylesheet"
-        />
-        <title>{CMS_NAME}</title>
+        <title>Posts - {CMS_NAME}</title>
       </Head>
-      <Author />
+
       <Box borderRadius="lg" mb={6}>
         <Heading
           as="h3"
@@ -32,7 +27,7 @@ const Index = ({ allPosts }: Props) => {
           color={useColorModeValue('purple.500', 'primary.main')}
           variant="section-title"
         >
-          Blog
+          Posts
         </Heading>
         <Box
           as="ol"
@@ -53,30 +48,11 @@ const Index = ({ allPosts }: Props) => {
           ))}
         </Box>
       </Box>
-      {/* <Button onClick={toggleColorMode}>
-        Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-      </Button>
-      <Layout>
-        <OldContainer>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </OldContainer>
-      </Layout> */}
     </>
   )
 }
 
-export default Index
+export default Posts
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts()
