@@ -1,12 +1,12 @@
 ---
 title: "Meus Plugins Sublime"
-description: Os plugins que mais gosto do Sublime Text 3.
-image: /assets/bg-meus-plugins-sublime.png
-category: "DEV"
-date: 2018-04-01 00:00:01
-tags:
-  - SoftSkill
-twitter_text: Os plugins que mais gosto do Sublime Text 3.
+excerpt: "Os plugins que mais gosto do Sublime Text 3."
+coverImage: '/assets/img/posts/bg-meus-plugins-sublime.png'
+tags: ['SoftSkill']
+date: '2018-04-01T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/bg-meus-plugins-sublime.png'
+twitter_text: "Os plugins que mais gosto do Sublime Text 3."
 ---
 
 Por mais root que seja, hoje é difícil encontrar um programador que não use um editor mais elegante, não é mesmo?
@@ -122,4 +122,3 @@ Se está escrevendo em PHP, procure "php snippets", se precisa daquela ajuda em 
 
 E aí, qual você indicaria?
 
-Dúvidas ou sugestão? [Vamos bater um papo](/contato)

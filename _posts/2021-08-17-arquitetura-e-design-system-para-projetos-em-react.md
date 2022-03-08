@@ -1,11 +1,12 @@
 ---
-layout: post
-date: 2021-08-17 02:24:33
-image: /assets/arq-design-react.png
-title: Arquitetura e Design System para projetos em React
-description: Arquitetura na prática para aquele seu projeto em react
-tags:
-  - Frontend
+title: "Arquitetura e Design System em React"
+excerpt: "Arquitetura na prática para aquele seu projeto em react"
+coverImage: '/assets/img/posts/arq-design-react.png'
+tags: ['Frontend', 'ReactJs']
+date: '2021-08-17T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/arq-design-react.png'
+twitter_text: "Arquitetura na prática para aquele seu projeto em react"
 ---
 # Design System para React
 
@@ -25,7 +26,7 @@ Mas uma breve, muito breve mesmo, informação sobre é que essa arquitetura foi
 
 Onde encontramos 5 estágios: átomos, moléculas, organismos, modelos e paginas.
 
-![Atomic Design](/assets/atomic-design.png "Atomic Design")
+![Atomic Design](/assets/img/posts/atomic-design.png "Atomic Design")
 
 Num exemplo prático, átomos poderia ser um botão. A molécula seria esse botão (átomo) com outro átomo, talvez um icone. E assim por diante até chegarmos na maior composição que é a página.
 
@@ -33,7 +34,7 @@ Caso queira mais detalhes, este artigo é perfeito para você <https://vidadepro
 
 ### Vamos para prática
 
-Chegou a hora de aplicarmos tudo isso no nosso projeto. 
+Chegou a hora de aplicarmos tudo isso no nosso projeto.
 
 Eu não gosto de usar as nomenclaturas oferecidas pelo atomic. Prefiro usar apenas a ideia de separação de componentes.
 
@@ -86,7 +87,7 @@ Nos próximos posts, estou querendo trazer de forma prática como fazer isso no 
 
 ### DesignSystem
 
-É aqui que a brincadeira fica cada vez mais interessante. 
+É aqui que a brincadeira fica cada vez mais interessante.
 
 Dentro desta página, ficará nossos átomos e Moléculas.
 
@@ -114,7 +115,7 @@ Uma outra dica, da qual aprendi com a galera do [Quinto Andar](https://www.quint
 
 Exemplo:
 
-```jsx
+```js
   import {
     Button as MuiButton,
     ButtonProps as MuiButtonProps
@@ -162,7 +163,7 @@ Então nesta página terá uma pasta especifica para os cartão do autor (Author
 
 Exemplo do nosso componente AuthorCard utilizando suas moléculas.
 
-```jsx
+```js
   import { Card } from 'src/DesignSystem/System/Card'
 
   import * as S from './styles'
@@ -190,4 +191,3 @@ Exemplo do nosso componente AuthorCard utilizando suas moléculas.
 
 Então é isso galera. Isso não é a melhor arquitetura do mundo, mas é a arquitetura que até o momento mais tem me agradado e me feito mais produtivo.
 
-Qual você usa? Como você costuma deixar? Comenta ai e vamos trocar essas idéias.

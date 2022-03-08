@@ -1,13 +1,12 @@
 ---
 title: "Conhecendo Gulp"
-description: Conheça o mundo dos automatizador de tarefas Gulp
-image: /assets/bg-know-gulp.png
-category: "Front-End"
-date: 2018-09-20 00:00:01
-tags:
-  - Frontend
-  - Backend
-twitter_text: Conheça o mundo dos automatizador de tarefas Gulp.
+excerpt: "Conheça o mundo dos automatizador de tarefas Gulp."
+coverImage: '/assets/img/posts/bg-know-gulp.png'
+tags: ['Frontend', 'Backend']
+date: '2018-09-20T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/bg-know-gulp.png'
+twitter_text: "Conheça o mundo dos automatizador de tarefas Gulp."
 ---
 
 Antes de explicar e demonstrar o poderoso automatizador de tarefas, **[Gulp](https://gulpjs.com/)**, preciso explicar o que é um automatizador de tarefas.
@@ -249,4 +248,5 @@ gulp.task("default", ["es5", "stylus", "watch"])
 
 Agora ao rodar `gulp` ele fará o es5, depois o stylus e começará a observar com o watch.
 
-Bom, é isso ai galera. Este foi um exemplo muito simples de como funciona o **[Gulp](https://gulpjs.com/)**. Conhece outras coisas que da para fazer com ele? Coloque aqui embaixo e vamos conversar!
+Bom, é isso ai galera. Este foi um exemplo muito simples de como funciona o **[Gulp](https://gulpjs.com/)**.
+

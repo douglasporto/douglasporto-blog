@@ -3,7 +3,7 @@ title: "Conhecendo Vue.js"
 excerpt: "Uma pequena introdução ao Framework em javascript, Vuejs"
 # coverImage: '/assets/pots/vuejs.jpg'
 coverImage: '/assets/img/posts/vuejs.jpg'
-tags: ['Frontend']
+tags: ['Frontend', 'VueJs']
 date: '2018-03-28T05:35:07.322Z'
 ogImage:
   url: '/assets/img/pots/vuejs.jpg'

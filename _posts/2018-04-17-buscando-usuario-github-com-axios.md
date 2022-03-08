@@ -1,15 +1,13 @@
 ---
 title: "Buscando Usuário GitHub com AXIOS"
-description: Vamos aprender na prática como fazer uma requisição AXIOS na API do GitHub.
-image: /assets/header-axios-vuejs.png
-category: "Front-End"
-date: 2018-04-17 00:00:01
-tags:
-  - Frontend
-twitter_text: Vamos aprender na prática como fazer uma requisição AXIOS na API do GitHub.
+excerpt: "Vamos aprender na prática como fazer uma requisição AXIOS na API do GitHub."
+coverImage: '/assets/img/posts/header-axios-vuejs.png'
+tags: ['Frontend']
+date: '2018-04-17T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/header-axios-vuejs.png'
+twitter_text: "Vamos aprender na prática como fazer uma requisição AXIOS na API do GitHub."
 ---
-
-<!-- ![Axios](/assets/posts/header-axios-vuejs.png) -->
 
 Neste artigo não vou enrolar. Vamos colocar a mão na massa e aprender na prática a utilizar o [AXIOS](https://github.com/axios/axios).
 
@@ -153,8 +151,5 @@ Agora busque um usuário e observe o cosole.
 </div>
 ```
 
-![Screen Axios+Vue.js](/image/screen-axios-vue.png)
-
 Agora basta ler a [documentação do GitHub](https://developer.github.com/v3/) e deixar a criatividade fluir.
 
-Gostou desta dica? Comente ai embaixo e vamos trocar uma ideia.

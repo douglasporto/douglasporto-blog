@@ -1,11 +1,12 @@
 ---
-layout: post
-date: 2021-08-17 02:24:33
-image: /assets/arq-design-react.png
-title: Arquitetura e Design System para projetos em React
-description: Arquitetura na prática para aquele seu projeto em react
-tags:
-  - Frontend
+title: "Como criar templates de páginas no Next.js"
+excerpt: "Criando templates para páginas com Next.js"
+coverImage: '/assets/img/posts/templates-next.png'
+tags: ['Frontend', 'ReactJs']
+date: '2021-08-25T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/templates-next.png'
+twitter_text: "Criando templates para páginas com Next.js"
 ---
 # Como criar templates de páginas no Next.js
 
@@ -32,7 +33,7 @@ No [React.js](https://reactjs.org/) não tinha muito segredo, bastava arrumar is
 ```bash
 ./index.ts
 ```
-```jsx
+```js
 import React from 'react';
 import { Switch } from 'react-router-dom';
 
@@ -57,7 +58,7 @@ export default Routes;
 ```bash
 ./Route.ts
 ```
-```jsx
+```js
 import React from 'react';
 import {
   RouteProps as ReactRouteProps,
@@ -108,7 +109,7 @@ Gosto de criar esses arquivos desta forma `./TemplateAdmin/index.tsx` pois podem
 
 ` ./TemplateAdmin/index.tsx`
 
-```jsx
+```js
 import { ReactNode } from 'react'
 
 type TemplateAdminProps = {
@@ -129,7 +130,7 @@ export default function TemplateAdmin({ ...props }: TemplateAdminProps) {
 }
 ```
 ` ./TemplateAuth/index.tsx`
-```jsx
+```js
 import { ReactNode } from 'react'
 
 type TemplateAuthProps = {
@@ -153,7 +154,7 @@ Agora poderemos criar por exemplo o componente `Header` e apenas importa-lo no t
 Ainda dentro da pasta `.Templates` vamos criar o arquivo `TemplateWrapper.tsx` que será nosso aquivo principal.
 
 ` ./TemplateWrapper.tsx`
-```jsx
+```js
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import TemplateAdmin from './TemplateAdmin'
 import TemplateAuth from './TemplateAuth'
@@ -185,7 +186,7 @@ Colocando em `switch` pois poderemos ter 2, 3, x templates diferentes.
 
 No nosso arquivo `pages/_app.tsx`, nosso arquivo principal das páginas do next.js, vamos renderizar nosso `TemplateWrapper.tsx`
 
-```jsx
+```js
 ...
 import TemplateWrapper from 'Template/TemplateWrapper'
 
@@ -206,7 +207,7 @@ Mas, vou colocar na prática, bora lá!
 
 `pages/sign-in.tsx`
 
-```jsx
+```js
 ...
 export default function SignIn() {
   ...
@@ -223,7 +224,7 @@ Agora vamos criar nossa página de dashboard também, porém para mudarmos, ao i
 
 `pages/dashboard.tsx`
 
-```jsx
+```js
 ...
 export default function Dashboard() {
   ...

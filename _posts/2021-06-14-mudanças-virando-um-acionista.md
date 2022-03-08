@@ -1,11 +1,12 @@
 ---
-layout: post
-date: '2021-06-14 04:46:56'
-image: /assets/virando-acionista.png
-title: 'Mudanças: virando um acionista'
-description: 'Série Mudança: parte 3 de 3'
-tags:
-  - SoftSkill
+title: "Mudanças: virando um acionista"
+excerpt: "Série Mudança: parte 3 de 3"
+coverImage: '/assets/img/posts/virando-acionista.png'
+tags: ['SoftSkill']
+date: '2021-06-14T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/virando-acionista.png'
+twitter_text: "Série Mudança: parte 3 de 3"
 ---
 ### No texto anterior…
 

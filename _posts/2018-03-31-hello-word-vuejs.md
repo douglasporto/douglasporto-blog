@@ -1,12 +1,12 @@
 ---
 title: "Hello World Vue.js"
-description: Um simples Hello World em Vue.js
-image: /assets/hellovue.png
-category: "Front-End"
-date: 2018-03-31 00:00:01
-tags:
-  - Frontend
-twitter_text: Um simples Hello World em Vue.js.
+excerpt: "Um simples Hello World em Vue.js"
+coverImage: '/assets/img/posts/hellovue.png'
+tags: ['Frontend', 'VueJs']
+date: '2018-03-31T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/hellovue.png'
+twitter_text: "Um simples Hello World em Vue.js"
 ---
 
 Agora que conhece um pouco sobre o Vue.js, vou mostrar o quanto é simples começar a utiliza-lo.
@@ -76,7 +76,7 @@ Simples, a interpolação do Vue é `{ { } }`, ou seja, basta dentro da nossa `<
 
 e o nosso resultado será o famoso Hello World.
 
-![Way Data-bind](/assets/posts/directiva.png)
+![Way Data-bind](/assets/img/posts/directiva.png)
 
 Simples não?
 
@@ -116,7 +116,7 @@ Nosso html criamos uma `<ul>` e nela usamos o `v-for`
 
 Nosso resultado será:
 
-![v-for](/assets/posts/hellovue1.png)
+![v-for](/assets/img/posts/hellovue1.png)
 
 ## v-if e two-Way Data-bind
 
@@ -200,10 +200,10 @@ O **V-if** é o famosos `if` de qualquer linguagem, então colocamos o **v-if()*
 
 Logo de cara, você vai ver que a nossa lista sumiu. Mas basta clicar em Brasil ou Internacional para o Vue resolver nosso problema.
 
-![v-for](/assets/posts/hellovue2.png)
+![v-for](/assets/img/posts/hellovue2.png)
 
 **Incrível** não?
 
 Enfim, isso é apenas uma parcela do que você pode fazer com este FrameWork.
 
-Por enquanto é isso galera. Dúvidas ou sugestão? [Vamos bater um papo](/contato)
+Por enquanto é isso galera.

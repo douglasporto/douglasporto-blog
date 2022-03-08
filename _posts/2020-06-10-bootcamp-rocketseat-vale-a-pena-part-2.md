@@ -1,14 +1,14 @@
 ---
-layout: post
-date: '2020-06-10 12:23:55'
-image: /assets/bg-rocketseat-vale-pena-p2.jpg
-title: 'Bootcamp Rocketseat, vale a pena? Part-2'
-description: >-
-  O famoso curso bootcamp da Rocketseat deu uma repaginada e agora realmente
-  vale o valor?
-tags:
-  - SoftSkill
+title: "Bootcamp Rocketseat, vale a pena? Part-2"
+excerpt: "O famoso curso bootcamp da Rocketseat deu uma repaginada e agora realmente vale o valor?"
+coverImage: '/assets/img/posts/bg-rocketseat-vale-pena-p2.jpg'
+tags: ['SoftSkill']
+date: '2020-06-10T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/bg-rocketseat-vale-pena-p2.jpg'
+twitter_text: "O famoso curso bootcamp da Rocketseat deu uma repaginada e agora realmente vale o valor?"
 ---
+
 **Faaaala deeev!!!**
 
 Olha eu voltando aqui depois de tanto tempo.
@@ -19,7 +19,7 @@ O que eu não imaginava era que a [Rocketseat](https://rocketseat.com.br/) iria 
 
 # Typescript.
 
-Sim. Essa para mim foi a grande atualização do curso. Antes as aulas de ***back-end (node), front-end (React) e mobile (React-native)*** eram com javascript puro. 
+Sim. Essa para mim foi a grande atualização do curso. Antes as aulas de ***back-end (node), front-end (React) e mobile (React-native)*** eram com javascript puro.
 
 Porém nos últimos anos o ***[typescript](https://www.typescriptlang.org/)*** que era mais engajado pela comunidade do [Angular](https://angular.io/) ganhou muita notoriedade e espaço no 💜  dos devs.
 
@@ -29,13 +29,13 @@ A [Rocketseat](https://rocketseat.com.br/) vendo essa movimentação de todas as
 
 Quando escrevi o [artigo sobre a rocketseat](https://douglasporto.com.br/blog/bootcamp-rocketseat-vale-a-pena/) a comunidade era um dos pontos que mais gostei. Era simples se engajar. Você matava suas dúvidas rapidamente.
 
-O único problema era que por ser pelo [Discord](https://discord.com/) as perguntas se perdiam no meio. 
+O único problema era que por ser pelo [Discord](https://discord.com/) as perguntas se perdiam no meio.
 
-Então surgiu a nova comunidade. 
+Então surgiu a nova comunidade.
 
 Uma feita pela própria [Rocketseat](https://rocketseat.com.br/). Num estilo [Stackoverflow](http://stackoverflow.com/) mas com a cara do nosso foguete favorito 🚀.
 
-![comunidade-rocketseat](/assets/captura-de-tela-2020-06-10-às-13.40.31.png "Comunidade Rocketseat")
+![comunidade-rocketseat](/assets/img/posts/captura-de-tela-2020-06-10-às-13.40.31.png "Comunidade Rocketseat")
 
 Agora as perguntas não ficam "perdidas". E provavelmente sua dúvida já tenha sido uma dúvida de outro dev, agilizando ainda mais a resolução do seu problema.
 
@@ -47,11 +47,11 @@ Tudo foi mudado também. Vemos mais uma vez a coragem de mudar algo que estava d
 
 Agora para cada fase do curso, você terá um desafio, até ai tudo normal, nada mudou. Entretanto, agora você envia o repositório separadamente para cada desafio, diretamente na página do curso.
 
-![avaliacao-rocketseat](/assets/captura-de-tela-2020-06-10-às-13.41.39.png "Avaliação Rocketseat")
+![avaliacao-rocketseat](/assets/img/posts/captura-de-tela-2020-06-10-às-13.41.39.png "Avaliação Rocketseat")
 
-Se achou isso incrível, calma, o melhor esta por vir. 
+Se achou isso incrível, calma, o melhor esta por vir.
 
-Foi criado um [Template no Github](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository) para cada desafio. 
+Foi criado um [Template no Github](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository) para cada desafio.
 
 O que isso quer dizer?
 

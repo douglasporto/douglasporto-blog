@@ -1,16 +1,14 @@
 ---
-layout: post
-date: '2020-08-14 03:47:15'
-image: /assets/bg-pattern-git-commit.jpg
-title: Padronizando seus Commits
-description: >-
-  Neste post ensino a configurar 4 bibliotecas ótimas para padronizar suas
-  mensagens de commits e automatizar o processo de commit para que todos os devs
-  tenham deixado o projeto no padrão.
-tags:
-  - Frontend
-  - Backend
+title: "Padronizando seus Commits"
+excerpt: "Neste post ensino a configurar 4 bibliotecas ótimas para padronizar suas mensagens de commits e automatizar o processo de commit para que todos os devs tenham deixado o projeto no padrão."
+coverImage: '/assets/img/posts/bg-pattern-git-commit.jpg'
+tags: ['Frontend', 'Backend']
+date: '2020-08-14T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/bg-pattern-git-commit.jpg'
+twitter_text: "Neste post ensino a configurar 4 bibliotecas ótimas para padronizar suas mensagens de commits e automatizar o processo de commit para que todos os devs tenham deixado o projeto no padrão."
 ---
+
 Faaaala devs. Blz?
 
 Faz tempo que não dou uma atenção aqui no blog, mas agora vamos voltar aqui pelo menos a cada 15 dias.
@@ -25,7 +23,7 @@ Para automatizar nossos códigos vamos usar um carinha chamado [Husky](https://g
 
 Digamos que vamos querer varrer nosso código para ver se não ficou nenhum erro acusado pelo [Eslint](https://eslint.org/) automaticamente. Por isso e outros motivos que utilizamos essa maravilhosa lib.
 
-Dentro do nosso `.git` é possível encontrar hooks, que ao configura-los podemos fazer praticamente tudo que quisermos antes ou depois de qualquer comando [GIT](https://git-scm.com/). 
+Dentro do nosso `.git` é possível encontrar hooks, que ao configura-los podemos fazer praticamente tudo que quisermos antes ou depois de qualquer comando [GIT](https://git-scm.com/).
 
 No nosso caso, queremos que toda vez que rodarmos um `git commit` seja verificado se esquecemos algum erro que o `eslint` detectou. Vamos configurar também um outro carinha chamado [lint-stage](https://github.com/okonet/lint-stagedhttps://github.com/okonet/lint-staged), para que seja feita a verificação dos erros apenas nos arquivos que foram alterados. Imagina se tivervos mil arquivos no sistema onde será verificado nos mil arquivos mesmo nós termos alterado apenas um. Não faz sentido né?
 
@@ -54,11 +52,11 @@ Toda vez que rodarmos no terminal `git commit` será ativado o Husky por causa d
 
 Deixamos o `lint-staged` configurado para executar em todos (*) arquivos typescript (.ts), mas você pode colocar outras extensões de arquivos (js, jsx, tsx). Colocamos em um array pois será rodado 2 comandos nesses arquivos modificados: `eslint --fix` para corrigir e verificar erros e o `git add` pois o próprio eslint poderá corrigir os erros, então precisaremos novamente o `git add` para adicinar no commit.
 
-![husky-running](/assets/captura-de-tela-2020-08-14-às-16.41.17.png "husky-running")
+![husky-running](/assets/img/posts/captura-de-tela-2020-08-14-às-16.41.17.png "husky-running")
 
 Husky irá começar a rodar e logo após fazer as tarefas mostrará assim:
 
-![husky-done](/assets/captura-de-tela-2020-08-14-às-16.41.38.png "husky-done")
+![husky-done](/assets/img/posts/captura-de-tela-2020-08-14-às-16.41.38.png "husky-done")
 
 Pronto! Próxima configuração.
 
@@ -75,7 +73,7 @@ Estou falando do [Commit lint](https://github.com/conventional-changelog/commitl
 Vamos instalar as 2 libs,
 
 ```bash
-yarn add  @commitlint/config-conventional @commitlint/cli commitizen -D 
+yarn add  @commitlint/config-conventional @commitlint/cli commitizen -D
 ```
 
 Com as libs instaladas vamos configura-las.
@@ -90,12 +88,12 @@ ou se usa `yarn`
 yarn commitizen init cz-conventional-changelog --yarn --dev --exact
 ```
 
-Voltamos para o `package.json` lembra do Husky? Vamos ligar essas 2 libs com ele. 
+Voltamos para o `package.json` lembra do Husky? Vamos ligar essas 2 libs com ele.
 
 Dentro do husky vamos adicionar os comandos:
 
 ```json
-"prepare-commit-msg":"exec < /dev/tty && git cz --hook || true", 
+"prepare-commit-msg":"exec < /dev/tty && git cz --hook || true",
 "commit-msg":"commitlint -E HUSKY_GIT_PARAMS"
 ```
 
@@ -125,15 +123,15 @@ module.exports={
 
 Pronto, chegou a hora do commit. Agora vamos rodar apenas o  `git commit` e teremos este resultado:
 
-![git-commit](/assets/captura-de-tela-2020-08-14-às-19.46.19.png "git-commit")
+![git-commit](/assets/img/posts/captura-de-tela-2020-08-14-às-19.46.19.png "git-commit")
 
 Após verificar os erros de `lint`, o comitizen irá nos direcionar com perguntas para criar nossa mensagem de commit. Basta ir respondendo e dando `ENTER`
 
-![](/assets/captura-de-tela-2020-08-14-às-19.49.40.png)
+![](/assets/img/posts/captura-de-tela-2020-08-14-às-19.49.40.png)
 
 Seus commits ficarão assim:
 
-![](/assets/captura-de-tela-2020-08-14-às-19.51.13.png)
+![](/assets/img/posts/captura-de-tela-2020-08-14-às-19.51.13.png)
 
 No começo não mudará muito, mas depois quando tiver uma lista grande de commits tudo organizado indicando o que cada commit resolveu, irá agradecer demais o commitizen.
 
@@ -141,4 +139,3 @@ No começo não mudará muito, mas depois quando tiver uma lista grande de commi
 
 Me diz ai, já conhecia alguma dessas libs? Já sabia que era possível utiliza-las juntas?
 
-Ou, tem mais alguma que gostaria de indicar? Manda aqui abaixo nos comentários.

@@ -1,11 +1,12 @@
 ---
-layout: post
-date: 2021-05-07 02:14:27
-image: /assets/recolocacao.png
 title: "Mudanças: recolocação profissional"
-description: "Série Mudança: parte 1 de 3"
-tags:
-  - SoftSkill
+excerpt: "Série Mudança: parte 1 de 3"
+coverImage: '/assets/img/posts/recolocacao.png'
+tags: ['SoftSkill']
+date: '2021-05-07T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/recolocacao.png'
+twitter_text: "Série Mudança: parte 1 de 3"
 ---
 Salve galera!
 
@@ -49,9 +50,9 @@ Me reencontrei profissionalmente novamente. Tudo que aprendia de novo, podia col
 
 ### Conclusão da parte 1
 
-Medo todos temos. Já estava casado quando aceitei esse novo desafio. Já tinha compromissos dos quais dependiam muito de mim. 
+Medo todos temos. Já estava casado quando aceitei esse novo desafio. Já tinha compromissos dos quais dependiam muito de mim.
 
-Mas se não confiasse em mim, jamais descobriria o quanto essa área me faz feliz. 
+Mas se não confiasse em mim, jamais descobriria o quanto essa área me faz feliz.
 
 Vai por mim, ser feliz e se sentir realizado profissionalmente vale todo sacrifício.
 

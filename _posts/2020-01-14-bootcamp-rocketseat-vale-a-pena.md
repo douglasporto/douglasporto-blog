@@ -1,12 +1,14 @@
 ---
-layout: post
-date: '2020-01-13 08:18:12'
-image: /assets/bg-rocketseat-vale-pena.png
-title: 'Bootcamp Rocketseat, vale a pena?'
-description: O famoso curso bootcamp da Rocketseat realmente vale o valor?
-tags:
-  - SoftSkill
+title: "Bootcamp Rocketseat, vale a pena?"
+excerpt: "O famoso curso bootcamp da Rocketseat realmente vale o valor?"
+coverImage: '/assets/img/posts/bg-rocketseat-vale-pena.png'
+tags: ['SoftSkill']
+date: '2020-01-13T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/bg-rocketseat-vale-pena.png'
+twitter_text: "O famoso curso bootcamp da Rocketseat realmente vale o valor?"
 ---
+
 **Faaaala deeev!!!**
 
 Com toda certeza você já deve ter escutado esta introdução em algum video no youtube. Estamos falando de [Diego Fernandes](https://twitter.com/dieegosfhttps://twitter.com/dieegosf) CTO da [Rocketseat](https://rocketseat.com.br/).
@@ -29,7 +31,7 @@ O melhor desta comunidade é que os canais são muito bem divididos e um ajuda o
 
 #### Lives
 
-Quase todos os dias são feito lives com diversos temas. Diversos temas mesmo. Mas além dos temas relacionados a programação (javascript e etc), quero enfatizar as lives que não são diretamente sobre programação. 
+Quase todos os dias são feito lives com diversos temas. Diversos temas mesmo. Mas além dos temas relacionados a programação (javascript e etc), quero enfatizar as lives que não são diretamente sobre programação.
 
 São as lives de Inglês e Mentoria.
 
@@ -47,7 +49,7 @@ Hoje tenho postagens de 15k, 10k, 7k de visulizações.
 
 #### Certificado
 
-Diferente dos concorrentes, a [Rocketseat](https://rocketseat.com.br/) não dará o certificado apenas por você dar "play nos videos". 
+Diferente dos concorrentes, a [Rocketseat](https://rocketseat.com.br/) não dará o certificado apenas por você dar "play nos videos".
 
 Durante mais ou menos 1 mês é disponibilizados os video das aulas. Junto são enviados alguns `.txt` que são os desafios.  Após esse mês, você receberá a data para a entraga do código.
 
@@ -65,11 +67,11 @@ Neste desafio tinhamos tudo que precisava para desenvolver, as regras de negocio
 
 Caso queira ver, este é meu projeto final [Github](https://github.com/douglasporto/meetapp-gostack).
 
-![Meetapp](/assets/meetapp.png "Meetapp")
+![Meetapp](/assets/img/posts/meetapp.png "Meetapp")
 
 Depois de enviar seu código basta aguardar ansiosamente pela nota e feedback.
 
-![Nota Bootcamp](/assets/nota-bootcamp.jpeg "Nota Bootcamp")
+![Nota Bootcamp](/assets/img/posts/nota-bootcamp.jpeg "Nota Bootcamp")
 
 ## Então vale a pena???
 

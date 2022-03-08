@@ -1,12 +1,12 @@
 ---
 title: "Colocando Stylus no seu Site"
-description: Você já ouviu falar em Pré-Processador CSS? Conheça o Stylus e seja mais produtivo.
-image: /assets/bg-colocando-stylus.png
-category: "Front-End"
-date: 2018-04-09 00:00:01
-tags:
-  - Frontend
-twitter_text: Você já ouviu falar em Pré-Processador CSS? Conheça o Stylus e seja mais produtivo.
+excerpt: "Problemas com plugins do WordPress NUNCA MAIS. Jekyll, o melhor gerador de site estático feito para desenvolvedores."
+coverImage: '/assets/img/posts/bg-colocando-stylus.png'
+tags: ['Frontend']
+date: '2018-04-09T05:35:07.322Z'
+ogImage:
+  url: '/assets/img/posts/bg-colocando-stylus.png'
+twitter_text: "Problemas com plugins do WordPress NUNCA MAIS. Jekyll, o melhor gerador de site estático feito para desenvolvedores."
 ---
 
 Se você trabalha com o Front-End, deve saber o quanto o CSS é essencial.
@@ -101,7 +101,7 @@ Com um Pré-processador como o Stylus, não será necessário, basta criar uma v
 mainColor = #1976d2 body {
   color: mainColor;
 }
-maincolormainColor 
+maincolormainColor
 div
   color: mainColor;
 ```
@@ -381,4 +381,3 @@ Mas não vai achando que é tudo flores. É necesário saber quando deve usa-lo 
 
 Já conhecia o Stylus ou outro Pré-processador (Sass, Less)?
 
-Gostou desta dica? Comente ai embaixo e vamos trocar uma ideia.
