@@ -8,7 +8,7 @@ type MetaProps = {
   image?: string
 }
 const Meta = ({ title, description, image }: MetaProps) => {
-  const ogImage = image || 'assets/profile/douglas-porto.jpeg'
+  const ogImage = image || '/assets/img/posts/profile/og-image.png'
   const ogDescription = description || 'Douglas Porto Personal Blog'
 
   return (
