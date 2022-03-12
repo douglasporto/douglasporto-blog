@@ -1,15 +1,10 @@
-import Head from 'next/head'
-
-import { CMS_NAME } from 'lib/constants'
-
 import Author from '@/components/Author/Author'
+import Meta from '@/components/meta'
 
 const ItsMe = () => {
   return (
     <>
-      <Head>
-        <title>It&apos;s Me - {CMS_NAME}</title>
-      </Head>
+      <Meta title="It's Me" />
 
       <Author />
     </>

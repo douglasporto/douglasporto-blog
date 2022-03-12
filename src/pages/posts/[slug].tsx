@@ -32,6 +32,7 @@ const Post = (post: PostType) => {
               <title>
                 {post.title} | {CMS_NAME}
               </title>
+              <meta property="og:image" content={post.ogImage.url} />
             </Head>
             <PostHeader
               title={post.title}

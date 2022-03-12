@@ -1,14 +1,11 @@
-import Head from 'next/head'
-
 import { Box, useColorModeValue } from '@chakra-ui/react'
-import { CMS_NAME } from 'lib/constants'
+
+import Meta from '@/components/meta'
 
 const Works = () => {
   return (
     <>
-      <Head>
-        <title>Works - {CMS_NAME}</title>
-      </Head>
+      <Meta title="Works" />
 
       <Box
         borderRadius="lg"

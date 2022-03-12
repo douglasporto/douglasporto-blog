@@ -1,11 +1,9 @@
-import Head from 'next/head'
-
 import { Box, Heading, useColorModeValue } from '@chakra-ui/react'
 import { getAllPosts } from 'lib/api'
-import { CMS_NAME } from 'lib/constants'
 import Post from 'types/post'
 
 import Author from '@/components/Author/Author'
+import Meta from '@/components/meta'
 import PostItem from '@/components/PostList/PostList'
 
 type Props = {
@@ -17,13 +15,7 @@ const Index = ({ allPosts }: Props) => {
   // const morePosts = allPosts.slice(1)
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
-          rel="stylesheet"
-        />
-        <title>{CMS_NAME}</title>
-      </Head>
+      <Meta />
       <Author />
       <Box borderRadius="lg" mb={6}>
         <Heading
