@@ -8,7 +8,6 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        {/* <link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css"></link> */}
         <Head />
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
