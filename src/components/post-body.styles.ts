@@ -2,7 +2,6 @@ import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
 import theme from 'styles/theme'
-console.log(theme)
 
 const background = '#282A36'
 const comment = '#6272A4'

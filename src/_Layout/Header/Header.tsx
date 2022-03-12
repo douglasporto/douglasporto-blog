@@ -109,21 +109,15 @@ const Header = ({ path }: { path: string }) => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/">
-                  <MenuItem as={Link}>About</MenuItem>
+                <NextLink href="/posts" passHref>
+                  <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+                <NextLink href="/its-me" passHref>
+                  <MenuItem as={Link}>It&apos;s me</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
-                </MenuItem>
               </MenuList>
             </Menu>
           </Box>

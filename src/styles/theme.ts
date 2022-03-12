@@ -47,8 +47,6 @@ const colors = {
   }
 }
 
-console.log(styles)
-
 // 3. extend the theme
 const theme = extendTheme({ styles, config, components, colors })
 
