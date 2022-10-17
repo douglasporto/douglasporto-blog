@@ -1,71 +1,56 @@
-import Head from 'next/head'
+import {
+  Box,
+  Heading,
+  SimpleGrid,
+  useColorModeValue,
+  VStack
+} from '@chakra-ui/react'
+import { getAllWorks } from 'lib/apiWorks'
+import WorkType from 'types/work'
 
-import { Box, Heading, useColorModeValue } from '@chakra-ui/react'
-import { getAllPosts } from 'lib/api'
-import { CMS_NAME } from 'lib/constants'
-import Post from 'types/post'
+import Meta from '@/components/meta'
+import { WorkCard } from '@/components/WorkCard/WorkCard'
 
-import PostItem from '@/components/PostList/PostList'
-
-type Props = {
-  allPosts: Post[]
-}
-
-const Posts = ({ allPosts }: Props) => {
-  const heroPost = allPosts[0]
-  // const morePosts = allPosts.slice(1)
+export default function Works({ allWorks }: { allWorks: WorkType[] }) {
   return (
     <>
-      <Head>
-        <title>Posts - {CMS_NAME}</title>
-      </Head>
+      <Meta title="Works" />
 
-      <Box borderRadius="lg" mb={6}>
-        <Heading
-          as="h3"
-          fontSize="lg"
-          color={useColorModeValue('purple.500', 'primary.main')}
-          variant="section-title"
-        >
-          Posts
-        </Heading>
-        <Box
-          as="ol"
-          width="100%"
-          margin="0 auto"
-          display="flex"
-          flexDirection="column"
-        >
-          {allPosts.map((post, index) => (
-            <PostItem
-              key={index}
-              title={post.title}
-              date={post.date}
-              slug={post.slug}
-              last={index === 0}
-              tags={heroPost.tags}
-            />
-          ))}
+      <Box borderRadius="lg" mb={6} p={3}>
+        <VStack spacing={2} alignItems="baseline">
+          <Heading
+            as="h3"
+            fontSize="lg"
+            color={useColorModeValue('purple.500', 'primary.main')}
+            variant="section-title"
+          >
+            Works
+          </Heading>
+          <Heading as="h6" fontSize="md">
+            Here are my freelance jobs
+          </Heading>
+        </VStack>
+        <Box as="section" mt="8">
+          <SimpleGrid as="ul" columns={{ md: 2, sm: 1 }} gap={8}>
+            {allWorks.map((work, index) => (
+              <WorkCard
+                key={index}
+                title={work.title}
+                description={work.description}
+                image={work.coverImage}
+                slug={work.slug}
+              />
+            ))}
+          </SimpleGrid>
         </Box>
       </Box>
     </>
   )
 }
 
-export default Posts
-
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts()
-  // const allPosts = getAllPosts([
-  //   'title',
-  //   'date',
-  //   'slug',
-  //   'author',
-  //   'coverImage',
-  //   'excerpt',
-  // ])
-
+  const allWorks = getAllWorks()
   return {
-    props: { allPosts }
+    props: { allWorks }
   }
 }
