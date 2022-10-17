@@ -1,5 +1,7 @@
 import { Flex, GridItem } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import { US } from 'country-flag-icons/react/3x2'
+import { BR } from 'country-flag-icons/react/3x2'
 
 import theme from 'styles/theme'
 
@@ -110,4 +112,13 @@ export const CardContainer = styled(GridItem)`
 
 export const Title = styled(Flex)`
   margin-top: 0.75rem;
+`
+
+export const FlagBR = styled(BR)`
+  max-width: 20px;
+  margin: 0 8px;
+`
+export const FlagUS = styled(US)`
+  max-width: 20px;
+  margin: 0 8px;
 `

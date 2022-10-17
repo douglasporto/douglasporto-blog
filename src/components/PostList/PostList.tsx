@@ -1,4 +1,11 @@
-import { Box, Heading, Text, useColorMode, VStack } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  useColorMode,
+  VStack
+} from '@chakra-ui/react'
 import format from 'date-fns/format'
 import { AnimatePresence, motion } from 'framer-motion'
 import PostType from 'types/post'
@@ -11,6 +18,7 @@ type PostLinkProps = {
   last: boolean
   typeList: 'card' | 'list'
 }
+
 const PostLink = ({ post, last, typeList }: PostLinkProps) => {
   const { slug, tags, date, title, coverImage, lang } = post
   const { colorMode } = useColorMode()
@@ -68,8 +76,24 @@ const PostLink = ({ post, last, typeList }: PostLinkProps) => {
                     </Heading>
                     <Text as="span" fontSize="sm">
                       <DateFormatter dateString={date} /> · Reading of {time}{' '}
-                      min - in {lang}
+                      min
+                      {/* - in {lang}{' '}
+                      {lang === 'Portuguese' ? (
+                        <S.FlagBR title="Brazil" />
+                      ) : (
+                        <S.FlagUS title="United States" />
+                      )} */}
                     </Text>
+                    <Flex w="100%" alignItems="center" justifyContent="center">
+                      <Text as="span" fontSize="xs">
+                        in {lang}{' '}
+                      </Text>
+                      {lang === 'Portuguese' ? (
+                        <S.FlagBR title="Brazil" />
+                      ) : (
+                        <S.FlagUS title="United States" />
+                      )}
+                    </Flex>
                   </VStack>
                 </S.Title>
               </S.CardContainer>
