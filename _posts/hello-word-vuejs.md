@@ -7,6 +7,7 @@ date: '2018-03-31T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/hellovue.png'
 twitter_text: "Um simples Hello World em Vue.js"
+published: true
 ---
 
 Agora que conhece um pouco sobre o Vue.js, vou mostrar o quanto é simples começar a utiliza-lo.

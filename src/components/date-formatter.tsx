@@ -1,5 +1,5 @@
 import { parseISO, format } from 'date-fns'
-import ptBR from 'date-fns/locale/pt-BR'
+import enUs from 'date-fns/locale/en-US'
 
 type Props = {
   dateString: string
@@ -10,7 +10,7 @@ const DateFormatter = ({ dateString }: Props) => {
   // return <time dateTime={dateString}>{format(date, 'LLLL	d, yyyy')}</time>
   return (
     <time dateTime={dateString}>
-      {format(date, "d 'de' LLLL 'de' yyyy'", { locale: ptBR })}
+      {format(date, "LLLL d',' yyyy'", { locale: enUs })}
     </time>
   )
 }

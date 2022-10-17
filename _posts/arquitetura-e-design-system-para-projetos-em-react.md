@@ -7,6 +7,7 @@ date: '2021-08-17T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/arq-design-react.png'
 twitter_text: "Arquitetura na prática para aquele seu projeto em react"
+published: true
 ---
 # Design System para React
 

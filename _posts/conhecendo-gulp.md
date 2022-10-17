@@ -7,6 +7,7 @@ date: '2018-09-20T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/bg-know-gulp.png'
 twitter_text: "Conheça o mundo dos automatizador de tarefas Gulp."
+published: true
 ---
 
 Antes de explicar e demonstrar o poderoso automatizador de tarefas, **[Gulp](https://gulpjs.com/)**, preciso explicar o que é um automatizador de tarefas.

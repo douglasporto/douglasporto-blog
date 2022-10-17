@@ -7,6 +7,7 @@ date: '2020-06-10T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/bg-rocketseat-vale-pena-p2.jpg'
 twitter_text: "O famoso curso bootcamp da Rocketseat deu uma repaginada e agora realmente vale o valor?"
+published: true
 ---
 
 **Faaaala deeev!!!**

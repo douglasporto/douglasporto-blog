@@ -7,6 +7,7 @@ date: '2021-05-18T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/interno.jpg'
 twitter_text: "Série Mudança: parte 2 de 3"
+published: true
 ---
 ### No texto anterior…
 

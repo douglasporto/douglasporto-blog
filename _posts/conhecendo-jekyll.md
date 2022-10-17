@@ -7,6 +7,7 @@ date: '2018-04-04T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/bg-conhecendo-jekyll.png'
 twitter_text: "Problemas com plugins do WordPress NUNCA MAIS. Jekyll, o melhor gerador de site estático feito para desenvolvedores."
+published: true
 ---
 
 Confesso que sempre que falavam de Blog, na minha cabeça vinha a imagem do [WordPress](https://br.wordpress.com/). Longe de mim julga-lo, já fiz diversos temas e trabalhos com esse CMS.

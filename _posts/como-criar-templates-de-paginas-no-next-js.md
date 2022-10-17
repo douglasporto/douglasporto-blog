@@ -7,6 +7,7 @@ date: '2021-08-25T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/templates-next.png'
 twitter_text: "Criando templates para páginas com Next.js"
+published: true
 ---
 # Como criar templates de páginas no Next.js
 

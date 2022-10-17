@@ -7,6 +7,7 @@ date: '2020-08-14T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/bg-pattern-git-commit.jpg'
 twitter_text: "Neste post ensino a configurar 4 bibliotecas ótimas para padronizar suas mensagens de commits e automatizar o processo de commit para que todos os devs tenham deixado o projeto no padrão."
+published: true
 ---
 
 Faaaala devs. Blz?

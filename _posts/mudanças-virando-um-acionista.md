@@ -7,6 +7,7 @@ date: '2021-06-14T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/virando-acionista.png'
 twitter_text: "Série Mudança: parte 3 de 3"
+published: true
 ---
 ### No texto anterior…
 

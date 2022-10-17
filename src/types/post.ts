@@ -12,6 +12,7 @@ type PostType = {
     url: string
   }
   content: string
+  lang: 'English' | 'Portuguese'
 }
 
 export default PostType

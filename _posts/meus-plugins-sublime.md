@@ -7,6 +7,7 @@ date: '2018-04-01T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/bg-meus-plugins-sublime.png'
 twitter_text: "Os plugins que mais gosto do Sublime Text 3."
+published: true
 ---
 
 Por mais root que seja, hoje é difícil encontrar um programador que não use um editor mais elegante, não é mesmo?

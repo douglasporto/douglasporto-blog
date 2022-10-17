@@ -8,6 +8,7 @@ date: '2018-03-28T05:35:07.322Z'
 ogImage:
   url: '/assets/img/pots/vuejs.jpg'
 twitter_text: "Uma pequena introdução ao Framework em javascript, Vuejs."
+published: true
 ---
 
 Sabemos que o momento é bom para o JavaScript. Com isso, vemos diversos plugins e frameworks surgindo e ganhando espaço nas comunidades.

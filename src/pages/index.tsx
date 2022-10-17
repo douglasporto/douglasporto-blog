@@ -1,31 +1,113 @@
-import { Box, Heading, useColorModeValue } from '@chakra-ui/react'
+import { useState } from 'react'
+import { BsList } from 'react-icons/bs'
+import { MdDashboard } from 'react-icons/md'
+
+import {
+  Box,
+  Flex,
+  Heading,
+  IconButton,
+  SimpleGrid,
+  useColorModeValue
+} from '@chakra-ui/react'
 import { getAllPosts } from 'lib/api'
+import { getAllWorks } from 'lib/apiWorks'
 import Post from 'types/post'
+import Work from 'types/work'
 
 import Author from '@/components/Author/Author'
 import Meta from '@/components/meta'
 import PostItem from '@/components/PostList/PostList'
+import { WorkCard } from '@/components/WorkCard/WorkCard'
 
 type Props = {
   allPosts: Post[]
+  allWorks: Work[]
 }
 
-const Index = ({ allPosts }: Props) => {
-  const heroPost = allPosts[0]
-  // const morePosts = allPosts.slice(1)
+type TypeList = 'card' | 'list'
+
+const Index = ({ allPosts, allWorks }: Props) => {
+  const firstTwoWorks = allWorks.slice(0, 2)
+  const [typeList, setTypeList] = useState<TypeList>('card')
+  const color = useColorModeValue('purple.500', 'primary.main')
   return (
     <>
       <Meta />
       <Author />
-      <Box borderRadius="lg" mb={6}>
+      <Box borderRadius="lg" mt={12} mb={6}>
         <Heading
           as="h3"
           fontSize="lg"
           color={useColorModeValue('purple.500', 'primary.main')}
           variant="section-title"
         >
-          Blog
+          Latest Projects
         </Heading>
+
+        <Box as="section" mt="8">
+          <SimpleGrid as="ul" columns={{ md: 2, sm: 1 }} gap={8}>
+            {firstTwoWorks.map((work, index) => (
+              <WorkCard
+                key={index}
+                title={work.title}
+                description={work.description}
+                image={work.coverImage}
+                slug={work.slug}
+              />
+            ))}
+          </SimpleGrid>
+          <Flex justifyContent="center" mt={8} mb={12}>
+            <Box
+              as="a"
+              href="/works"
+              sx={{
+                _hover: {
+                  color: 'white'
+                }
+              }}
+            >
+              <Heading
+                as="h5"
+                fontSize="md"
+                color={useColorModeValue('purple.500', 'primary.main')}
+              >
+                See more project
+              </Heading>
+            </Box>
+          </Flex>
+        </Box>
+      </Box>
+
+      <Box borderRadius="lg">
+        <Flex alignItems="center" mb={12}>
+          <Heading
+            as="h3"
+            fontSize="lg"
+            color={useColorModeValue('purple.500', 'primary.main')}
+            variant="section-title"
+          >
+            Articles
+          </Heading>
+          <IconButton
+            variant="outline"
+            aria-label="type list"
+            fontSize="20px"
+            color={typeList === 'card' ? color : ''}
+            ml={12}
+            onClick={() => setTypeList('card')}
+            icon={<MdDashboard />}
+          />
+          <IconButton
+            variant="outline"
+            aria-label="type list"
+            fontSize="20px"
+            color={typeList === 'list' ? color : ''}
+            ml={2}
+            onClick={() => setTypeList('list')}
+            icon={<BsList />}
+          />
+        </Flex>
         <Box
           as="ol"
           width="100%"
@@ -33,37 +115,23 @@ const Index = ({ allPosts }: Props) => {
           display="flex"
           flexDirection="column"
         >
-          {allPosts.map((post, index) => (
-            <PostItem
-              key={index}
-              title={post.title}
-              date={post.date}
-              slug={post.slug}
-              last={index === 0}
-              tags={heroPost.tags}
-            />
-          ))}
+          <SimpleGrid
+            as="ul"
+            mb={40}
+            columns={typeList === 'card' ? { md: 2, sm: 1 } : { base: 1 }}
+            gap={typeList === 'card' ? 14 : 0}
+          >
+            {allPosts.map((post, index) => (
+              <PostItem
+                typeList={typeList}
+                key={index}
+                post={post}
+                last={index === 0}
+              />
+            ))}
+          </SimpleGrid>
         </Box>
       </Box>
-      {/* <Button onClick={toggleColorMode}>
-        Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
-      </Button>
-      <Layout>
-        <OldContainer>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </OldContainer>
-      </Layout> */}
     </>
   )
 }
@@ -72,16 +140,9 @@ export default Index
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts()
-  // const allPosts = getAllPosts([
-  //   'title',
-  //   'date',
-  //   'slug',
-  //   'author',
-  //   'coverImage',
-  //   'excerpt',
-  // ])
+  const allWorks = getAllWorks()
 
   return {
-    props: { allPosts }
+    props: { allPosts, allWorks }
   }
 }

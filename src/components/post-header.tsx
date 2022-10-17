@@ -22,7 +22,7 @@ const PostHeader = ({ title, coverImage, date, timeToRead }: Props) => {
       </Flex>
       <Flex justifyContent="center">
         <Text fontSize="sm" as="i">
-          <DateFormatter dateString={date} /> · Leitura de {timeToRead} min
+          <DateFormatter dateString={date} /> · Reading of {timeToRead} min
         </Text>
       </Flex>
       <Box py={4}>

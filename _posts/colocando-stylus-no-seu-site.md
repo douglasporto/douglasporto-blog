@@ -7,6 +7,7 @@ date: '2018-04-09T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/bg-colocando-stylus.png'
 twitter_text: "Problemas com plugins do WordPress NUNCA MAIS. Jekyll, o melhor gerador de site estático feito para desenvolvedores."
+published: true
 ---
 
 Se você trabalha com o Front-End, deve saber o quanto o CSS é essencial.

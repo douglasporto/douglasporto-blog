@@ -7,6 +7,7 @@ date: '2018-04-17T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/header-axios-vuejs.png'
 twitter_text: "Vamos aprender na prática como fazer uma requisição AXIOS na API do GitHub."
+published: true
 ---
 
 Neste artigo não vou enrolar. Vamos colocar a mão na massa e aprender na prática a utilizar o [AXIOS](https://github.com/axios/axios).

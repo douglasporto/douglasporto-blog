@@ -95,7 +95,7 @@ const Header = ({ path }: { path: string }) => {
               it&apos;s me
             </LinkItem>
             <LinkItem href="/posts" path={path}>
-              Posts
+              Articles
             </LinkItem>
           </Stack>
           <ThemeToggleButton />

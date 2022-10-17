@@ -7,6 +7,7 @@ date: '2021-05-07T05:35:07.322Z'
 ogImage:
   url: '/assets/img/posts/recolocacao.png'
 twitter_text: "Série Mudança: parte 1 de 3"
+published: true
 ---
 Salve galera!
 

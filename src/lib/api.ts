@@ -72,7 +72,9 @@ export function getPostBySlug(slug: string) {
     tags: data.tags,
     ...data,
     dateFormatted: date,
-    content
+    content,
+    published: data?.published ? true : false,
+    lang: data?.lang ? data?.lang : 'Portuguese'
   }
 }
 
@@ -84,5 +86,5 @@ export function getAllPosts() {
       new Date(post1?.date) > new Date(post2?.date) ? -1 : 1
     )
 
-  return posts
+  return posts.filter((post) => post.published)
 }
