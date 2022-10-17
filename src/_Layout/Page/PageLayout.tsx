@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 
 import { useRouter } from 'next/router'
 
+import { Footer } from '_Layout/Footer/Footer'
 import Header from '_Layout/Header/Header'
 import { Box, Container } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
@@ -18,7 +19,7 @@ type PageLayoutProps = {
 const PageLayout = (props: PageLayoutProps) => {
   const router = useRouter()
   return (
-    <Box as="main" pb={8}>
+    <Box as="main">
       <Header path={router.asPath} />
       <Container maxW="container.md" pt={32}>
         <motion.article
@@ -32,6 +33,7 @@ const PageLayout = (props: PageLayoutProps) => {
           {props.children}
         </motion.article>
       </Container>
+      <Footer />
     </Box>
   )
 }
