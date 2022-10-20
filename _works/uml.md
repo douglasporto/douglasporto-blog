@@ -12,10 +12,10 @@ published: true
  This project's for a laboratory of the covid test that has 3 different platforms. For admin, patient, and account customers.
 
 Through the PWA, the patient with his smartphone fills in the form with his data. So through video conference, the patient makes a call to a doctor.
-The doctor on the admin platform makes the call with the patient. He can let or not that the test continues.
+The doctor on the admin platform makes the call with the patient. He can allow or disallow that the test continues.
 On the account customers platform, the account customers can follow all steps his tests make.
 
-On both platform admin and platform account customers, has many possibilities to change test status and follow the process flow.
+On both platform admin and platforms account customers, has many possibilities to change test status and follow the process flow.
 
 
  # Technologies

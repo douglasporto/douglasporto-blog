@@ -47,10 +47,11 @@ const Author = () => {
           <Box pt={4} pb={4}>
             <Text as="span" fontSize="md">
               Douglas is a freelancer, full-stack developer based in Brazil with
-              a passion for creating digital services/things. He likes all
-              things product launches, from planning and designing to solving
-              real-life problems with code. When not online, he loves to watch
-              movies and series. He is currently working at{' '}
+              a passion for creating digital services/things. He likes
+              everything involved in product launches, from planning and
+              designing to solving real-life problems with code. When not
+              online, he loves to watch movies and series. Currently, he has
+              been working at{' '}
               <a
                 href="https://fabricadeaplicativos.com.br/"
                 target="_blank"
@@ -89,16 +90,18 @@ const Author = () => {
         <Stack spacing={4}>
           <Box>
             <BioYear>2019 - to present</BioYear>
-            <BioDescription>Senior Develop fullstack at Fabapp</BioDescription>
+            <BioDescription>
+              Senior fullstack Developer at Fabapp
+            </BioDescription>
           </Box>
           <Box>
             <BioYear>2010 - 2019</BioYear>
-            <BioDescription>Web Develop fullstack at Uranet</BioDescription>
+            <BioDescription>Web fullstack Developer at Uranet</BioDescription>
           </Box>
           <Box>
             <BioYear>2009 - 2011</BioYear>
             <BioDescription>
-              Formed in 2011 Analysis and System Development
+              Graduated in Analysis and System Development
             </BioDescription>
           </Box>
         </Stack>
