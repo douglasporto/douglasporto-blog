@@ -1,30 +1,30 @@
+import { FaComments, FaHeart } from 'react-icons/fa'
+
 import {
   Box,
   Flex,
   Heading,
+  HStack,
   Text,
   useColorMode,
   VStack
 } from '@chakra-ui/react'
+import { PostDevTo } from 'api/getPostsDevTo'
 import format from 'date-fns/format'
 import { AnimatePresence, motion } from 'framer-motion'
-import PostType from 'types/post'
 
 import DateFormatter from '../date-formatter'
 import * as S from './PostList.styles'
 
-type PostLinkProps = {
-  post: PostType
+type PostItemDevToProps = {
+  post: PostDevTo
   last: boolean
   typeList: 'card' | 'list'
 }
 
-const PostLink = ({ post, last, typeList }: PostLinkProps) => {
-  const { slug, tags, date, title, coverImage, lang } = post
+export const PostItemDevTo = ({ post, last, typeList }: PostItemDevToProps) => {
   const { colorMode } = useColorMode()
-  const wpm = 225
-  const words = post.content.trim().split(/\s+/).length
-  const time = Math.ceil(words / wpm)
+  const time = post.reading_time_minutes
   return (
     <>
       <AnimatePresence exitBeforeEnter>
@@ -39,7 +39,8 @@ const PostLink = ({ post, last, typeList }: PostLinkProps) => {
             <S.PostItem colorMode={colorMode}>
               <Box
                 as="a"
-                href={`posts/${slug}`}
+                href={post.url}
+                target="_blank"
                 sx={{
                   _hover: {
                     color: 'white'
@@ -47,20 +48,21 @@ const PostLink = ({ post, last, typeList }: PostLinkProps) => {
                 }}
               >
                 <S.PostPath colorMode={colorMode}>
-                  {tags.length > 0 && tags.join('/')}
+                  {post.tag_list.length > 0 && post.tag_list.join('/')}
                   <S.PostDate>
-                    {format(new Date(date), 'dd/MM/yyyy')}
+                    {format(new Date(post.created_at), 'MM/dd/yyyy')}
                     {last && <S.PostLast>*</S.PostLast>}
                   </S.PostDate>
                 </S.PostPath>
-                <S.PostTitle>{title}</S.PostTitle>
+                <S.PostTitle>{post.title}</S.PostTitle>
                 {last && <S.PostCursor>&nbsp;</S.PostCursor>}
               </Box>
             </S.PostItem>
           ) : (
             <Box
               as="a"
-              href={`posts/${slug}`}
+              href={post.url}
+              target="_blank"
               sx={{
                 _hover: {
                   color: 'white'
@@ -68,25 +70,30 @@ const PostLink = ({ post, last, typeList }: PostLinkProps) => {
               }}
             >
               <S.CardContainer as="li">
-                <img src={coverImage} />
+                <img src={post.cover_image} />
                 <S.Title flexDirection="column" alignItems="center">
                   <VStack spacing={2}>
                     <Heading as="h3" fontSize="md">
-                      {title}
+                      {post.title}
                     </Heading>
                     <Text as="span" fontSize="sm">
-                      <DateFormatter dateString={date} /> · Reading of {time}{' '}
-                      min
+                      <DateFormatter dateString={post.created_at} /> · Reading
+                      of {time} min
                     </Text>
                     <Flex w="100%" alignItems="center" justifyContent="center">
-                      <Text as="span" fontSize="xs">
-                        in {lang}{' '}
-                      </Text>
-                      {lang === 'Portuguese' ? (
-                        <S.FlagBR title="Brazil" />
-                      ) : (
-                        <S.FlagUS title="United States" />
-                      )}
+                      <HStack spacing={2}>
+                        <FaHeart color="red" />
+                        <Text as="span" fontSize="xs">
+                          {post.public_reactions_count}
+                        </Text>
+                        <Text as="span" fontSize="xs">
+                          {'   '}·{'   '}
+                        </Text>
+                        <FaComments />
+                        <Text as="span" fontSize="xs">
+                          {post.comments_count}
+                        </Text>
+                      </HStack>
                     </Flex>
                   </VStack>
                 </S.Title>
@@ -98,5 +105,3 @@ const PostLink = ({ post, last, typeList }: PostLinkProps) => {
     </>
   )
 }
-
-export default PostLink

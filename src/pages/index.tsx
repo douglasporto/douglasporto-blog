@@ -7,9 +7,14 @@ import {
   Flex,
   Heading,
   IconButton,
+  Radio,
+  RadioGroup,
   SimpleGrid,
+  Stack,
   useColorModeValue
 } from '@chakra-ui/react'
+import { useQuery } from '@tanstack/react-query'
+import { getPosts, PostDevTo } from 'api/getPostsDevTo'
 import { getAllPosts } from 'lib/api'
 import { getAllWorks } from 'lib/apiWorks'
 import Post from 'types/post'
@@ -18,6 +23,7 @@ import Work from 'types/work'
 import Author from '@/components/Author/Author'
 import Meta from '@/components/meta'
 import PostItem from '@/components/PostList/PostList'
+import { PostItemDevTo } from '@/components/PostList/PostListDevTo'
 import { WorkCard } from '@/components/WorkCard/WorkCard'
 
 type Props = {
@@ -31,6 +37,12 @@ const Index = ({ allPosts, allWorks }: Props) => {
   const firstTwoWorks = allWorks.slice(0, 2)
   const [typeList, setTypeList] = useState<TypeList>('card')
   const color = useColorModeValue('purple.500', 'primary.main')
+  const [language, setLanguage] = useState('en_US')
+
+  const { data: dataDevTo } = useQuery<PostDevTo[]>(['dev_to'], () => {
+    return getPosts()
+  })
+
   return (
     <>
       <Meta />
@@ -107,6 +119,17 @@ const Index = ({ allPosts, allWorks }: Props) => {
             onClick={() => setTypeList('list')}
             icon={<BsList />}
           />
+          <RadioGroup
+            onChange={setLanguage}
+            value={language}
+            paddingLeft={8}
+            colorScheme={'purple'}
+          >
+            <Stack direction="row">
+              <Radio value="pt_BR">Portuguese</Radio>
+              <Radio value="en_US">English</Radio>
+            </Stack>
+          </RadioGroup>
         </Flex>
         <Box
           as="ol"
@@ -121,14 +144,29 @@ const Index = ({ allPosts, allWorks }: Props) => {
             columns={typeList === 'card' ? { md: 2, sm: 1 } : { base: 1 }}
             gap={typeList === 'card' ? 14 : 0}
           >
-            {allPosts.map((post, index) => (
-              <PostItem
-                typeList={typeList}
-                key={index}
-                post={post}
-                last={index === 0}
-              />
-            ))}
+            {language === 'pt_BR' ? (
+              <>
+                {allPosts.map((post, index) => (
+                  <PostItem
+                    typeList={typeList}
+                    key={index}
+                    post={post}
+                    last={index === 0}
+                  />
+                ))}
+              </>
+            ) : (
+              <>
+                {dataDevTo?.map((post, index) => (
+                  <PostItemDevTo
+                    typeList={typeList}
+                    key={post.id}
+                    post={post}
+                    last={index === 0}
+                  />
+                ))}
+              </>
+            )}
           </SimpleGrid>
         </Box>
       </Box>
