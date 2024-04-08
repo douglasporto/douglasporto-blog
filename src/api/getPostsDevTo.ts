@@ -2,7 +2,13 @@ import axios from 'axios'
 
 export const getPosts = async () => {
   const res = await axios.get(
-    'https://dev.to/api/articles?username=douglasporto'
+    'https://dev.to/api/articles/me/published',
+    // 'https://dev.to/api/articles?username=douglasporto',
+    {
+      headers: {
+        'api-key': 'uJQdtHuLfX4uKyKxcmj8SUFb'
+      }
+    }
   )
   return res.data
 }
@@ -21,6 +27,7 @@ export interface PostDevTo {
   collection_id: null
   published_timestamp: string
   positive_reactions_count: 6
+  page_views_count: number
   cover_image: string
   social_image: string
   canonical_url: string

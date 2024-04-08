@@ -1,4 +1,4 @@
-import { FaComments, FaHeart } from 'react-icons/fa'
+import { FaComments, FaHeart, FaEye } from 'react-icons/fa'
 
 import {
   Box,
@@ -50,7 +50,8 @@ export const PostItemDevTo = ({ post, last, typeList }: PostItemDevToProps) => {
                 <S.PostPath colorMode={colorMode}>
                   {post.tag_list.length > 0 && post.tag_list.join('/')}
                   <S.PostDate>
-                    {format(new Date(post.created_at), 'MM/dd/yyyy')}
+                    {format(new Date(post.published_timestamp), 'MM/dd/yyyy')}
+                    {/* {post.published_timestamp} */}
                     {last && <S.PostLast>*</S.PostLast>}
                   </S.PostDate>
                 </S.PostPath>
@@ -77,8 +78,8 @@ export const PostItemDevTo = ({ post, last, typeList }: PostItemDevToProps) => {
                       {post.title}
                     </Heading>
                     <Text as="span" fontSize="sm">
-                      <DateFormatter dateString={post.created_at} /> · Reading
-                      of {time} min
+                      <DateFormatter dateString={post.published_timestamp} /> ·
+                      Reading of {time} min
                     </Text>
                     <Flex w="100%" alignItems="center" justifyContent="center">
                       <HStack spacing={2}>
@@ -92,6 +93,13 @@ export const PostItemDevTo = ({ post, last, typeList }: PostItemDevToProps) => {
                         <FaComments />
                         <Text as="span" fontSize="xs">
                           {post.comments_count}
+                        </Text>
+                        <Text as="span" fontSize="xs">
+                          {'   '}·{'   '}
+                        </Text>
+                        <FaEye color="#ed64a6" />
+                        <Text as="span" fontSize="xs">
+                          {post.page_views_count}
                         </Text>
                       </HStack>
                     </Flex>

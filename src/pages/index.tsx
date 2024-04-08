@@ -13,7 +13,6 @@ import {
   Stack,
   useColorModeValue
 } from '@chakra-ui/react'
-import { useQuery } from '@tanstack/react-query'
 import { getPosts, PostDevTo } from 'api/getPostsDevTo'
 import { getAllPosts } from 'lib/api'
 import { getAllWorks } from 'lib/apiWorks'
@@ -29,20 +28,17 @@ import { WorkCard } from '@/components/WorkCard/WorkCard'
 type Props = {
   allPosts: Post[]
   allWorks: Work[]
+  dataDevTo: PostDevTo[]
 }
 
 type TypeList = 'card' | 'list'
 
-const Index = ({ allPosts, allWorks }: Props) => {
+const Index = ({ allPosts, allWorks, dataDevTo }: Props) => {
   const firstTwoWorks = allWorks.slice(0, 2)
   const [typeList, setTypeList] = useState<TypeList>('card')
   const color = useColorModeValue('purple.500', 'primary.main')
   const [language, setLanguage] = useState('en_US')
-
-  const { data: dataDevTo } = useQuery<PostDevTo[]>(['dev_to'], () => {
-    return getPosts()
-  })
-
+  console.log(dataDevTo)
   return (
     <>
       <Meta />
@@ -179,8 +175,9 @@ export default Index
 export const getStaticProps = async () => {
   const allPosts = getAllPosts()
   const allWorks = getAllWorks()
+  const dataDevTo = await getPosts()
 
   return {
-    props: { allPosts, allWorks }
+    props: { allPosts, allWorks, dataDevTo }
   }
 }
