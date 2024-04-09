@@ -43,23 +43,29 @@ const Author = () => {
           >
             Douglas Porto
           </Heading>
-          <p>Senior Developer Engineer</p>
+          <p>Senior Developer Engineer and Tech lead</p>
           <Box pt={4} pb={4}>
+            {/* Douglas é um desenvolvedor freelancer full-stack, residente no Brasil e apaixonado pela criação de serviços e produtos digitais.
+                Ele se entusiasma com todos os aspectos relacionados ao lançamento de produtos, abrangendo desde o planejamento e o design até a resolução de problemas concretos por meio da programação.
+                No momento, está empenhado em projetos pessoais e na sua empresa de consultoria especializada no desenvolvimento de software.
+                Casado e pai de dois filhos, Douglas prioriza também momentos de qualidade ao lado da família.
+                É um amante por futebol, cinema e séries de TV. Além disso, pratica maratonas amadoramente e tem um gosto diversificado por esportes.
+            */}
+
             <Text as="span" fontSize="md">
-              Douglas is a freelancer, full-stack developer based in Brazil with
-              a passion for creating digital services/things. He likes
-              everything involved in product launches, from planning and
-              designing to solving real-life problems with code. When not
-              online, he loves to watch movies and series. Currently, he has
-              been working at{' '}
-              <a
-                href="https://fabricadeaplicativos.com.br/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Fabapp
-              </a>
-              , an app company.
+              Douglas is a freelance full-stack developer, living in Brazil and
+              passionate about creating digital services and products. He is
+              excited about all aspects of product launch, covering everything
+              from planning and design to solving concrete problems through
+              programming.
+              <br />
+              Currently, he is dedicated to personal projects and his consulting
+              firm specialized in software development.
+              <br />
+              Married and a father of two, Douglas also prioritizes quality
+              moments with his family. He is a lover of soccer, cinema, and TV
+              series. Additionally, he practices marathons as an amateur and has
+              a diversified taste for sports.
             </Text>
           </Box>
         </Box>
@@ -89,7 +95,20 @@ const Author = () => {
         </Heading>
         <Stack spacing={4}>
           <Box>
-            <BioYear>2019 - to present</BioYear>
+            <BioYear>2022 - to present</BioYear>
+            <BioDescription>
+              Tech lead and Founder at{' '}
+              <a
+                href="https://onetwo.services"
+                target="_blank"
+                rel="noreferrer"
+              >
+                One Two Tech
+              </a>
+            </BioDescription>
+          </Box>
+          <Box>
+            <BioYear>2019 - 2024</BioYear>
             <BioDescription>
               Senior fullstack Developer at Fabapp
             </BioDescription>

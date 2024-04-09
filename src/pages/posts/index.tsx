@@ -15,8 +15,7 @@ import {
   Stack,
   useColorModeValue
 } from '@chakra-ui/react'
-import { useQuery } from '@tanstack/react-query'
-import { getPosts, PostDevTo } from 'api/getPostsDevTo'
+import { PostDevTo, getPosts } from 'api/getPostsDevTo'
 import { getAllPosts } from 'lib/api'
 import { CMS_NAME } from 'lib/constants'
 import Post from 'types/post'
@@ -28,15 +27,12 @@ type TypeList = 'card' | 'list'
 
 type Props = {
   allPosts: Post[]
+  dataDevTo: PostDevTo[]
 }
 
-const Posts = ({ allPosts }: Props) => {
+const Posts = ({ allPosts, dataDevTo }: Props) => {
   const [typeList, setTypeList] = useState<TypeList>('card')
   const [language, setLanguage] = useState('en_US')
-
-  const { data: dataDevTo } = useQuery<PostDevTo[]>(['dev_to'], () => {
-    return getPosts()
-  })
 
   return (
     <>
@@ -52,7 +48,7 @@ const Posts = ({ allPosts }: Props) => {
             color={useColorModeValue('purple.500', 'primary.main')}
             variant="section-title"
           >
-            Articles
+            Posts
           </Heading>
           <IconButton
             variant="outline"
@@ -131,6 +127,7 @@ export default Posts
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts()
+  const dataDevTo = await getPosts()
   // const allPosts = getAllPosts([
   //   'title',
   //   'date',
@@ -141,6 +138,6 @@ export const getStaticProps = async () => {
   // ])
 
   return {
-    props: { allPosts }
+    props: { allPosts, dataDevTo }
   }
 }

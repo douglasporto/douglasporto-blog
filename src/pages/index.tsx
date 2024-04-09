@@ -38,7 +38,7 @@ const Index = ({ allPosts, allWorks, dataDevTo }: Props) => {
   const [typeList, setTypeList] = useState<TypeList>('card')
   const color = useColorModeValue('purple.500', 'primary.main')
   const [language, setLanguage] = useState('en_US')
-  console.log(dataDevTo)
+
   return (
     <>
       <Meta />
@@ -95,7 +95,7 @@ const Index = ({ allPosts, allWorks, dataDevTo }: Props) => {
             color={useColorModeValue('purple.500', 'primary.main')}
             variant="section-title"
           >
-            Articles
+            Posts
           </Heading>
           <IconButton
             variant="outline"

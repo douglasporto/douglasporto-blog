@@ -10,6 +10,8 @@ twitter_text: "Material-UI: Transformando Ideias em Interfaces com Elegância e 
 published: true
 ---
 
+[🇺🇸 Post in English click here](https://dev.to/douglasporto/material-ui-turning-ideas-into-interfaces-with-style-and-efficiency-ecn)
+
 Salve devs ✌🏾
 
 Inicio esta postagem já pedindo desculpas por tanto tempo sem escrever nada.
