@@ -10,7 +10,6 @@ export function getWorkBySlug(slug: string) {
   // if (!slug) return null
 
   const realSlug = slug.replace(/\.md$/, '')
-  console.log('real', realSlug)
   const fullPath = join(postsDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)

@@ -112,7 +112,6 @@ methods: {
     vm = this;
     axios.get(api).then(function(response) {
       vm.github = response.data;
-      console.log(vm.github);
     });
   }
 }
@@ -153,4 +152,3 @@ Agora busque um usuário e observe o cosole.
 ```
 
 Agora basta ler a [documentação do GitHub](https://developer.github.com/v3/) e deixar a criatividade fluir.
-

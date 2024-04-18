@@ -96,7 +96,6 @@ methods: {
     vm = this;
     axios.get(api).then(function(response) {
       vm.github = response.data;
-      console.log(vm.github);
     });
   }
 }
