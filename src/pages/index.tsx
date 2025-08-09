@@ -36,7 +36,7 @@ type TypeList = 'card' | 'list'
 const Index = ({ allPosts, allWorks, dataDevTo }: Props) => {
   const firstTwoWorks = allWorks.slice(0, 2)
   const [typeList, setTypeList] = useState<TypeList>('card')
-  const color = useColorModeValue('purple.500', 'primary.main')
+  const color = useColorModeValue('primary.light', 'primary.main')
   const [language, setLanguage] = useState('en_US')
 
   return (
@@ -47,10 +47,10 @@ const Index = ({ allPosts, allWorks, dataDevTo }: Props) => {
         <Heading
           as="h3"
           fontSize="lg"
-          color={useColorModeValue('purple.500', 'primary.main')}
+          color={useColorModeValue('primary.light', 'primary.main')}
           variant="section-title"
         >
-          Latest Projects
+          Últimos projetos
         </Heading>
 
         <Box as="section" mt="8">
@@ -78,9 +78,9 @@ const Index = ({ allPosts, allWorks, dataDevTo }: Props) => {
               <Heading
                 as="h5"
                 fontSize="md"
-                color={useColorModeValue('purple.500', 'primary.main')}
+                color={useColorModeValue('primary.light', 'primary.main')}
               >
-                See more project
+                Ver mais projetos
               </Heading>
             </Box>
           </Flex>
@@ -92,10 +92,10 @@ const Index = ({ allPosts, allWorks, dataDevTo }: Props) => {
           <Heading
             as="h3"
             fontSize="lg"
-            color={useColorModeValue('purple.500', 'primary.main')}
+            color={useColorModeValue('primary.light', 'primary.main')}
             variant="section-title"
           >
-            Posts
+            Artigos técnicos
           </Heading>
           <IconButton
             variant="outline"

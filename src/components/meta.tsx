@@ -39,7 +39,7 @@ const Meta = ({ title, description, image }: MetaProps) => {
         href="/favicon/douglas-icon.png"
       />
       <link rel="shortcut icon" href="/favicon/douglas-icon.png" />
-      <meta name="theme-color" content="#ED64A6" />
+      <meta name="theme-color" content="#F97316" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta name="description" content={ogDescription} />
       <meta property="og:image" content={ogImage} />

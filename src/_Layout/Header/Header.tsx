@@ -39,7 +39,7 @@ const LinkItem = ({
     <Box
       as="a"
       p={2}
-      color={active ? 'pink.700' : inactiveColor}
+      color={active ? 'orange.500' : inactiveColor}
       fontWeight={active ? '700' : '500'}
       target={_target}
       href={href}
@@ -59,7 +59,7 @@ const Header = ({ path }: { path: string }) => {
       w="100%"
       alignContent="center"
       justifyContent="center"
-      bg={useColorModeValue('#ffffff40', '#0E091B80')}
+      bg={useColorModeValue('#E5E7EB95', '#1F293795')}
       sx={{
         backdropFilter: 'blur(10px)',
         boxShadow: '2px 2px 4px rgb(0 0 0 / 70%)'
@@ -89,13 +89,13 @@ const Header = ({ path }: { path: string }) => {
             mt={{ base: 4, md: 0 }}
           >
             <LinkItem href="/works" path={path}>
-              Works
+              Trabalhos
             </LinkItem>
             <LinkItem href="/its-me" path={path}>
-              it&apos;s me
+              It&apos;s me
             </LinkItem>
             <LinkItem href="/posts" path={path}>
-              Posts
+              Artigos
             </LinkItem>
           </Stack>
           <ThemeToggleButton />

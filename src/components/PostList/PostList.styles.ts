@@ -22,7 +22,7 @@ export const PostItem = styled.li<{ colorMode?: 'dark' | 'light' }>`
     color: ${({ colorMode }) =>
       colorMode === 'dark'
         ? theme.colors.primary.main
-        : theme.colors.pink[700]};
+        : theme.colors.primary.light};
     content: '~/';
   }
   &:not(:last-child) {
@@ -49,7 +49,9 @@ export const PostItem = styled.li<{ colorMode?: 'dark' | 'light' }>`
 
 export const PostPath = styled.span<{ colorMode?: 'dark' | 'light' }>`
   color: ${({ colorMode }) =>
-    colorMode === 'dark' ? theme.colors.primary.main : theme.colors.pink[700]};
+    colorMode === 'dark'
+      ? theme.colors.primary.main
+      : theme.colors.primary.light};
   &:after {
     content: '»';
     display: inline-block;

@@ -22,6 +22,11 @@ const BioYear = styled.span`
 `
 
 const Author = () => {
+  const gradientColors = useColorModeValue(
+    'linear-gradient(135deg, #2563EB, #3B82F6, #60A5FA)',
+    'linear-gradient(135deg, #F97316, #FB923C, #FED7AA)'
+  )
+
   return (
     <>
       <Box
@@ -31,44 +36,44 @@ const Author = () => {
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I{`'`}m a full-stack developer based in Brazil!
+        Olá! Eu ajudo empresas e criadores a transformarem ideias em negócios
+        digitais de sucesso.
       </Box>
+
       <Box display="flex">
         <Box flexGrow={1}>
           <Heading
             as="h2"
             variant="page-title"
-            background="linear-gradient(#ec4899,#7e22ce)"
+            background={gradientColors}
             backgroundClip="text"
           >
             Douglas Porto
           </Heading>
-          <p>Senior Developer Engineer and Tech lead</p>
-          <Box pt={4} pb={4}>
-            {/* Douglas é um desenvolvedor freelancer full-stack, residente no Brasil e apaixonado pela criação de serviços e produtos digitais.
-                Ele se entusiasma com todos os aspectos relacionados ao lançamento de produtos, abrangendo desde o planejamento e o design até a resolução de problemas concretos por meio da programação.
-                No momento, está empenhado em projetos pessoais e na sua empresa de consultoria especializada no desenvolvimento de software.
-                Casado e pai de dois filhos, Douglas prioriza também momentos de qualidade ao lado da família.
-                É um amante por futebol, cinema e séries de TV. Além disso, pratica maratonas amadoramente e tem um gosto diversificado por esportes.
-            */}
+          <p>Head de Tecnologia • Criador de Plataformas Digitais</p>
 
+          <Box pt={4} pb={4}>
             <Text as="span" fontSize="md">
-              Douglas is a freelance full-stack developer, living in Brazil and
-              passionate about creating digital services and products. He is
-              excited about all aspects of product launch, covering everything
-              from planning and design to solving concrete problems through
-              programming.
+              Sou empreendedor e Head de Tecnologia, com mais de 15 anos
+              liderando a criação de produtos digitais que geram resultados
+              reais.
               <br />
-              Currently, he is dedicated to personal projects and his consulting
-              firm specialized in software development.
+              Fundador da <strong>Baseportal</strong>, um portal modular
+              no-code/low-code com automações e IA, e da{' '}
+              <strong>FansDeck</strong>, plataforma para criadores gerirem suas
+              comunidades e conteúdos exclusivos.
               <br />
-              Married and a father of two, Douglas also prioritizes quality
-              moments with his family. He is a lover of soccer, cinema, and TV
-              series. Additionally, he practices marathons as an amateur and has
-              a diversified taste for sports.
+              Minha missão é guiar empresários e empreendedores na jornada de
+              tirar suas ideias do papel, passando da visão à execução com
+              clareza, estratégia e foco em resultados.
+              <br />
+              Maratonista amador, marido e pai de duas crianças, aplico no dia a
+              dia o mesmo princípio que me guia no esporte: disciplina e
+              consistência para alcançar grandes conquistas.
             </Text>
           </Box>
         </Box>
+
         <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
           <Image
             borderColor="whiteAlpha.800"
@@ -80,24 +85,45 @@ const Author = () => {
             display="inline-block"
             borderRadius="full"
             src="/assets/profile/douglas-porto.jpeg"
-            alt="Profile image"
+            alt="Foto de perfil"
           />
         </Box>
       </Box>
+
       <Box borderRadius="lg" mb={12}>
         <Heading
           as="h3"
           fontSize="lg"
-          color={useColorModeValue('purple.500', 'primary.main')}
+          color={useColorModeValue('primary.light', 'primary.main')}
           variant="section-title"
         >
-          Bio
+          Linha do Tempo
         </Heading>
         <Stack spacing={4}>
           <Box>
-            <BioYear>2022 - to present</BioYear>
+            <BioYear>2024 - Presente</BioYear>
             <BioDescription>
-              Tech lead and Founder at{' '}
+              Fundador e Head de Tecnologia na{' '}
+              <a href="https://baseportal.io" target="_blank" rel="noreferrer">
+                Baseportal
+              </a>{' '}
+              — plataforma no-code/low-code com IA e automações para empresas.
+            </BioDescription>
+          </Box>
+          <Box>
+            <BioYear>2024 - Presente</BioYear>
+            <BioDescription>
+              Criador da{' '}
+              <a href="https://fansdeck.com" target="_blank" rel="noreferrer">
+                FansDeck
+              </a>{' '}
+              — solução para criadores monetizarem e gerirem suas comunidades.
+            </BioDescription>
+          </Box>
+          <Box>
+            <BioYear>2022 - Presente</BioYear>
+            <BioDescription>
+              Tech Lead e Fundador da{' '}
               <a
                 href="https://onetwo.services"
                 target="_blank"
@@ -110,29 +136,32 @@ const Author = () => {
           <Box>
             <BioYear>2019 - 2024</BioYear>
             <BioDescription>
-              Senior fullstack Developer at Fabapp
+              Desenvolvedor Fullstack Sênior na Fabapp
             </BioDescription>
           </Box>
           <Box>
             <BioYear>2010 - 2019</BioYear>
-            <BioDescription>Web fullstack Developer at Uranet</BioDescription>
+            <BioDescription>
+              Desenvolvedor Web Fullstack na Uranet
+            </BioDescription>
           </Box>
           <Box>
             <BioYear>2009 - 2011</BioYear>
             <BioDescription>
-              Graduated in Analysis and System Development
+              Graduado em Análise e Desenvolvimento de Sistemas
             </BioDescription>
           </Box>
         </Stack>
       </Box>
+
       <Box borderRadius="lg" mb={12}>
         <Heading
           as="h3"
           fontSize="lg"
-          color={useColorModeValue('purple.500', 'primary.main')}
+          color={useColorModeValue('primary.light', 'primary.main')}
           variant="section-title"
         >
-          On the web
+          Na Web
         </Heading>
         <Stack spacing={4}>
           <Box ml={6} display="flex" flexDirection="column" alignItems="start">

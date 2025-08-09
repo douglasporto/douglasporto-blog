@@ -19,7 +19,7 @@ const Progress = styled(motion.div)`
   left: 0;
   right: 0;
   height: 10px;
-  background: #805ad5;
+  background: #f97316;
   transform-origin: 0%;
 `
 

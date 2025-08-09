@@ -14,7 +14,7 @@ const PostHeader = ({ title, coverImage, date, timeToRead }: Props) => {
     <>
       <Flex justifyContent="center">
         <Text
-          color={useColorModeValue('purple.500', 'pink.400')}
+          color={useColorModeValue('primary.light', 'primary.main')}
           fontSize="3xl"
         >
           {title}

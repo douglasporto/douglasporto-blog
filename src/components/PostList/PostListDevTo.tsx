@@ -7,6 +7,7 @@ import {
   HStack,
   Text,
   useColorMode,
+  useColorModeValue,
   VStack
 } from '@chakra-ui/react'
 import { PostDevTo } from 'api/getPostsDevTo'
@@ -24,6 +25,7 @@ type PostItemDevToProps = {
 
 export const PostItemDevTo = ({ post, last, typeList }: PostItemDevToProps) => {
   const { colorMode } = useColorMode()
+  const eyeColor = useColorModeValue('#2563EB', '#F97316')
   const time = post.reading_time_minutes
   return (
     <>
@@ -97,7 +99,7 @@ export const PostItemDevTo = ({ post, last, typeList }: PostItemDevToProps) => {
                         <Text as="span" fontSize="xs">
                           {'   '}·{'   '}
                         </Text>
-                        <FaEye color="#ed64a6" />
+                        <FaEye color={eyeColor} />
                         <Text as="span" fontSize="xs">
                           {post.page_views_count}
                         </Text>

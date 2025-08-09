@@ -26,7 +26,7 @@ const Logo = () => {
       <LogoBox>
         <GoRocket />
         <Text fontWeight="bold" ml={3}>
-          {`Douglas Porto`}
+          Douglas Porto
         </Text>
       </LogoBox>
     </a>

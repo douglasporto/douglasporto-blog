@@ -21,13 +21,13 @@ export default function Works({ allWorks }: { allWorks: WorkType[] }) {
           <Heading
             as="h3"
             fontSize="lg"
-            color={useColorModeValue('purple.500', 'primary.main')}
+            color={useColorModeValue('primary.light', 'primary.main')}
             variant="section-title"
           >
-            Works
+            Trabalhos
           </Heading>
           <Heading as="h6" fontSize="md">
-            Here are my freelance jobs
+            Aqui são alguns dos meus trabalhos
           </Heading>
         </VStack>
         <Box as="section" mt="8">

@@ -105,7 +105,7 @@ const MainContent = css`
     width: 100%;
   }
   blockquote {
-    border-left: 0.3rem solid ${theme.colors.pink[400]};
+    border-left: 0.3rem solid var(--primaryColor);
     border-radius: 0 0.5rem 0.5rem 0;
     background: var(--bgSecondary);
     padding: 0.5rem 1.875rem;
@@ -157,65 +157,59 @@ const MainContent = css`
 
 export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
   a {
-    color: ${({ colorMode }) =>
-      colorMode === 'dark' ? theme.colors.pink[400] : theme.colors.purple[500]};
+    color: ${(props) =>
+      props.colorMode === 'dark'
+        ? theme.colors.primary.main
+        : theme.colors.primary.light};
   }
   ${MainContent}
 
-  pre::-webkit-scrollbar
-  {
+  pre::-webkit-scrollbar {
     width: 14px;
   }
 
-  pre::-webkit-scrollbar-track
-  {
+  pre::-webkit-scrollbar-track {
     background-color: ${comment};
     border-radius: 0px;
   }
 
-  pre::-webkit-scrollbar-thumb
-  {
+  pre::-webkit-scrollbar-thumb {
     background-color: ${purple};
     border-radius: 0px;
   }
 
   /* Selection */
 
-  pre[class*="language-"]::-moz-selection,
-  pre[class*="language-"] ::-moz-selection,
-  code[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection
-  {
+  pre[class*='language-']::-moz-selection,
+  pre[class*='language-'] ::-moz-selection,
+  code[class*='language-']::-moz-selection,
+  code[class*='language-'] ::-moz-selection {
     text-shadow: none;
     background-color: ${selection};
   }
 
-  pre[class*="language-"]::selection,
-  pre[class*="language-"] ::selection,
-  code[class*="language-"]::selection,
-  code[class*="language-"] ::selection
-  {
+  pre[class*='language-']::selection,
+  pre[class*='language-'] ::selection,
+  code[class*='language-']::selection,
+  code[class*='language-'] ::selection {
     text-shadow: none;
     background-color: ${selection};
   }
 
   /* Line numbers */
 
-  pre.line-numbers
-  {
+  pre.line-numbers {
     position: relative;
     padding-left: 3.8em;
     counter-reset: linenumber;
   }
 
-  pre.line-numbers > code
-  {
+  pre.line-numbers > code {
     position: relative;
     white-space: inherit;
   }
 
-  .line-numbers .line-numbers-rows
-  {
+  .line-numbers .line-numbers-rows {
     position: absolute;
     pointer-events: none;
     top: 0;
@@ -231,15 +225,13 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
     user-select: none;
   }
 
-  .line-numbers-rows > span
-  {
+  .line-numbers-rows > span {
     pointer-events: none;
     display: block;
     counter-increment: linenumber;
   }
 
-  .line-numbers-rows > span:before
-  {
+  .line-numbers-rows > span:before {
     content: counter(linenumber);
     color: #999;
     display: block;
@@ -249,13 +241,11 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
 
   /* Toolbar for copying */
 
-  div.code-toolbar
-  {
+  div.code-toolbar {
     position: relative;
   }
 
-  div.code-toolbar > .toolbar
-  {
+  div.code-toolbar > .toolbar {
     position: absolute;
     top: 0.3em;
     right: 0.2em;
@@ -263,24 +253,20 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
     opacity: 0;
   }
 
-  div.code-toolbar:hover > .toolbar
-  {
+  div.code-toolbar:hover > .toolbar {
     opacity: 1;
   }
 
-  div.code-toolbar > .toolbar .toolbar-item
-  {
+  div.code-toolbar > .toolbar .toolbar-item {
     display: inline-block;
     padding-right: 20px;
   }
 
-  div.code-toolbar > .toolbar a
-  {
+  div.code-toolbar > .toolbar a {
     cursor: pointer;
   }
 
-  div.code-toolbar > .toolbar button
-  {
+  div.code-toolbar > .toolbar button {
     background: none;
     border: 0;
     color: inherit;
@@ -295,8 +281,7 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
 
   div.code-toolbar > .toolbar a,
   div.code-toolbar > .toolbar button,
-  div.code-toolbar > .toolbar span
-  {
+  div.code-toolbar > .toolbar span {
     color: ${foreground};
     font-size: 0.8em;
     padding: 0.5em;
@@ -309,8 +294,7 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
   div.code-toolbar > .toolbar button:hover,
   div.code-toolbar > .toolbar button:focus,
   div.code-toolbar > .toolbar span:hover,
-  div.code-toolbar > .toolbar span:focus
-  {
+  div.code-toolbar > .toolbar span:focus {
     color: inherit;
     text-decoration: none;
     background-color: ${green};
@@ -318,22 +302,19 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
 
   /* Remove text shadow for printing */
 
-  @media print
-  {
-    code[class*="language-"],
-    pre[class*="language-"]
-    {
+  @media print {
+    code[class*='language-'],
+    pre[class*='language-'] {
       text-shadow: none;
     }
   }
 
-  code[class*="language-"],
-  pre[class*="language-"]
-  {
+  code[class*='language-'],
+  pre[class*='language-'] {
     color: ${foreground};
     background: ${background};
     text-shadow: none;
-    font-family: PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    font-family: PT Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
       monospace;
     text-align: left;
     white-space: pre;
@@ -354,8 +335,7 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
 
   /* Code blocks */
 
-  pre[class*="language-"]
-  {
+  pre[class*='language-'] {
     background: ${background};
     border-radius: 0.5em;
     padding: 1em;
@@ -364,15 +344,13 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
     height: auto;
   }
 
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"]
-  {
+  :not(pre) > code[class*='language-'],
+  pre[class*='language-'] {
     background: ${background};
   }
 
   /* Inline code */
-  :not(pre) > code[class*="language-"]
-  {
+  :not(pre) > code[class*='language-'] {
     padding: 4px 7px;
     border-radius: 0.3em;
     white-space: normal;
@@ -380,261 +358,216 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
 
   /* Code box limit */
 
-  .limit-300
-  {
+  .limit-300 {
     height: 300px !important;
   }
 
-  .limit-300
-  {
+  .limit-300 {
     height: 400px !important;
   }
 
-  .limit-500
-  {
+  .limit-500 {
     height: 500px !important;
   }
 
-  .limit-600
-  {
+  .limit-600 {
     height: 600px !important;
   }
 
-  .limit-700
-  {
+  .limit-700 {
     height: 700px !important;
   }
 
-  .limit-800
-  {
+  .limit-800 {
     height: 800px !important;
   }
 
-  .language-css
-  {
+  .language-css {
     color: ${purple};
   }
 
-  .token
-  {
+  .token {
     color: ${pink};
   }
 
-  .language-css .token
-  {
+  .language-css .token {
     color: ${pink};
   }
 
-  .token.script
-  {
+  .token.script {
     color: ${foreground};
   }
 
-  .token.bold
-  {
+  .token.bold {
     font-weight: bold;
   }
 
-  .token.italic
-  {
+  .token.italic {
     font-style: italic;
   }
 
-  .token.atrule, .token.attr-name, .token.attr-value
-  {
+  .token.atrule,
+  .token.attr-name,
+  .token.attr-value {
     color: ${green};
   }
 
-  .language-css .token.atrule
-  {
+  .language-css .token.atrule {
     color: ${purple};
   }
 
-  .language-html .token.attr-value, .language-markup .token.attr-value
-  {
+  .language-html .token.attr-value,
+  .language-markup .token.attr-value {
     color: ${yellow};
   }
 
-  .token.boolean
-  {
+  .token.boolean {
     color: ${purple};
   }
 
-  .token.builtin, .token.class-name
-  {
+  .token.builtin,
+  .token.class-name {
     color: ${cyan};
   }
 
-  .token.comment
-  {
+  .token.comment {
     color: ${comment};
   }
 
-  .token.constant
-  {
+  .token.constant {
     color: ${purple};
   }
 
-  .language-javascript .token.constant
-  {
+  .language-javascript .token.constant {
     color: ${orange};
     font-style: italic;
   }
 
-  .token.entity
-  {
+  .token.entity {
     color: ${pink};
   }
 
-  .language-css .token.entity
-  {
+  .language-css .token.entity {
     color: ${green};
   }
 
-  .language-html .token.entity.named-entity
-  {
+  .language-html .token.entity.named-entity {
     color: ${purple};
   }
 
-  .language-html .token.entity:not(.named-entity)
-  {
+  .language-html .token.entity:not(.named-entity) {
     color: ${pink};
   }
 
-  .language-markup .token.entity.named-entity
-  {
+  .language-markup .token.entity.named-entity {
     color: ${purple};
   }
 
-  .language-markup .token.entity:not(.named-entity)
-  {
+  .language-markup .token.entity:not(.named-entity) {
     color: ${pink};
   }
 
-  .token.function
-  {
+  .token.function {
     color: ${green};
   }
 
-  .language-css .token.function
-  {
+  .language-css .token.function {
     color: ${cyan};
   }
 
-  .token.important, .token.keyword
-  {
+  .token.important,
+  .token.keyword {
     color: ${pink};
   }
 
-  .token.prolog
-  {
+  .token.prolog {
     color: ${foreground};
   }
 
-  .token.property
-  {
+  .token.property {
     color: ${orange};
   }
 
-  .language-css .token.property
-  {
+  .language-css .token.property {
     color: ${cyan};
   }
 
-  .token.punctuation
-  {
+  .token.punctuation {
     color: ${pink};
   }
 
-  .language-css .token.punctuation
-  {
+  .language-css .token.punctuation {
     color: ${orange};
   }
 
-  .language-html .token.punctuation, .language-markup .token.punctuation
-  {
+  .language-html .token.punctuation,
+  .language-markup .token.punctuation {
     color: ${foreground};
   }
 
-  .token.selector
-  {
+  .token.selector {
     color: ${pink};
   }
 
-  .language-css .token.selector
-  {
+  .language-css .token.selector {
     color: ${green};
   }
 
-  .token.regex
-  {
+  .token.regex {
     color: ${red};
   }
 
-  .language-css .token.rule:not(.atrule)
-  {
+  .language-css .token.rule:not(.atrule) {
     color: ${foreground};
   }
 
-  .token.string
-  {
+  .token.string {
     color: ${yellow};
   }
 
-  .token.tag
-  {
+  .token.tag {
     color: ${pink};
   }
 
-  .token.url
-  {
+  .token.url {
     color: ${cyan};
   }
 
-  .language-css .token.url
-  {
+  .language-css .token.url {
     color: ${orange};
   }
 
-  .token.variable
-  {
+  .token.variable {
     color: ${comment};
   }
 
-  .token.number
-  {
+  .token.number {
     color: rgba(189, 147, 249, 1);
   }
 
-  .token.operator
-  {
+  .token.operator {
     color: rgba(139, 233, 253, 1);
   }
 
-  .token.char
-  {
+  .token.char {
     color: rgba(255, 135, 157, 1);
   }
 
-  .token.symbol
-  {
+  .token.symbol {
     color: rgba(255, 184, 108, 1);
   }
 
-  .token.deleted
-  {
+  .token.deleted {
     color: #e2777a;
   }
 
-  .token.namespace
-  {
+  .token.namespace {
     color: #e2777a;
   }
 
   /* Line Highlighter */
 
-  .highlight-line
-  {
+  .highlight-line {
     color: inherit;
     display: inline-block;
     text-decoration: none;
@@ -643,40 +576,32 @@ export const Container = styled('div')<{ colorMode: 'dark' | 'light' }>`
     padding: 2px 10px;
   }
 
-  .highlight-line:empty:before
-  {
-    content: " ";
+  .highlight-line:empty:before {
+    content: ' ';
   }
 
-  .highlight-line:not(:last-child)
-  {
+  .highlight-line:not(:last-child) {
     min-width: 100%;
   }
 
-  .highlight-line .highlight-line:not(:last-child)
-  {
+  .highlight-line .highlight-line:not(:last-child) {
     min-width: 0;
   }
 
-  .highlight-line-isdir
-  {
+  .highlight-line-isdir {
     color: ${foreground};
-    background$-color: ${selection30});
+    background-color: ${selection30};
   }
 
-  .highlight-line-active
-  {
-    background$-color: ${comment30});
+  .highlight-line-active {
+    background-color: ${comment30};
   }
 
-  .highlight-line-add
-  {
-    background$-color: ${green});
+  .highlight-line-add {
+    background-color: ${green};
   }
 
-  .highlight-line-remove
-  {
-    background$-color: ${red});
+  .highlight-line-remove {
+    background-color: ${red};
   }
-
 `

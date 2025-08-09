@@ -12,12 +12,12 @@ const styles = {
     body: {
       fontFamily:
         "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;",
-      bg: mode('#f0e7db', '#0E091B')(props),
-      color: mode('gray.800', 'whiteAlpha.900')(props),
+      bg: mode('#E5E7EB', '#1F2937')(props),
+      color: mode('#1F2937', '#E5E7EB')(props),
       a: {
         _hover: {
           textDecoration: 'none',
-          color: mode('purple.500', 'pink.400')(props)
+          color: mode('#2563EB', '#F97316')(props)
         }
       }
     }
@@ -42,9 +42,15 @@ const components = {
 
 const colors = {
   primary: {
-    main: '#ED64A6',
-    second: '#805AD5'
-  }
+    main: '#F97316', // For dark mode
+    light: '#2563EB', // For light mode (blue)
+    second: '#1F2937'
+  },
+  gray: {
+    dark: '#1F2937',
+    light: '#E5E7EB'
+  },
+  orange: '#F97316'
 }
 
 // 3. extend the theme

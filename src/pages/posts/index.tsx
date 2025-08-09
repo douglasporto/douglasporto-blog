@@ -33,6 +33,7 @@ type Props = {
 const Posts = ({ allPosts, dataDevTo }: Props) => {
   const [typeList, setTypeList] = useState<TypeList>('card')
   const [language, setLanguage] = useState('en_US')
+  const primaryColor = useColorModeValue('primary.light', 'primary.main')
 
   return (
     <>
@@ -45,7 +46,7 @@ const Posts = ({ allPosts, dataDevTo }: Props) => {
           <Heading
             as="h3"
             fontSize="lg"
-            color={useColorModeValue('purple.500', 'primary.main')}
+            color={primaryColor}
             variant="section-title"
           >
             Posts
@@ -54,7 +55,7 @@ const Posts = ({ allPosts, dataDevTo }: Props) => {
             variant="outline"
             aria-label="type list"
             fontSize="20px"
-            color={typeList === 'card' ? 'primary.main' : ''}
+            color={typeList === 'card' ? primaryColor : ''}
             ml={12}
             onClick={() => setTypeList('card')}
             icon={<MdDashboard />}
@@ -63,7 +64,7 @@ const Posts = ({ allPosts, dataDevTo }: Props) => {
             variant="outline"
             aria-label="type list"
             fontSize="20px"
-            color={typeList === 'list' ? 'primary.main' : ''}
+            color={typeList === 'list' ? primaryColor : ''}
             ml={2}
             onClick={() => setTypeList('list')}
             icon={<BsList />}
