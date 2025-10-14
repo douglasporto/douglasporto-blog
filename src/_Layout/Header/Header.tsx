@@ -91,6 +91,13 @@ const Header = ({ path }: { path: string }) => {
             <LinkItem href="/works" path={path}>
               Trabalhos
             </LinkItem>
+            <LinkItem
+              href="https://douglasporto.substack.com"
+              path={path}
+              _target="_blank"
+            >
+              Newsletter
+            </LinkItem>
             <LinkItem href="/its-me" path={path}>
               It&apos;s me
             </LinkItem>

@@ -23,6 +23,7 @@ import Author from '@/components/Author/Author'
 import Meta from '@/components/meta'
 import PostItem from '@/components/PostList/PostList'
 import { PostItemDevTo } from '@/components/PostList/PostListDevTo'
+import SubstackPosts from '@/components/SubstackPosts/SubstackPosts'
 import { WorkCard } from '@/components/WorkCard/WorkCard'
 
 type Props = {
@@ -43,6 +44,7 @@ const Index = ({ allPosts, allWorks, dataDevTo }: Props) => {
     <>
       <Meta />
       <Author />
+      <SubstackPosts />
       <Box borderRadius="lg" mt={12} mb={6}>
         <Heading
           as="h3"

@@ -89,6 +89,28 @@ const Author = () => {
           />
         </Box>
       </Box>
+      <Box
+        maxWidth="100%"
+        background="rgba(255, 255, 255, 0.05)"
+        border="1px solid rgba(255, 255, 255, 0.2)"
+        borderRadius="12px"
+        padding="12px"
+        backdropFilter="blur(6px)"
+        boxShadow="0 4px 20px rgba(0,0,0,0.2)"
+        marginBottom="12px"
+      >
+        <iframe
+          src="https://douglasporto.substack.com/embed"
+          width="100%"
+          height="150"
+          style={{
+            border: 0,
+            borderRadius: '8px',
+            background: 'rgba(255, 255, 255, 0.05)'
+          }}
+          frameBorder="0"
+        />
+      </Box>
 
       <Box borderRadius="lg" mb={12}>
         <Heading
