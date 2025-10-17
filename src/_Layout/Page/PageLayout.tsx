@@ -19,9 +19,9 @@ type PageLayoutProps = {
 const PageLayout = (props: PageLayoutProps) => {
   const router = useRouter()
   return (
-    <Box as="main">
+    <Box as="main" overflowX="hidden" w="100%">
       <Header path={router.asPath} />
-      <Container maxW="container.md" pt={32}>
+      <Container maxW="container.md" pt={32} px={{ base: 4, md: 6 }} w="100%">
         <motion.article
           initial="hidden"
           animate="enter"

@@ -88,8 +88,12 @@ const Header = ({ path }: { path: string }) => {
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
           >
-            <LinkItem href="/works" path={path}>
-              Trabalhos
+            <LinkItem
+              href="https://onetwo-tech.baseportal.io/forms/2a45e044-ea9f-4ac3-aa12-b46af5066081"
+              path={path}
+              _target="_blank"
+            >
+              Mentoria
             </LinkItem>
             <LinkItem
               href="https://douglasporto.substack.com"
@@ -116,14 +120,25 @@ const Header = ({ path }: { path: string }) => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
+                <MenuItem
+                  as={Link}
+                  href="https://onetwo-tech.baseportal.io/forms/2a45e044-ea9f-4ac3-aa12-b46af5066081"
+                  target="_blank"
+                >
+                  Mentoria
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="https://douglasporto.substack.com"
+                  target="_blank"
+                >
+                  Newsletter
+                </MenuItem>
                 <NextLink href="/its-me" passHref>
                   <MenuItem as={Link}>It&apos;s me</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                <NextLink href="/posts" passHref>
+                  <MenuItem as={Link}>Artigos</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

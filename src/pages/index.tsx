@@ -20,9 +20,11 @@ import Post from 'types/post'
 import Work from 'types/work'
 
 import Author from '@/components/Author/Author'
+import LeadMagnetSection from '@/components/LeadMagnetSection/LeadMagnetSection'
 import Meta from '@/components/meta'
 import PostItem from '@/components/PostList/PostList'
 import { PostItemDevTo } from '@/components/PostList/PostListDevTo'
+import SaasSection from '@/components/SaasSection/SaasSection'
 import SubstackPosts from '@/components/SubstackPosts/SubstackPosts'
 import { WorkCard } from '@/components/WorkCard/WorkCard'
 
@@ -44,7 +46,13 @@ const Index = ({ allPosts, allWorks, dataDevTo }: Props) => {
     <>
       <Meta />
       <Author />
+
+      <SaasSection />
+
+      <LeadMagnetSection />
+
       <SubstackPosts />
+
       <Box borderRadius="lg" mt={12} mb={6}>
         <Heading
           as="h3"
